@@ -1,0 +1,186 @@
+@font-face {
+  font-family: "Lato";
+  font-display: auto;
+  src: url(../assets/font/Lato/Lato-Light.ttf); }
+
+html {
+  font-size: 12px; }
+
+body {
+  margin: 0;
+  font-family: "Lato"; }
+
+.scale {
+  transform: scale(2); }
+
+.app {
+  height: 100vh;
+  width: 100vw; }
+  .app .home-page {
+    height: 100%;
+    width: 100%;
+    background: #232f34; }
+    .app .home-page .title {
+      padding-top: 8rem;
+      color: white;
+      font-size: 5rem; }
+      .app .home-page .title .test {
+        padding: 1rem;
+        color: white;
+        position: relative;
+        display: inline-block;
+        border: 9px solid transparent; }
+        .app .home-page .title .test:before, .app .home-page .title .test:after {
+          content: '';
+          position: absolute;
+          background: white; }
+        .app .home-page .title .test:focus:before, .app .home-page .title .test:hover:before {
+          animation: beforeBorders .4s forwards ease-in-out; }
+        .app .home-page .title .test:focus:after, .app .home-page .title .test:hover:after {
+          animation: afterBorders .4s forwards ease-in-out; }
+        .app .home-page .title .test:focus, .app .home-page .title .test:hover {
+          animation: borderColors 0.4s steps(1) forwards;
+          outline: none; }
+      .app .home-page .title h1 {
+        margin: unset;
+        font-size: 7rem; }
+    .app .home-page .logo-img {
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .app .home-page .logo-img .down {
+        padding: 2rem; }
+        .app .home-page .logo-img .down:hover {
+          cursor: pointer; }
+        .app .home-page .logo-img .down .circle {
+          transition: .5s;
+          margin: 1.5rem;
+          width: .5rem;
+          height: .5rem;
+          border-radius: 50%;
+          background: white; }
+
+@keyframes border {
+  0% {
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    border-bottom-color: transparent; }
+  25% {
+    border-top-color: white;
+    border-right-color: transparent;
+    border-left-color: white;
+    border-bottom-color: transparent; }
+  50% {
+    border-top-color: white;
+    border-right-color: white;
+    border-left-color: white;
+    border-bottom-color: white; }
+  75% {
+    border-top-color: transparent;
+    border-right-color: white;
+    border-left-color: transparent;
+    border-bottom-color: white; }
+  100% {
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    border-bottom-color: transparent; } }
+
+@keyframes beforeBorders {
+  0% {
+    top: calc(1px * -1);
+    left: 50%;
+    bottom: auto;
+    right: auto;
+    width: 0;
+    height: 1px; }
+  33% {
+    top: calc(1px * -1);
+    left: calc(1px * -1);
+    bottom: auto;
+    right: auto;
+    width: calc(1px + 50%);
+    height: 1px; }
+  66% {
+    top: calc(1px * -1);
+    left: calc(1px * -1);
+    bottom: auto;
+    right: auto;
+    width: 1px;
+    height: calc((1px * 2) + 100%); }
+  100% {
+    top: auto;
+    left: calc(1px * -1);
+    bottom: calc(1px * -1);
+    right: auto;
+    width: calc(1px + 50%);
+    height: calc((1px * 2) + 100%); } }
+
+@keyframes afterBorders {
+  0% {
+    top: calc(1px * -1);
+    left: auto;
+    bottom: auto;
+    right: 50%;
+    width: 0;
+    height: 1px; }
+  33% {
+    top: calc(1px * -1);
+    left: auto;
+    bottom: auto;
+    right: calc(1px * -1);
+    width: calc(1px + 50%);
+    height: 1px; }
+  66% {
+    top: calc(1px * -1);
+    left: auto;
+    bottom: auto;
+    right: calc(1px * -1);
+    width: 1px;
+    height: calc((1px * 2) + 100%); }
+  100% {
+    top: auto;
+    left: auto;
+    bottom: calc(1px * -1);
+    right: calc(1px * -1);
+    width: calc(1px + 50%);
+    height: calc((1px * 2) + 100%); } }
+
+@keyframes borderColors {
+  0% {
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent; }
+  33% {
+    border-top-color: white;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent; }
+  66% {
+    border-top-color: white;
+    border-right-color: white;
+    border-bottom-color: transparent;
+    border-left-color: white; }
+  100% {
+    border-top-color: white;
+    border-right-color: white;
+    border-bottom-color: white;
+    border-left-color: white; } }
+
+#header {
+  width: 100vw;
+  height: 8rem;
+  position: fixed;
+  display: flex;
+  align-items: center; }
+  #header .nav {
+    width: 100%;
+    height: 100%; }
+    #header .nav .end-nav {
+      width: 100%;
+      height: 100%; }

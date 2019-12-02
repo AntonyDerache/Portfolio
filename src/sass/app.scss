@@ -1,239 +1,38 @@
 @import "variables";
 
 @font-face {
-    font-family: $font;
-    font-display: auto;
-    src: url(../assets/font/Lato/Lato-Light.ttf)
+  font-family: $font;
+  font-display: auto;
+  src: url(../assets/font/Lato/Lato-Light.ttf)
 }
 
 html {
-    font-size: $font-size;
+  font-size: $font-size;
+  height: 100%;
 }
 
 body {
-    margin: 0;
-    font-family: $font;
+  margin: 0;
+  font-family: $font;
+  height: 100%;
+
 }
 
-.scale {
-    transform: scale(2);
-}
+#app {
+  background-color: #231f20;
 
-.app {
-    height: 100vh;
-    width: 100vw;
-
-    .home-page {
-        height: 100%;
-        width: 100%;
-        background: #232f34;
-
-        .title {
-            padding-top: $header-height;
-            color: white;
-            font-size: 5rem;
-
-            .test {
-                padding: 1rem;
-                color: white;
-                position: relative;
-                display: inline-block;
-                // line-height: 1em;
-                border: 9px solid transparent;
-
-                &:before,
-                &:after {
-                    content: '';
-                    position: absolute;
-                    background: white;
-                }
-
-                &:focus:before,
-                &:hover:before {
-                    animation: beforeBorders .4s forwards ease-in-out;
-                }
-
-                &:focus:after,
-                &:hover:after {
-                    animation: afterBorders .4s forwards ease-in-out;
-                }
-
-                &:focus,
-                &:hover {
-                    animation: borderColors .4s steps(1) forwards;
-                    outline: none;
-                }
-
-                // border: 9px solid transparent;
-
-                // &:hover {
-                //     animation: border .4s ease-in-out;
-                // }
-            }
-
-
-            h1 {
-                margin: unset;
-                font-size: 7rem;
-            }
-        }
-
-
-        .logo-img {
-            width: 100%;
-            position: absolute;
-            bottom: 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            .down {
-                padding: 2rem;
-                &:hover {
-                    cursor: pointer;
-                }
-
-                .circle {
-                    transition: .5s;
-                    margin: 1.5rem;
-                    width: .5rem;
-                    height: .5rem;
-                    border-radius: 50%;
-                    background: white;
-                }
-            }
-
-        }
-    }
-}
-
-@keyframes border {
-            0% {
-                border-top-color: transparent;
-                border-right-color: transparent;
-                border-left-color: transparent;
-                border-bottom-color: transparent;
-            }
-            25% {
-                border-top-color: white;
-                border-right-color: transparent;
-                border-left-color: white;
-                border-bottom-color: transparent;
-            }
-            50% {
-                border-top-color: white;
-                border-right-color: white;
-                border-left-color: white;
-                border-bottom-color: white;
-            }
-            75% {
-                border-top-color: transparent;
-                border-right-color: white;
-                border-left-color: transparent;
-                border-bottom-color: white;
-            }
-            100% {
-                border-top-color: transparent;
-                border-right-color: transparent;
-                border-left-color: transparent;
-                border-bottom-color: transparent;
-            }
-        }
-
-        @keyframes beforeBorders {
-  0% {
-    top: calc(1px * -1);
-    left: 50%;
-    bottom: auto;
-    right: auto;
-    width: 0;
-    height: 1px;
-  }
-  33% {    
-    top: calc(1px * -1);
-    left: calc(1px * -1);
-    bottom: auto;
-    right: auto;
-    width: calc(1px + 50%);
-    height: 1px;
-  }
-  66% {
-    top: calc(1px * -1);
-    left: calc(1px * -1);
-    bottom: auto;
-    right: auto;
-    width: 1px;
-    height: calc((1px * 2) + 100%);
-  }
-  100% {
-    top: auto;
-    left: calc(1px * -1);
-    bottom: calc(1px * -1);
-    right: auto;
-    width: calc(1px + 50%);
-    height: calc((1px * 2) + 100%);
+  #white-screen {
+    // display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    transition: 1s;
   }
 }
 
-@keyframes afterBorders {
-  0% {
-    top: calc(1px * -1);
-    left: auto;
-    bottom: auto;
-    right: 50%;
-    width: 0;
-    height: 1px;
-  }
-  33% {    
-    top: calc(1px * -1);
-    left: auto;
-    bottom: auto;
-    right: calc(1px * -1);
-    width: calc(1px + 50%);
-    height: 1px;
-  }
-  66% {
-    top: calc(1px * -1);
-    left: auto;
-    bottom: auto;
-    right: calc(1px * -1);
-    width: 1px;
-    height: calc((1px * 2) + 100%);
-  }
-  100% {
-    top: auto;
-    left: auto;
-    bottom: calc(1px * -1);
-    right: calc(1px * -1);
-    width: calc(1px + 50%);
-    height: calc((1px * 2) + 100%);
-  }
-}
-
-@keyframes borderColors {
-  0% {
-    border-top-color: transparent;
-    border-right-color: transparent;
-    border-bottom-color: transparent;
-    border-left-color: transparent;
-  }
-  33% {
-    border-top-color: white;
-    border-right-color: transparent;
-    border-bottom-color: transparent;
-    border-left-color: transparent;
-
-  }
-  66% {
-    border-top-color: white;
-    border-right-color: white;
-    border-bottom-color: transparent;
-    border-left-color: white;
-  }
-  100% {
-    border-top-color: white;
-    border-right-color: white;
-    border-bottom-color: white;
-    border-left-color: white;
-  }
+.anime-white-screen {
+  animation: white-screen .4s;
 }

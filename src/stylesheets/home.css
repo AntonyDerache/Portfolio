@@ -1,0 +1,50 @@
+#newBackground {
+  background-image: url("../assets/background-cv2.png");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: cover;
+  padding: 2.5rem;
+  overflow: hidden; }
+  #newBackground .square {
+    border: 1px solid white;
+    position: relative; }
+    #newBackground .square #lantern {
+      position: relative;
+      padding-left: 15rem;
+      display: flex; }
+      #newBackground .square #lantern img {
+        z-index: 2; }
+      #newBackground .square #lantern .light-zone {
+        position: absolute;
+        padding-left: 6rem;
+        padding-top: 18rem; }
+        #newBackground .square #lantern .light-zone #back-light {
+          position: absolute;
+          width: 1px;
+          height: 1px;
+          background-color: transparent;
+          border-radius: 50%;
+          box-shadow: 0px 0px 350px 350px #473e41; }
+    #newBackground .square #social-media {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding: 1rem; }
+      #newBackground .square #social-media .zone-icon {
+        width: 5rem;
+        height: 5rem;
+        margin-right: 1.5rem; }
+        #newBackground .square #social-media .zone-icon .circle {
+          height: 4rem;
+          width: 4rem;
+          border-radius: 50%;
+          border: 1px solid white;
+          transition: .5s; }
+          #newBackground .square #social-media .zone-icon .circle .color {
+            color: white; }
+          #newBackground .square #social-media .zone-icon .circle:hover {
+            transform: translateY(-10px); }

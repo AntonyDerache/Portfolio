@@ -1,0 +1,57 @@
+#header {
+  height: 6rem;
+  position: fixed;
+  z-index: 10; }
+  @media screen and (min-width: 1024px) {
+    #header {
+      padding: 0 2.5rem;
+      margin-top: 2.5rem; } }
+  #header .nav {
+    display: flex;
+    flex-flow: row; }
+    #header .nav .navBrand {
+      width: 30%; }
+    #header .nav .end-nav {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding-right: 2rem;
+      color: white; }
+      @media screen and (min-width: 1024px) {
+        #header .nav .end-nav {
+          padding-right: 5rem; } }
+      #header .nav .end-nav #burger {
+        display: none;
+        color: white;
+        background-color: transparent;
+        position: relative;
+        z-index: 10; }
+      #header .nav .end-nav #nav-bar {
+        display: none;
+        font-size: 2rem;
+        position: relative; }
+        @media screen and (max-width: 1024px) {
+          #header .nav .end-nav #nav-bar {
+            color: black;
+            background-color: white;
+            position: absolute;
+            top: 0;
+            right: 0;
+            margin-top: 6rem; } }
+        #header .nav .end-nav #nav-bar li {
+          opacity: 0;
+          font-variant: small-caps;
+          padding: .5rem 2rem;
+          transition: 1s; }
+          @media screen and (min-width: 1024px) {
+            #header .nav .end-nav #nav-bar li {
+              display: inline; }
+              #header .nav .end-nav #nav-bar li:hover {
+                border-bottom: 1px solid #FFF; } }
+      #header .nav .end-nav #icon-energy img {
+        padding: 0 2rem; }
+      #header .nav .end-nav #reload {
+        color: white; }
+        #header .nav .end-nav #reload:hover {
+          cursor: pointer;
+          opacity: 1; }

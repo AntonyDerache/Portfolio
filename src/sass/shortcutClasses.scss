@@ -1,0 +1,17 @@
+.full-height {
+  height: 100%;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.fl {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.scale {
+    transform: scale(2);
+}

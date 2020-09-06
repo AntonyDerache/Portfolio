@@ -1,66 +1,22 @@
-#newBackground {
+#background {
     background-image: url("../assets/background-cv2.png");
     background-repeat: no-repeat;
     background-position: left;
     background-size: cover;
     overflow: hidden;
-    display: none;
+    position: relative;
+    transition: 2s;
+    display: -webkit-inline-box;
+
     @media screen and (min-width: 1024px) {
         padding: $global-padding;
+        padding-top: $global-padding + $header-height;
     }
-    #square {
-        position: relative;
-        padding: 1rem;
-        opacity: 0;
-        transition: 2s;
-        @media screen and (min-width: 1024px) {
-            border: 1px solid white;
-        }
 
-        #back-light {
-            position: absolute;
-            width: 1px;
-            height: 1px;
-            background-color: transparent;
-            border-radius: 50%;
-            box-shadow: 0px 0px 350px 350px #473e41;
-        }
-
-        #social-media {
-            position: absolute;
-            bottom: 0;
-            right: 0;
-            left: 0;
-            display: flex;
-            align-items: center;
-            justify-content: flex-end;
-            border-top: 1px solid white;
-            padding: .5rem;
-            @media screen and (min-width: 1024px) {
-            border: 0;
-                padding: 1rem;
-            }
-            .zone-icon {
-                width: 5rem;
-                height: 5rem;
-                margin-right: 1.5rem;
-
-                .circle {
-                    height: 4rem;
-                    width: 4rem;
-                    border-radius: 50%;
-                    border: 1px solid white;
-                    transition: .5s;
-
-                    .color {
-                        color: white;
-                    }
-
-                    &:hover {
-                        transform: translateY(-10px);
-                    }
-                }
-            }
-        }
+    #content {
+        position: absolute;
+        display: -webkit-inline-box;
+        transition: .5s;
+        left: 0;
     }
 }

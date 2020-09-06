@@ -1,27 +1,26 @@
-import React, { Component } from 'react';
-
+import React, { useState, useEffect } from 'react';
 import Header from '../header-components/Header'
-import Light from './light/light';
-import RealScreen from '../home/home';
+import Home from '../home/home';
 
 import '../../stylesheets/all.css';
 
-class App extends Component {
-  componentDidMount() {
-    document.getElementById("white-screen").style.opacity = 0;
+const App = () => {
+  const [index, setIndex] = useState(1);
 
+  const updateIndex = newValue => {
+    setIndex(newValue);
   }
 
-  render() {
-    return (
-      <div id="app" className="full-width full-height">
-        <Header />
-        <Light />
-        <RealScreen />
-        <div id="white-screen"></div>
-      </div>
-    );
+  const getIndex = () => {
+    return index;
   }
+
+  return (
+    <div id="app" className="full-width full-height">
+      <Header updateIndex={updateIndex} getIndex={getIndex}/>
+      <Home index={index}/>
+    </div>
+  );
 }
 
 export default App;

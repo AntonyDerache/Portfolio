@@ -7,13 +7,11 @@ import Projets from '../pages-components/projets';
 import Formation from '../pages-components/formations';
 
 const Home = (props) => {
-    const arrayId = ["competences", "experiences"];
-
     useEffect(() => {
         let width = document.getElementById("content").clientWidth;
 
         document.getElementById("content").style.left = (width * (props.index - 1) * -1).toString() + "px";
-    })
+    }, [])
 
     return (
         <div id="background" className="full-width full-height">

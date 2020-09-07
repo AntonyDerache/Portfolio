@@ -4,20 +4,30 @@
     background-repeat: no-repeat;
     background-position: left;
     background-size: cover;
-    overflow: hidden;
+    overflow-x: hidden;
     position: relative;
     transition: 2s;
     display: -webkit-inline-box;
-
-    @media screen and (min-width: 1024px) {
-        padding: $global-padding;
-        padding-top: $global-padding + $header-height;
-    }
+    height: 100vh;
 
     #content {
         position: absolute;
         display: -webkit-inline-box;
         transition: .5s;
         left: 0;
+
+        @media screen and (min-width: 1024px) {
+            padding-top: $global-padding + $header-height;
+        }
+
+        h2 {
+            font-size: 4rem;
+            line-height: 10rem;
+
+            @media screen and (min-width: 1024px) {
+                padding: 3rem 0;
+                font-size: 6rem;
+            }
+        }
     }
 }

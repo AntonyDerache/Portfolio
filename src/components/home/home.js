@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 
 import Competences from '../pages-components/competences';
 import Experiences from '../pages-components/experiences';
@@ -15,7 +15,7 @@ const Home = (props) => {
     })
 
     return (
-        <div id="background" className="full-width full-height">
+        <div id="background" className="full-width">
             <div id="content" className="full-width full-height">
                 <Main/>
                 <Competences/>

@@ -16,7 +16,7 @@ const Header = (props) => {
             document.getElementsByClassName("tab")[props.getIndex() - 1].classList.add("underlined");
         return _ => {
             window.removeEventListener('resize', updateSize) }
-    }, [])
+    }, [props])
 
     const clickBurger = () => {
         if (document.getElementById("burger").classList.contains("is-active")) {
@@ -32,6 +32,8 @@ const Header = (props) => {
         document.getElementsByClassName("tab")[props.getIndex() - 1].classList.remove("underlined");
         props.updateIndex(value);
         document.getElementsByClassName("tab")[value - 1].classList.add("underlined");
+        if (window.innerWidth <= 1024)
+            clickBurger();
     }
 
     return (

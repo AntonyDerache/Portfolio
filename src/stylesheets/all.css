@@ -112,24 +112,34 @@ body {
   background-repeat: no-repeat;
   background-position: left;
   background-size: cover;
-  overflow: hidden;
+  overflow-x: hidden;
   position: relative;
   transition: 2s;
-  display: -webkit-inline-box; }
-  @media screen and (min-width: 1024px) {
-    #background {
-      padding: 2.5rem;
-      padding-top: 8.5rem; } }
+  display: -webkit-inline-box;
+  height: 100vh; }
   #background #content {
     position: absolute;
     display: -webkit-inline-box;
     transition: .5s;
     left: 0; }
+    @media screen and (min-width: 1024px) {
+      #background #content {
+        padding-top: 8.5rem; } }
+    #background #content h2 {
+      font-size: 4rem;
+      line-height: 10rem; }
+      @media screen and (min-width: 1024px) {
+        #background #content h2 {
+          padding: 3rem 0;
+          font-size: 6rem; } }
 
 .pages {
   color: white;
   padding: 1rem;
   padding-top: 6rem; }
+  @media screen and (min-width: 1024px) {
+    .pages {
+      padding-top: 0rem; } }
 
 #main {
   display: -webkit-flex;
@@ -137,25 +147,115 @@ body {
   justify-content: flex-end; }
   #main div {
     font-variant: small-caps; }
-    #main div h2, #main div h3 {
-      text-align: right; }
-    #main div h2 {
+    #main div h1, #main div h3 {
+      text-align: right;
       line-height: 17vw;
       font-size: 20vw;
       width: 100%; }
     #main div h3 {
-      color: #00d1c7;
-      line-height: 17vw;
-      font-size: 20vw;
-      width: 100%; }
+      color: #00d1c7; }
+    @media screen and (min-width: 1024px) {
+      #main div h1, #main div h3 {
+        text-align: right;
+        line-height: 11vw;
+        font-size: 10vw; } }
 
-#competences h2 {
-  font-size: 4rem;
-  line-height: 10rem; }
+#about p {
+  padding: 1.8rem;
+  text-align: justify;
+  font-size: 2rem; }
+  @media screen and (min-width: 1024px) {
+    #about p {
+      font-size: 2.5rem;
+      padding: 1.8rem 30rem; } }
 
-#competences ul {
-  padding-top: 3rem; }
-  #competences ul li {
-    padding: 0 2rem;
+#formations h3 {
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 1.5rem 0; }
+  @media screen and (min-width: 1024px) {
+    #formations h3 {
+      font-size: 3rem;
+      padding: 3rem 2rem; } }
+  #formations h3 div {
+    font-weight: 500;
+    font-size: 1.1rem; }
+    @media screen and (min-width: 1024px) {
+      #formations h3 div {
+        font-size: 2rem; } }
+
+#skills ul {
+  padding-top: 1rem; }
+  #skills ul li {
+    padding: 1rem 2rem;
     font-size: 2.5rem;
-    font-variant: small-caps; }
+    font-variant: small-caps;
+    display: flex;
+    align-items: center;
+    justify-content: left; }
+
+@media screen and (min-width: 1024px) {
+  #skills {
+    display: flex; }
+    #skills .hard-skills, #skills .soft-skills {
+      width: 50vw; }
+      #skills .hard-skills ul li, #skills .soft-skills ul li {
+        padding: 2rem 2rem;
+        font-size: 3rem;
+        padding-left: 20%; } }
+
+#skills .html-css-js {
+  background-image: url("../assets/icone-html-css-js.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 9rem;
+  height: 3rem;
+  display: inline-flex;
+  margin-right: 1rem; }
+  @media screen and (min-width: 1024px) {
+    #skills .html-css-js {
+      width: 13rem;
+      height: 5rem;
+      margin-right: 3rem; } }
+
+#skills .background-image {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 3rem;
+  height: 3rem;
+  display: inline-flex;
+  margin-right: 1rem; }
+  @media screen and (min-width: 1024px) {
+    #skills .background-image {
+      width: 6rem;
+      height: 6rem;
+      margin-right: 3rem; } }
+
+#skills .c {
+  background-image: url("../assets/icone-c.svg"); }
+
+#skills .reactjs {
+  background-image: url("../assets/icone-react.svg"); }
+
+#skills .nodejs {
+  background-image: url("../assets/icone-nodejs.svg"); }
+
+#skills .cplusplus {
+  background-image: url("../assets/icone-cplusplus.svg"); }
+
+#skills .python {
+  background-image: url("../assets/icone-python.svg"); }
+
+#skills .unity {
+  background-image: url("../assets/icone-unity.png"); }
+
+#skills .photoshop {
+  background-image: url("../assets/icone-photoshop.svg"); }
+
+#skills .anglais {
+  background-image: url("../assets/icone-anglais.png"); }
+
+#skills .permis {
+  background-image: url("../assets/icone-permis.png"); }

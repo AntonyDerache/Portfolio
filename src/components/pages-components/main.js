@@ -4,7 +4,7 @@ const Main = () => {
     return (
         <div id="main" className="pages full-width full-height">
             <div className="full-width">
-                <h2 className="name">antony derache</h2>
+                <h1 className="name">antony derache</h1>
                 <h3 >developer</h3>
             </div>
         </div>

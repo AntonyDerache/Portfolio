@@ -1,4 +1,49 @@
 .pages {
     color: white;
     padding: 1rem;
+    padding-top: $header-height;
+}
+
+#main {
+    display: -webkit-flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+
+    div {
+        font-variant: small-caps;
+
+        h2, h3 {
+            text-align: right;
+        }
+
+        h2 {
+            line-height: 17vw;
+            font-size: 20vw;
+            width: 100%;
+        }
+
+        h3 {
+            color: rgb(0, 209, 199);
+            line-height: 17vw;
+            font-size: 20vw;
+            width: 100%;
+        }
+    }
+}
+
+#competences {
+    h2 {
+        font-size: 4rem;
+        line-height: 10rem;
+    }
+
+    ul {
+        padding-top: 3rem;
+
+        li {
+            padding: 0 2rem;
+            font-size: 2.5rem;
+            font-variant: small-caps;
+        }
+    }
 }

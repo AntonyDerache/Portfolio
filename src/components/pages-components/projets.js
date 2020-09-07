@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Projets = (props) => {
+const Projets = () => {
     return (
         <div id="projets" className="pages full-width full-height">
-            <h1>PROJETS {props.index}</h1>
+            <h1>PROJETS</h1>
         </div>
     );
 }

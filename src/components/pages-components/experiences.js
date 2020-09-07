@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Experiences = (props) => {
+const Experiences = () => {
     return (
         <div id="experiences" className="pages full-width full-height">
-            <h1>EXPERIENCES {props.index}</h1>
+            <h1>EXPERIENCES</h1>
         </div>
     );
 }

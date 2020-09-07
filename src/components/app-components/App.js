@@ -5,7 +5,7 @@ import Home from '../home/home';
 import '../../stylesheets/all.css';
 
 const App = () => {
-  const [index, setIndex] = useState(1);
+  const [index, setIndex] = useState(2);
 
   const updateIndex = newValue => {
     setIndex(newValue);

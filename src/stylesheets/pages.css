@@ -2,5 +2,24 @@
   color: white;
   padding: 1rem; }
 
-.underlined {
-  border-bottom: 1px solid white; }
+#main {
+  display: -webkit-flex;
+  align-items: flex-end;
+  justify-content: flex-end; }
+  #main div {
+    font-variant: small-caps; }
+    #main div h2, #main div h3 {
+      text-align: right; }
+    #main div h2 {
+      line-height: 17vw;
+      font-size: 20vw;
+      width: 100%; }
+    #main div h3 {
+      color: #00d1c7;
+      line-height: 17vw;
+      font-size: 20vw;
+      width: 100%; }
+
+#competences li {
+  font-size: 3rem;
+  font-variant: small-caps; }

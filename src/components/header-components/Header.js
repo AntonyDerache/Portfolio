@@ -8,6 +8,7 @@ const Header = (props) => {
             if (window.innerWidth <= 1024)
                 setMobil(true);
         }
+
         if (window.innerWidth <= 1024)
             setMobil(true);
         window.addEventListener('resize', updateSize);
@@ -48,11 +49,12 @@ const Header = (props) => {
                         </span> : null
                     }
                     <ul id="nav-bar">
-                        <li><span className="tab" onClick={() => handleSwap(1)}>compétences</span></li>
-                        <li><span className="tab" onClick={() => handleSwap(2)}>expériences</span></li>
-                        <li><span className="tab" onClick={() => handleSwap(3)}>formations</span></li>
-                        <li><span className="tab" onClick={() => handleSwap(4)}>projets</span></li>
-                        <li><span className="tab" onClick={() => handleSwap(5)}>about</span></li>
+                        <li><span className="tab" onClick={() => handleSwap(1)}>home</span></li>
+                        <li><span className="tab" onClick={() => handleSwap(2)}>compétences</span></li>
+                        <li><span className="tab" onClick={() => handleSwap(3)}>expériences</span></li>
+                        <li><span className="tab" onClick={() => handleSwap(4)}>formations</span></li>
+                        <li><span className="tab" onClick={() => handleSwap(5)}>projets</span></li>
+                        <li><span className="tab" onClick={() => handleSwap(6)}>about</span></li>
                     </ul>
                 </div>
             </nav>

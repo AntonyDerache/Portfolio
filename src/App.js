@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import Header from '../header-components/Header'
-import Home from '../home/home';
+import Header from './Views/Header'
+import Home from './Views/Home';
 
-import '../../stylesheets/all.css';
+import './stylesheets/all.css';
 
 const App = () => {
-  const [index, setIndex] = useState(2);
+  const [index, setIndex] = useState(1);
 
   const updateIndex = newValue => {
     setIndex(newValue);

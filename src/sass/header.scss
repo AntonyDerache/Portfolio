@@ -1,17 +1,22 @@
 @import 'variables';
 
+.is-not-top {
+  background-color: rgba(#122a42, .9); }
+
 #header {
     height: $header-height;
     position: fixed;
     z-index: 10;
+    transition: .3s ease-in-out;
     @media screen and (min-width: 1024px) {
         padding: 0 $global-padding;
-        margin-top: $global-padding;
+        // margin-top: $global-padding;
     }
 
     .nav {
         display: flex;
-        flex-flow: row;
+        // flex-flow: row;
+        
 
         .navBrand {
             width: 30%;
@@ -36,13 +41,11 @@
             }
 
             #nav-bar {
-                display: initial;
                 font-size: 2rem;
+                display: flex;
                 position: relative;
                 @media screen and (max-width: 1024px) {
                     background: linear-gradient(130deg, rgba(13, 79, 82, .85), rgba(38, 117, 128, .85));
-                    // background-color: rgba(6, 104, 107, 0.897);
-                    // background-color: rgba(73, 61, 61, 0.685);
                     position: absolute;
                     top: 0;
                     right: 0;
@@ -55,6 +58,8 @@
                 span {
                     font-size: 2.5rem;
                     font-weight: 700;
+                    display: flex;
+                    align-items: center;
                 }
 
                 @media screen and (min-width: 1024px) {

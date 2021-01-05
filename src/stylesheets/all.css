@@ -5,7 +5,8 @@
 
 html {
   font-size: 12px;
-  height: 100%; }
+  height: 100%;
+  overflow-y: hidden; }
 
 body {
   margin: 0;
@@ -15,17 +16,19 @@ body {
 #app {
   background-color: #231f20; }
 
+.is-not-top {
+  background-color: rgba(18, 42, 66, 0.9); }
+
 #header {
   height: 6rem;
   position: fixed;
-  z-index: 10; }
+  z-index: 10;
+  transition: .3s ease-in-out; }
   @media screen and (min-width: 1024px) {
     #header {
-      padding: 0 2.5rem;
-      margin-top: 2.5rem; } }
+      padding: 0 2.5rem; } }
   #header .nav {
-    display: flex;
-    flex-flow: row; }
+    display: flex; }
     #header .nav .navBrand {
       width: 30%; }
     #header .nav .end-nav {
@@ -44,8 +47,8 @@ body {
         z-index: 10;
         transform: scale(1.5); }
       #header .nav .end-nav #nav-bar {
-        display: initial;
         font-size: 2rem;
+        display: flex;
         position: relative; }
         @media screen and (max-width: 1024px) {
           #header .nav .end-nav #nav-bar {
@@ -59,7 +62,9 @@ body {
             display: none; } }
         #header .nav .end-nav #nav-bar span {
           font-size: 2.5rem;
-          font-weight: 700; }
+          font-weight: 700;
+          display: flex;
+          align-items: center; }
         @media screen and (min-width: 1024px) {
           #header .nav .end-nav #nav-bar span {
             position: relative;
@@ -106,6 +111,95 @@ body {
 
 .underlined {
   border-bottom: 1px solid white; }
+
+.hidden {
+  opacity: 0; }
+
+#projets .project-container {
+  padding: 2rem 0rem;
+  min-width: 100%; }
+  @media (min-width: 768px) and (max-width: 1500px) {
+    #projets .project-container {
+      min-width: 50%;
+      padding: 4rem 0; } }
+  @media screen and (min-width: 1500px) {
+    #projets .project-container {
+      min-width: 33%; } }
+  #projets .project-container .hide {
+    top: -100% !important; }
+  #projets .project-container .hideCard {
+    position: absolute;
+    flex-direction: column;
+    width: 100%;
+    background-color: #00d1c7;
+    height: 100%;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    transition: .3s ease-in-out;
+    text-align: center;
+    font-size: 2rem; }
+    @media screen and (max-width: 1500px) {
+      #projets .project-container .hideCard {
+        font-size: 1.7rem; } }
+    #projets .project-container .hideCard .cardTitle {
+      font-weight: 700; }
+    #projets .project-container .hideCard .cross {
+      padding-top: 1rem;
+      font-size: 2rem;
+      cursor: pointer; }
+  #projets .project-container .project-box {
+    width: 15rem;
+    height: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    transition: .2s ease-in-out;
+    box-shadow: 0px 0px 20px #111;
+    position: relative;
+    overflow: hidden; }
+    @media screen and (min-width: 1500px) {
+      #projets .project-container .project-box {
+        width: 20rem;
+        height: 20rem; } }
+    #projets .project-container .project-box .banner {
+      position: absolute;
+      background-color: rgba(80, 80, 80, 0.3);
+      height: 30%;
+      bottom: 0; }
+      #projets .project-container .project-box .banner .info {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 3rem;
+        color: white; }
+        #projets .project-container .project-box .banner .info:hover {
+          cursor: pointer; }
+    #projets .project-container .project-box:hover {
+      transition: .5s;
+      width: 70vw;
+      box-shadow: 0px 0px 60px #111;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color: rgba(0, 0, 0, 0.2); }
+      @media screen and (min-width: 768px) {
+        #projets .project-container .project-box:hover {
+          width: 30vw; } }
+      @media screen and (min-width: 1500px) {
+        #projets .project-container .project-box:hover {
+          width: 20vw; } }
+    #projets .project-container .project-box:hover.uj {
+      background-image: url("../assets/preview-brawhalla.png"); }
+    #projets .project-container .project-box:hover.sk {
+      background-image: url("../assets/skipty-background.png"); }
+    #projets .project-container .project-box:hover.bomberman {
+      background-image: url("../assets/bomberman-background.png"); }
+    #projets .project-container .project-box:hover.epytodo {
+      background-image: url("../assets/epytodo-background.png"); }
+    #projets .project-container .project-box:hover.epicture {
+      background-image: url("../assets/epicture-background.png"); }
 
 #background {
   background-image: url(../assets/background.jpg);
@@ -259,3 +353,6 @@ body {
 
 #skills .permis {
   background-image: url("../assets/icone-permis.png"); }
+
+#projets .project-content {
+  flex-flow: row wrap; }

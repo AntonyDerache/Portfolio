@@ -11,3 +11,9 @@
 
 .scale {
   transform: scale(2); }
+
+.underlined {
+  border-bottom: 1px solid white; }
+
+.hidden {
+  opacity: 0; }

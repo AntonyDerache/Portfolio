@@ -5,7 +5,8 @@
 
 html {
   font-size: 12px;
-  height: 100%; }
+  height: 100%;
+  overflow-y: hidden; }
 
 body {
   margin: 0;
@@ -14,6 +15,3 @@ body {
 
 #app {
   background-color: #231f20; }
-
-.anime-white-screen {
-  animation: white-screen .4s; }

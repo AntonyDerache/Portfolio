@@ -15,7 +15,7 @@ const Header = (props) => {
         if (!document.getElementsByClassName("tab")[props.getIndex() - 1].classList.contains("underlined"))
             document.getElementsByClassName("tab")[props.getIndex() - 1].classList.add("underlined");
         return _ => {
-            window.removeEventListener('resize', updateSize) }
+            window.removeEventListener('resize', updateSize)}
     }, [props])
 
     const clickBurger = () => {
@@ -29,11 +29,22 @@ const Header = (props) => {
     }
 
     const handleSwap = value => {
+        document.getElementById('background').scrollTo(0, 0);
         document.getElementsByClassName("tab")[props.getIndex() - 1].classList.remove("underlined");
         props.updateIndex(value);
         document.getElementsByClassName("tab")[value - 1].classList.add("underlined");
         if (window.innerWidth <= 1024)
             clickBurger();
+    }
+
+    const buildTabNavigation = () => {
+        let titleTab = ["home", "compétences", "expériences", "formations", "projets", "about"];
+
+        return titleTab.map((title, i) => {
+            return (
+                <li><span key={i} className="tab" onClick={() => handleSwap(i + 1)}>{title}</span></li>
+            )
+        })
     }
 
     return (
@@ -51,12 +62,7 @@ const Header = (props) => {
                         </span> : null
                     }
                     <ul id="nav-bar">
-                        <li><span className="tab" onClick={() => handleSwap(1)}>home</span></li>
-                        <li><span className="tab" onClick={() => handleSwap(2)}>compétences</span></li>
-                        <li><span className="tab" onClick={() => handleSwap(3)}>expériences</span></li>
-                        <li><span className="tab" onClick={() => handleSwap(4)}>formations</span></li>
-                        <li><span className="tab" onClick={() => handleSwap(5)}>projets</span></li>
-                        <li><span className="tab" onClick={() => handleSwap(6)}>about</span></li>
+                        {buildTabNavigation()}
                     </ul>
                 </div>
             </nav>

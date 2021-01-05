@@ -1,6 +1,6 @@
 import React from 'react';
 
-const About = (props) => {
+const About = () => {
     return (
         <div id="about" className="pages full-width full-height">
             <h2 className="fl full-width">ABOUT</h2>

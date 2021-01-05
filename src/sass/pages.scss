@@ -136,38 +136,26 @@
     }
 
     .c {
-        background-image: url("../assets/icone-c.svg");
-    }
-
+        background-image: url("../assets/icone-c.svg"); }
     .reactjs {
-        background-image: url("../assets/icone-react.svg");
-    }
-
+        background-image: url("../assets/icone-react.svg"); }
     .nodejs {
-        background-image: url("../assets/icone-nodejs.svg");
-    }
-
+        background-image: url("../assets/icone-nodejs.svg"); }
     .cplusplus {
-        background-image: url("../assets/icone-cplusplus.svg");
-    }
-
+        background-image: url("../assets/icone-cplusplus.svg"); }
     .python {
-        background-image: url("../assets/icone-python.svg");
-    }
-
+        background-image: url("../assets/icone-python.svg"); }
     .unity {
-        background-image: url("../assets/icone-unity.png");
-    }
-
+        background-image: url("../assets/icone-unity.png"); }
     .photoshop {
-        background-image: url("../assets/icone-photoshop.svg");
-    }
-
+        background-image: url("../assets/icone-photoshop.svg"); }
     .anglais {
-        background-image: url("../assets/icone-anglais.png");
-    }
-
+        background-image: url("../assets/icone-anglais.png"); }
     .permis {
-        background-image: url("../assets/icone-permis.png");
-    }
+        background-image: url("../assets/icone-permis.png"); }
+}
+
+#projets {
+    .project-content {
+        flex-flow: row wrap; }
 }

@@ -6,9 +6,9 @@ const Competences = () => {
             <div className="hard-skills">
                 <h2 className="fl full-width">skills</h2>
                 <ul>
-                    <li><div className="html-css-js"></div>html / css / js</li>
-                    <li><div className="reactjs background-image"></div>react js</li>
+                    <li><div className="reactjs background-image"></div>reactjs & react native</li>
                     <li><div className="nodejs background-image"></div>node js</li>
+                    <li><div className="html-css-js"></div>html / css / js</li>
                     <li><div className="c background-image"></div>c</li>
                     <li><div className="cplusplus background-image"></div>c++</li>
                     <li><div className="unity background-image"></div>unity (c#)</li>

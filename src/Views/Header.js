@@ -5,11 +5,11 @@ const Header = (props) => {
 
     useEffect(() => {
         const updateSize = () => {
-            if (window.innerWidth <= 1024)
+            if (window.innerWidth < 1024)
                 setMobil(true);
         }
 
-        if (window.innerWidth <= 1024)
+        if (window.innerWidth < 1024)
             setMobil(true);
         window.addEventListener('resize', updateSize);
         if (!document.getElementsByClassName("tab")[props.getIndex() - 1].classList.contains("underlined"))
@@ -33,8 +33,18 @@ const Header = (props) => {
         document.getElementsByClassName("tab")[props.getIndex() - 1].classList.remove("underlined");
         props.updateIndex(value);
         document.getElementsByClassName("tab")[value - 1].classList.add("underlined");
-        if (window.innerWidth <= 1024)
+        if (window.innerWidth < 1024)
             clickBurger();
+        else {
+            let elem = document.getElementById("content")
+            for (let child_idx = 0; child_idx < elem.children.length; child_idx++) {
+                if (elem.children[child_idx].scrollTop > 0) {
+                    elem.children[child_idx].scrollTop = 0
+                    document.getElementById("header").classList.remove("is-not-top");
+                    return;
+                }
+            }
+        }
     }
 
     const buildTabNavigation = () => {
@@ -42,7 +52,7 @@ const Header = (props) => {
 
         return titleTab.map((title, i) => {
             return (
-                <li><span key={i} className="tab" onClick={() => handleSwap(i + 1)}>{title}</span></li>
+                <li key={i}><span className="tab" onClick={() => handleSwap(i + 1)}>{title}</span></li>
             )
         })
     }

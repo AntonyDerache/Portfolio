@@ -4,10 +4,12 @@
   background-position: left;
   background-size: cover;
   overflow-x: hidden;
-  position: relative;
   transition: 2s;
   display: -webkit-inline-box;
   height: 100vh; }
+  @media screen and (max-width: 1024px) {
+    #background {
+      position: relative; } }
   #background #content {
     position: absolute;
     display: -webkit-inline-box;
@@ -16,3 +18,7 @@
     #background #content h2 {
       font-size: 4rem;
       line-height: 10rem; }
+      @media screen and (min-width: 1024px) {
+        #background #content h2 {
+          padding: 3rem 0;
+          font-size: 6rem; } }

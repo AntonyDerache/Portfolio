@@ -2,7 +2,7 @@ import React from 'react';
 
 const Main = () => {
     return (
-        <div id="main" className="pages full-width full-height">
+        <div id="home" className="pages full-width full-height padding-sections">
             <div className="full-width">
                 <h1 className="name">antony derache</h1>
                 <h3 >developer</h3>

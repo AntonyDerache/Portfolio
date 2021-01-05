@@ -2,7 +2,7 @@ import React from 'react';
 
 const Competences = () => {
     return (
-        <div id="skills" className="pages full-width full-height">
+        <div id="skills" className="pages full-width full-height padding-sections">
             <div className="hard-skills">
                 <h2 className="fl full-width">skills</h2>
                 <ul>

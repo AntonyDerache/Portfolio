@@ -17,3 +17,7 @@
 
 .hidden {
   opacity: 0; }
+
+@media screen and (min-width: 1024px) {
+  .padding-sections {
+    padding-top: 8.5rem; } }

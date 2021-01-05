@@ -5,20 +5,19 @@
     background-position: left;
     background-size: cover;
     overflow-x: hidden;
-    position: relative;
     transition: 2s;
     display: -webkit-inline-box;
     height: 100vh;
+
+    @media screen and (max-width: 1024px) {
+        position: relative;
+    }
 
     #content {
         position: absolute;
         display: -webkit-inline-box;
         transition: .5s;
         left: 0;
-
-        @media screen and (min-width: 1024px) {
-            padding-top: $global-padding + $header-height;
-        }
 
         h2 {
             font-size: 4rem;

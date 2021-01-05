@@ -2,13 +2,9 @@
     color: white;
     padding: 1rem;
     padding-top: $header-height;
-
-    @media screen and (min-width: 1024px) {
-        padding-top: 0rem;
-    }
 }
 
-#main {
+#home {
     display: -webkit-flex;
     align-items: flex-end;
     justify-content: flex-end;
@@ -73,6 +69,11 @@
 }
 
 #skills {
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
     ul {
         padding-top: 1rem;
 

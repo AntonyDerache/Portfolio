@@ -17,10 +17,14 @@ const Home = (props) => {
     const changeHeader = () =>{
         if (window.innerWidth <= 1024)
             return
-        if (document.getElementById("background").scrollTop > 0)
-            document.getElementById("header").classList.add("is-not-top");
-        else
-            document.getElementById("header").classList.remove("is-not-top");
+        let elem = document.getElementById("content")
+        for (let child_idx = 0; child_idx < elem.children.length; child_idx++) {
+            if (elem.children[child_idx].scrollTop > 0) {
+                document.getElementById("header").classList.add("is-not-top");
+                return;
+            } else
+                document.getElementById("header").classList.remove("is-not-top");
+        }
     }
 
     return (

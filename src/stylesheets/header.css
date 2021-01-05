@@ -10,7 +10,8 @@
     #header {
       padding: 0 2.5rem; } }
   #header .nav {
-    display: flex; }
+    display: flex;
+    flex-flow: row; }
     #header .nav .navBrand {
       width: 30%; }
     #header .nav .end-nav {
@@ -32,7 +33,7 @@
         font-size: 2rem;
         display: flex;
         position: relative; }
-        @media screen and (max-width: 1024px) {
+        @media screen and (max-width: 1023px) {
           #header .nav .end-nav #nav-bar {
             background: linear-gradient(130deg, rgba(13, 79, 82, 0.85), rgba(38, 117, 128, 0.85));
             position: absolute;

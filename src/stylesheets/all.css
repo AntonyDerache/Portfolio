@@ -24,11 +24,12 @@ body {
   position: fixed;
   z-index: 10;
   transition: .3s ease-in-out; }
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1023px) {
     #header {
       padding: 0 2.5rem; } }
   #header .nav {
-    display: flex; }
+    display: flex;
+    flex-flow: row; }
     #header .nav .navBrand {
       width: 30%; }
     #header .nav .end-nav {
@@ -37,7 +38,7 @@ body {
       padding-right: 2rem;
       display: flex;
       color: white; }
-      @media screen and (min-width: 1024px) {
+      @media screen and (min-width: 1023px) {
         #header .nav .end-nav {
           padding-right: 5rem; } }
       #header .nav .end-nav #burger {
@@ -50,7 +51,7 @@ body {
         font-size: 2rem;
         display: flex;
         position: relative; }
-        @media screen and (max-width: 1024px) {
+        @media screen and (max-width: 1023px) {
           #header .nav .end-nav #nav-bar {
             background: linear-gradient(130deg, rgba(13, 79, 82, 0.85), rgba(38, 117, 128, 0.85));
             position: absolute;
@@ -65,7 +66,7 @@ body {
           font-weight: 700;
           display: flex;
           align-items: center; }
-        @media screen and (min-width: 1024px) {
+        @media screen and (min-width: 1023px) {
           #header .nav .end-nav #nav-bar span {
             position: relative;
             padding-bottom: .3rem;
@@ -91,7 +92,7 @@ body {
         #header .nav .end-nav #nav-bar li {
           font-variant: small-caps;
           padding: 1rem 2rem; }
-          @media screen and (min-width: 1024px) {
+          @media screen and (min-width: 1023px) {
             #header .nav .end-nav #nav-bar li {
               display: inline; } }
 
@@ -114,6 +115,10 @@ body {
 
 .hidden {
   opacity: 0; }
+
+@media screen and (min-width: 1023px) {
+  .padding-sections {
+    padding-top: 8.5rem; } }
 
 #projets .project-container {
   padding: 2rem 0rem;
@@ -207,22 +212,21 @@ body {
   background-position: left;
   background-size: cover;
   overflow-x: hidden;
-  position: relative;
   transition: 2s;
   display: -webkit-inline-box;
   height: 100vh; }
+  @media screen and (max-width: 1023px) {
+    #background {
+      position: relative; } }
   #background #content {
     position: absolute;
     display: -webkit-inline-box;
     transition: .5s;
     left: 0; }
-    @media screen and (min-width: 1024px) {
-      #background #content {
-        padding-top: 8.5rem; } }
     #background #content h2 {
       font-size: 4rem;
       line-height: 10rem; }
-      @media screen and (min-width: 1024px) {
+      @media screen and (min-width: 1023px) {
         #background #content h2 {
           padding: 3rem 0;
           font-size: 6rem; } }
@@ -231,25 +235,22 @@ body {
   color: white;
   padding: 1rem;
   padding-top: 6rem; }
-  @media screen and (min-width: 1024px) {
-    .pages {
-      padding-top: 0rem; } }
 
-#main {
+#home {
   display: -webkit-flex;
   align-items: flex-end;
   justify-content: flex-end; }
-  #main div {
+  #home div {
     font-variant: small-caps; }
-    #main div h1, #main div h3 {
+    #home div h1, #home div h3 {
       text-align: right;
       line-height: 17vw;
       font-size: 20vw;
       width: 100%; }
-    #main div h3 {
+    #home div h3 {
       color: #00d1c7; }
-    @media screen and (min-width: 1024px) {
-      #main div h1, #main div h3 {
+    @media screen and (min-width: 1023px) {
+      #home div h1, #home div h3 {
         text-align: right;
         line-height: 11vw;
         font-size: 10vw; } }
@@ -258,7 +259,7 @@ body {
   padding: 1.8rem;
   text-align: justify;
   font-size: 2rem; }
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1023px) {
     #about p {
       font-size: 2.5rem;
       padding: 1.8rem 30rem; } }
@@ -267,92 +268,84 @@ body {
   font-size: 1.5rem;
   text-align: center;
   padding: 1.5rem 0; }
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1023px) {
     #formations h3 {
       font-size: 3rem;
       padding: 3rem 2rem; } }
   #formations h3 div {
     font-weight: 500;
     font-size: 1.1rem; }
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: 1023px) {
       #formations h3 div {
         font-size: 2rem; } }
 
-#skills ul {
-  padding-top: 1rem; }
-  #skills ul li {
-    padding: 1rem 2rem;
-    font-size: 2.5rem;
-    font-variant: small-caps;
-    display: flex;
-    align-items: center;
-    justify-content: left; }
-
-@media screen and (min-width: 1024px) {
-  #skills {
-    display: flex; }
-    #skills .hard-skills, #skills .soft-skills {
-      width: 50vw; }
-      #skills .hard-skills ul li, #skills .soft-skills ul li {
-        padding: 2rem 2rem;
-        font-size: 3rem;
-        padding-left: 20%; } }
-
-#skills .html-css-js {
-  background-image: url("../assets/icone-html-css-js.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 9rem;
-  height: 3rem;
-  display: inline-flex;
-  margin-right: 1rem; }
-  @media screen and (min-width: 1024px) {
-    #skills .html-css-js {
-      width: 13rem;
-      height: 5rem;
-      margin-right: 3rem; } }
-
-#skills .background-image {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 3rem;
-  height: 3rem;
-  display: inline-flex;
-  margin-right: 1rem; }
-  @media screen and (min-width: 1024px) {
-    #skills .background-image {
-      width: 6rem;
-      height: 6rem;
-      margin-right: 3rem; } }
-
-#skills .c {
-  background-image: url("../assets/icone-c.svg"); }
-
-#skills .reactjs {
-  background-image: url("../assets/icone-react.svg"); }
-
-#skills .nodejs {
-  background-image: url("../assets/icone-nodejs.svg"); }
-
-#skills .cplusplus {
-  background-image: url("../assets/icone-cplusplus.svg"); }
-
-#skills .python {
-  background-image: url("../assets/icone-python.svg"); }
-
-#skills .unity {
-  background-image: url("../assets/icone-unity.png"); }
-
-#skills .photoshop {
-  background-image: url("../assets/icone-photoshop.svg"); }
-
-#skills .anglais {
-  background-image: url("../assets/icone-anglais.png"); }
-
-#skills .permis {
-  background-image: url("../assets/icone-permis.png"); }
+#skills {
+  overflow-y: scroll; }
+  #skills::-webkit-scrollbar {
+    display: none; }
+  #skills ul {
+    padding-top: 1rem; }
+    #skills ul li {
+      padding: 1rem 2rem;
+      font-size: 2.5rem;
+      font-variant: small-caps;
+      display: flex;
+      align-items: center;
+      justify-content: left; }
+  @media screen and (min-width: 1023px) {
+    #skills {
+      display: flex; }
+      #skills .hard-skills, #skills .soft-skills {
+        width: 50vw; }
+        #skills .hard-skills ul li, #skills .soft-skills ul li {
+          padding: 2rem 2rem;
+          font-size: 3rem;
+          padding-left: 20%; } }
+  #skills .html-css-js {
+    background-image: url("../assets/icone-html-css-js.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 9rem;
+    height: 3rem;
+    display: inline-flex;
+    margin-right: 1rem; }
+    @media screen and (min-width: 1023px) {
+      #skills .html-css-js {
+        width: 13rem;
+        height: 5rem;
+        margin-right: 3rem; } }
+  #skills .background-image {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 3rem;
+    height: 3rem;
+    display: inline-flex;
+    margin-right: 1rem; }
+    @media screen and (min-width: 1023px) {
+      #skills .background-image {
+        width: 6rem;
+        height: 6rem;
+        margin-right: 3rem; } }
+  #skills .c {
+    background-image: url("../assets/icone-c.svg"); }
+  #skills .reactjs {
+    background-image: url("../assets/icone-react.svg"); }
+  #skills .nodejs {
+    background-image: url("../assets/icone-nodejs.svg"); }
+  #skills .cplusplus {
+    background-image: url("../assets/icone-cplusplus.svg"); }
+  #skills .python {
+    background-image: url("../assets/icone-python.svg"); }
+  #skills .unity {
+    background-image: url("../assets/icone-unity.png"); }
+  #skills .photoshop {
+    background-image: url("../assets/icone-photoshop.svg"); }
+  #skills .anglais {
+    background-image: url("../assets/icone-anglais.png"); }
+  #skills .permis {
+    background-image: url("../assets/icone-permis.png"); }
 
 #projets .project-content {
   flex-flow: row wrap; }

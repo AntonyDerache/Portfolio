@@ -24,7 +24,7 @@ body {
   position: fixed;
   z-index: 10;
   transition: .3s ease-in-out; }
-  @media screen and (min-width: 1023px) {
+  @media screen and (min-width: 1024px) {
     #header {
       padding: 0 2.5rem; } }
   #header .nav {
@@ -38,7 +38,7 @@ body {
       padding-right: 2rem;
       display: flex;
       color: white; }
-      @media screen and (min-width: 1023px) {
+      @media screen and (min-width: 1024px) {
         #header .nav .end-nav {
           padding-right: 5rem; } }
       #header .nav .end-nav #burger {
@@ -66,7 +66,7 @@ body {
           font-weight: 700;
           display: flex;
           align-items: center; }
-        @media screen and (min-width: 1023px) {
+        @media screen and (min-width: 1024px) {
           #header .nav .end-nav #nav-bar span {
             position: relative;
             padding-bottom: .3rem;
@@ -92,7 +92,7 @@ body {
         #header .nav .end-nav #nav-bar li {
           font-variant: small-caps;
           padding: 1rem 2rem; }
-          @media screen and (min-width: 1023px) {
+          @media screen and (min-width: 1024px) {
             #header .nav .end-nav #nav-bar li {
               display: inline; } }
 
@@ -116,7 +116,7 @@ body {
 .hidden {
   opacity: 0; }
 
-@media screen and (min-width: 1023px) {
+@media screen and (min-width: 1024px) {
   .padding-sections {
     padding-top: 8.5rem; } }
 
@@ -215,7 +215,7 @@ body {
   transition: 2s;
   display: -webkit-inline-box;
   height: 100vh; }
-  @media screen and (max-width: 1023px) {
+  @media screen and (max-width: 1024px) {
     #background {
       position: relative; } }
   #background #content {
@@ -226,7 +226,7 @@ body {
     #background #content h2 {
       font-size: 4rem;
       line-height: 10rem; }
-      @media screen and (min-width: 1023px) {
+      @media screen and (min-width: 1024px) {
         #background #content h2 {
           padding: 3rem 0;
           font-size: 6rem; } }
@@ -234,7 +234,10 @@ body {
 .pages {
   color: white;
   padding: 1rem;
-  padding-top: 6rem; }
+  padding-top: 6rem;
+  overflow-y: scroll; }
+  .pages::-webkit-scrollbar {
+    display: none; }
 
 #home {
   display: -webkit-flex;
@@ -249,7 +252,7 @@ body {
       width: 100%; }
     #home div h3 {
       color: #00d1c7; }
-    @media screen and (min-width: 1023px) {
+    @media screen and (min-width: 1024px) {
       #home div h1, #home div h3 {
         text-align: right;
         line-height: 11vw;
@@ -259,7 +262,7 @@ body {
   padding: 1.8rem;
   text-align: justify;
   font-size: 2rem; }
-  @media screen and (min-width: 1023px) {
+  @media screen and (min-width: 1024px) {
     #about p {
       font-size: 2.5rem;
       padding: 1.8rem 30rem; } }
@@ -268,14 +271,14 @@ body {
   font-size: 1.5rem;
   text-align: center;
   padding: 1.5rem 0; }
-  @media screen and (min-width: 1023px) {
+  @media screen and (min-width: 1024px) {
     #formations h3 {
       font-size: 3rem;
       padding: 3rem 2rem; } }
   #formations h3 div {
     font-weight: 500;
     font-size: 1.1rem; }
-    @media screen and (min-width: 1023px) {
+    @media screen and (min-width: 1024px) {
       #formations h3 div {
         font-size: 2rem; } }
 
@@ -292,7 +295,7 @@ body {
       display: flex;
       align-items: center;
       justify-content: left; }
-  @media screen and (min-width: 1023px) {
+  @media screen and (min-width: 1024px) {
     #skills {
       display: flex; }
       #skills .hard-skills, #skills .soft-skills {
@@ -310,7 +313,7 @@ body {
     height: 3rem;
     display: inline-flex;
     margin-right: 1rem; }
-    @media screen and (min-width: 1023px) {
+    @media screen and (min-width: 1024px) {
       #skills .html-css-js {
         width: 13rem;
         height: 5rem;
@@ -323,7 +326,7 @@ body {
     height: 3rem;
     display: inline-flex;
     margin-right: 1rem; }
-    @media screen and (min-width: 1023px) {
+    @media screen and (min-width: 1024px) {
       #skills .background-image {
         width: 6rem;
         height: 6rem;

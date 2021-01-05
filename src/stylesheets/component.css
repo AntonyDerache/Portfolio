@@ -75,6 +75,8 @@
           width: 20vw; } }
     #projets .project-container .project-box:hover.uj {
       background-image: url("../assets/preview-brawhalla.png"); }
+    #projets .project-container .project-box:hover.ggj {
+      background-image: url("../assets/epitechjam-background.png"); }
     #projets .project-container .project-box:hover.sk {
       background-image: url("../assets/skipty-background.png"); }
     #projets .project-container .project-box:hover.bomberman {

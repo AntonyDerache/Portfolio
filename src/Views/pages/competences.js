@@ -16,7 +16,7 @@ const Competences = () => {
                 </ul>
             </div>
             <div className="soft-skills">
-                <h2 className="fl full-width">Savoir faire</h2>
+                <h2 className="fl full-width">Savoir-faire</h2>
                 <ul>
                     <li><div className="photoshop background-image"></div>photoshop</li>
                     <li><div className="anglais background-image"></div>anglais 720 toic</li>

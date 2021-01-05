@@ -4,7 +4,7 @@ import Card from '../../components/Cards'
 const Projets = () => {
     return (
         <div id="projets" className="pages full-width full-height padding-sections">
-            <h2 className="fl full-width">projets</h2>
+            <h2 className="fl full-width">Projets</h2>
             <div className="project-content fl full-width">
                 <Card id="skipty" classname="sk" title="Skipty" projet="Projet Stage" type="Site web"/>
                 <Card id="united" classname="uj" title="United Jam" projet="Game Jam" type="jeu vidéo"/>

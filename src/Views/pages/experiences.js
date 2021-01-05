@@ -5,7 +5,7 @@ import 'react-vertical-timeline-component/style.min.css';
 const Experiences = () => {
     return (
         <div id="experiences" className="pages full-width full-height padding-sections">
-            <h2 className="fl full-width" style={{paddingBottom: 50}}>expériences</h2>
+            <h2 className="fl full-width" style={{paddingBottom: 50}}>Expériences</h2>
             <VerticalTimeline>
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work"

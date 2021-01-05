@@ -48,7 +48,7 @@ const Header = (props) => {
     }
 
     const buildTabNavigation = () => {
-        let titleTab = ["home", "compétences", "expériences", "formations", "projets", "about"];
+        let titleTab = ["home", "compétences", "expériences", "formations", "projets", "a propos"];
 
         return titleTab.map((title, i) => {
             return (

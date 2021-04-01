@@ -1,0 +1,28 @@
+{
+    "header": {
+        "home": "home",
+        "skills": "skills",
+        "experiences": "experiences",
+        "educations": "educations",
+        "projects": "projects",
+        "about": "about"
+    },
+    "home": {
+
+    },
+    "skills": {
+
+    },
+    "experiences": {
+
+    },
+    "educations": {
+
+    },
+    "projects": {
+
+    },
+    "about": {
+
+    }
+}

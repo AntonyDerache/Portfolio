@@ -1,7 +1,11 @@
 import React, { useState, useEffect } from 'react'
+import { useTranslation } from 'react-i18next';
+import FlagFr from "../assets/flag-fr.png";
+import FlagGb from "../assets/flag-gb.png";
 
 const Header = (props) => {
     const [mobil, setMobil] = useState(false);
+    const { t, i18n } = useTranslation();
 
     useEffect(() => {
         const updateSize = () => {
@@ -47,12 +51,16 @@ const Header = (props) => {
         }
     }
 
+    const switchLanguage = (lang) => {
+        i18n.changeLanguage(lang);
+    }
+
     const buildTabNavigation = () => {
-        let titleTab = ["home", "compétences", "expériences", "formations", "projets", "a propos"];
+        let titleTab = ["home", "skills", "experiences", "educations", "projects", "about"];
 
         return titleTab.map((title, i) => {
             return (
-                <li key={i}><span className="tab" onClick={() => handleSwap(i + 1)}>{title}</span></li>
+                <li key={i}><span className="tab" onClick={() => handleSwap(i + 1)}>{t('header.' + titleTab[i])}</span></li>
             )
         })
     }
@@ -71,8 +79,12 @@ const Header = (props) => {
                             <span></span>
                         </span> : null
                     }
-                    <ul id="nav-bar">
+                    <ul id="nav-bar" className="fl">
                         {buildTabNavigation()}
+                        <div className="language">
+                            <img onClick={() => switchLanguage("fr")} src={FlagFr} alt="france_flag"></img>
+                            <img onClick={() => switchLanguage("en")} src={FlagGb} alt="great_britain_flag"></img>
+                        </div>
                     </ul>
                 </div>
             </nav>

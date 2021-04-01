@@ -16,10 +16,10 @@ const App = () => {
   }
 
   return (
-    <div id="app" className="full-width full-height">
-      <Header updateIndex={updateIndex} getIndex={getIndex}/>
-      <Home index={index}/>
-    </div>
+      <div id="app" className="full-width full-height">
+        <Header updateIndex={updateIndex} getIndex={getIndex}/>
+        <Home index={index}/>
+      </div>
   );
 }
 

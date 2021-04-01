@@ -13,7 +13,6 @@
         padding: 0 $global-padding;
         // margin-top: $global-padding;
     }
-    
 
     .nav {
         display: flex;
@@ -29,8 +28,22 @@
             padding-right: 2rem;
             display: flex;
             color: white;
-            @media screen and (min-width: 1024px) {
-                padding-right: 5rem;
+
+            .language {
+                position: absolute;
+                right: 0;
+                @media screen and (max-width: 1024px) {
+                    padding: 1.5rem;
+                    bottom: 0;
+                }
+
+                img {
+                    padding: .5rem;
+
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
             }
 
             #burger {
@@ -45,6 +58,7 @@
                 font-size: 2rem;
                 display: flex;
                 position: relative;
+                width: 100%;
                 @media screen and (max-width: 1023px) {
                     background: linear-gradient(130deg, rgba(13, 79, 82, .85), rgba(38, 117, 128, .85));
                     position: absolute;

@@ -38,9 +38,17 @@ body {
       padding-right: 2rem;
       display: flex;
       color: white; }
-      @media screen and (min-width: 1024px) {
-        #header .nav .end-nav {
-          padding-right: 5rem; } }
+      #header .nav .end-nav .language {
+        position: absolute;
+        right: 0; }
+        @media screen and (max-width: 1024px) {
+          #header .nav .end-nav .language {
+            padding: 1.5rem;
+            bottom: 0; } }
+        #header .nav .end-nav .language img {
+          padding: .5rem; }
+          #header .nav .end-nav .language img:hover {
+            cursor: pointer; }
       #header .nav .end-nav #burger {
         color: white;
         background-color: transparent;
@@ -50,7 +58,8 @@ body {
       #header .nav .end-nav #nav-bar {
         font-size: 2rem;
         display: flex;
-        position: relative; }
+        position: relative;
+        width: 100%; }
         @media screen and (max-width: 1023px) {
           #header .nav .end-nav #nav-bar {
             background: linear-gradient(130deg, rgba(13, 79, 82, 0.85), rgba(38, 117, 128, 0.85));

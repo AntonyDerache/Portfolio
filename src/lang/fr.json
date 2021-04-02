@@ -7,10 +7,54 @@
         "projects": "projets",
         "about": "à propos"
     },
-    "home": {},
-    "skills": {},
-    "experiences": {},
-    "educations": {},
-    "projects": {},
-    "about": {}
+    "main": {
+        "job": "developpeur"
+    },
+    "skills": {
+        "skills": {
+            "title": "Compétences",
+            "react": "reactjs & react native",
+            "node": "node js",
+            "html": "html / css / js",
+            "c": "c",
+            "cpp": "c++",
+            "unity": "unity (c#)",
+            "python": "python"
+        },
+        "extraSkills": {
+            "title": "Savoir-faire",
+            "photoshop": "photoshop",
+            "english": "anglais 850 TOEIC",
+            "driving": "permis de conduire"
+        }
+    },
+    "experiences": {
+        "title": "Expériences",
+        "trackap": {
+            "job": "Developpeur front chez Trackap",
+            "description": "Part-time 6 mois en tant que développeur web front-end au sein de la jeune entreprise Trackap"
+        },
+        "skipty": {
+            "job": "Developpeur fullstack chez Skipty",
+            "description": "Stage 6 mois en tant que développeur web au sein de la startup Skipty"
+        },
+        "delpharm": {
+            "job": "Operateur de conditionnement chez Delpharm Lille",
+            "description": "CDD 1 mois en tant qu'operateur de conditionnement"
+        }
+    },
+    "educations": {
+        "title": "Formations",
+        "graduation": "3e année, diplome d'expert en informatique",
+        "campus": "Epitech Lille",
+        "bac": "Bac S Science de l'ingénieur",
+        "highschool": "Lycée Jean Rostand Roubaix"
+    },
+    "projects": {
+        "title": "Projets"
+    },
+    "about": {
+        "title": "À propos",
+        "description": "Actuellement à Epitech Lille, j'ai fait le choix de m'orienter dans l'informatique, par passion de la technologie et de la création. J’ai développé ces passions en parallèle de mes études. J'apprenais à l'époque le dessin, qui m’a permis de développer des compétences en design. Outre l'informatique, je pratique l'escalade encore aujourd'hui depuis 10 ans, c'est une activité importante pour mon développement personnel car elle me permet de décompresser et de me maintenir en forme."
+    }
 }

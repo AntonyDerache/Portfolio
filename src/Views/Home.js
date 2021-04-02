@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 
 import Competences from './pages/competences';
 import Experiences from './pages/experiences';
@@ -8,6 +9,8 @@ import Formation from './pages/formations';
 import Main from './pages/main';
 
 const Home = (props) => {
+    const { t } = useTranslation();
+
     useEffect(() => {
         let width = document.getElementById("content").clientWidth;
 
@@ -30,12 +33,12 @@ const Home = (props) => {
     return (
         <div id="background" onScroll={changeHeader} className="full-width">
             <div id="content" className="full-width full-height">
-                <Main/>
-                <Competences/>
-                <Experiences/>
-                <Formation/>
-                <Projets/>
-                <About/>
+                <Main t={t}/>
+                <Competences t={t}/>
+                <Experiences t={t}/>
+                <Formation t={t}/>
+                <Projets t={t}/>
+                <About t={t}/>
             </div>
         </div>
     );

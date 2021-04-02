@@ -2,10 +2,10 @@ import React from 'react';
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 
-const Experiences = () => {
+const Experiences = (props) => {
     return (
         <div id="experiences" className="pages full-width full-height padding-sections">
-            <h2 className="fl full-width" style={{paddingBottom: 50}}>Expériences</h2>
+            <h2 className="fl full-width" style={{ paddingBottom: 50 }}>{props.t('experiences.title')}</h2>
             <VerticalTimeline>
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work"
@@ -14,9 +14,9 @@ const Experiences = () => {
                     iconStyle={{ background: 'rgb(0, 209, 199)', color: '#fff' }}
                 >
                     <h3 className="vertical-timeline-element-title">2020 - 2021</h3>
-                    <h4 className="vertical-timeline-element-subtitle">Developpeur front chez Trackap</h4>
+                    <h4 className="vertical-timeline-element-subtitle">{props.t('experiences.trackap.job')}</h4>
                     <p>
-                        Part-time 6 mois en tant que développeur web front-end au sein de la jeune entreprise Trackap
+                        {props.t('experiences.trackap.description')}
                     </p>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
@@ -26,9 +26,9 @@ const Experiences = () => {
                     iconStyle={{ background: '#fff', color: '#fff' }}
                 >
                     <h3 className="vertical-timeline-element-title">2019</h3>
-                    <h4 className="vertical-timeline-element-subtitle">Developpeur fullstack chez Skipty</h4>
+                    <h4 className="vertical-timeline-element-subtitle">{props.t('experiences.skipty.job')}</h4>
                     <p>
-                        Stage 6 mois en tant que développeur web au sein de la startup Skipty
+                        {props.t('experiences.skipty.description')}
                     </p>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
@@ -38,9 +38,9 @@ const Experiences = () => {
                     iconStyle={{ background: '#fff', color: '#fff' }}
                 >
                     <h3 className="vertical-timeline-element-title">2018</h3>
-                    <h4 className="vertical-timeline-element-subtitle">Operateur de conditionnement chez Delpharm Lille</h4>
+                    <h4 className="vertical-timeline-element-subtitle">{props.t('experiences.delpharm.job')}</h4>
                     <p>
-                        CDD 1 mois en tant qu'operateur de conditionnement
+                        {props.t('experiences.delpharm.description')}
                     </p>
                 </VerticalTimelineElement>
             </VerticalTimeline>

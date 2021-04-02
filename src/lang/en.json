@@ -7,22 +7,54 @@
         "projects": "projects",
         "about": "about"
     },
-    "home": {
-
+    "main": {
+        "job": "developer"
     },
     "skills": {
-
+        "skills": {
+            "title": "Skills",
+            "react": "reactjs & react native",
+            "node": "node js",
+            "html": "html / css / js",
+            "c": "c",
+            "cpp": "c++",
+            "unity": "unity (c#)",
+            "python": "python"
+        },
+        "extraSkills": {
+            "title": "Extra skills",
+            "photoshop": "photoshop",
+            "english": "english 850 TOEIC",
+            "driving": "driving license"
+        }
     },
     "experiences": {
-
+        "title": "Experiences",
+        "trackap": {
+            "job": "developer front for Trackap",
+            "description": "6-month part-time internship (2 days per week) inside Trackap. Worked as web developer"
+        },
+        "skipty": {
+            "job": "developer fullstack for Skipty",
+            "description": "6-month internship as web developer inside the Skipty startup"
+        },
+        "delpharm": {
+            "job": "packaging operator in Delpharm Lille",
+            "description": "1 month fixed-term contract as a packaging operator in a pharmaceutical company."
+        }
     },
     "educations": {
-
+        "title": "educations",
+        "graduation": "3rd year, Computer expert",
+        "campus": "Epitech Lille, France",
+        "bac": "High school diploma, major in engineering science",
+        "highschool": "Lycée Jean Rostand, Roubaix, France"
     },
     "projects": {
-
+        "title": "Projects"
     },
     "about": {
-
+        "title": "About",
+        "description": "Passionate about IT development and for creations. I have developed my skills within Epitech Lille French school. Loving visual design projects, before starting IT I loved learning drawing. I really appreciate working on web and video game projects. Besides IT, I have been a climber since I was around 10 years old. That is a very important activity to me because it allow me to relax, giving my best and keeping me in fit."
     }
 }

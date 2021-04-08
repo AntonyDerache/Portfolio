@@ -30,6 +30,10 @@
     },
     "experiences": {
         "title": "Expériences",
+        "sobook": {
+            "job": "Developpeur fullstack chez SoBook",
+            "decription": "Stage de 4 mois en tant que developpeur fullstack au sein de l'entreprise SoBook"
+        },
         "trackap": {
             "job": "Developpeur front chez Trackap",
             "description": "Part-time 6 mois en tant que développeur web front-end au sein de la jeune entreprise Trackap"

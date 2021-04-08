@@ -30,6 +30,10 @@
     },
     "experiences": {
         "title": "Experiences",
+        "sobook": {
+            "job": "Developer fullstack for SoBook",
+            "decription": "4-month internship as fullstack developer inside the SoBook company"
+        },
         "trackap": {
             "job": "developer front for Trackap",
             "description": "6-month part-time internship (2 days per week) inside Trackap. Worked as web developer"
@@ -39,7 +43,7 @@
             "description": "6-month internship as web developer inside the Skipty startup"
         },
         "delpharm": {
-            "job": "packaging operator in Delpharm Lille",
+            "job": "packaging operator for Delpharm Lille",
             "description": "1 month fixed-term contract as a packaging operator in a pharmaceutical company."
         }
     },

@@ -31,18 +31,22 @@
     "experiences": {
         "title": "Expériences",
         "sobook": {
+            "date": "2021 avril - juillet",
             "job": "Developpeur fullstack chez SoBook",
-            "decription": "Stage de 4 mois en tant que developpeur fullstack au sein de l'entreprise SoBook"
+            "description": "Stage de 4 mois en tant que developpeur fullstack au sein de l'entreprise SoBook"
         },
         "trackap": {
+            "date": "2020 octobre - 2021 mars",
             "job": "Developpeur front chez Trackap",
             "description": "Part-time 6 mois en tant que développeur web front-end au sein de la jeune entreprise Trackap"
         },
         "skipty": {
+            "date": "2019 juillet - decembre",
             "job": "Developpeur fullstack chez Skipty",
             "description": "Stage 6 mois en tant que développeur web au sein de la startup Skipty"
         },
         "delpharm": {
+            "date": "2018 juillet",
             "job": "Operateur de conditionnement chez Delpharm Lille",
             "description": "CDD 1 mois en tant qu'operateur de conditionnement"
         }

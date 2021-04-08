@@ -34,25 +34,25 @@ const Experiences = (props) => {
             <VerticalTimeline>
                 <ExperienceElement
                     backColor={'rgb(0, 209, 199)'}
-                    title={"2021"}
+                    title={props.t('experiences.sobook.date')}
                     substitle={props.t('experiences.sobook.job')}
                     description={props.t('experiences.sobook.description')}
                 />
                 <ExperienceElement
                     backColor={'#fff'}
-                    title={"2020 - 2021"}
+                    title={props.t('experiences.trackap.date')}
                     substitle={props.t('experiences.trackap.job')}
                     description={props.t('experiences.trackap.description')}
                 />
                 <ExperienceElement
                     backColor={'#fff'} fontColor={'#fff'}
-                    title={"2019"}
+                    title={props.t('experiences.skipty.date')}
                     substitle={props.t('experiences.skipty.job')}
                     description={props.t('experiences.skipty.description')}
                 />
                  <ExperienceElement
                     backColor={'rgb(0, 209, 199)'} fontColor={'#fff'}
-                    title={"2018"}
+                    title={props.t('experiences.delpharm.date')}
                     substitle={props.t('experiences.delpharm.job')}
                     description={props.t('experiences.delpharm.description')}
                 />

@@ -31,18 +31,22 @@
     "experiences": {
         "title": "Experiences",
         "sobook": {
+            "date": "2021 april - july",
             "job": "Developer fullstack for SoBook",
-            "decription": "4-month internship as fullstack developer inside the SoBook company"
+            "description": "4-month internship as fullstack developer inside the SoBook company"
         },
         "trackap": {
+            "date": "2020 october - 2021 march",
             "job": "developer front for Trackap",
             "description": "6-month part-time internship (2 days per week) inside Trackap. Worked as web developer"
         },
         "skipty": {
+            "date": "2019 july - december",
             "job": "developer fullstack for Skipty",
             "description": "6-month internship as web developer inside the Skipty startup"
         },
         "delpharm": {
+            "date": "2018 july",
             "job": "packaging operator for Delpharm Lille",
             "description": "1 month fixed-term contract as a packaging operator in a pharmaceutical company."
         }

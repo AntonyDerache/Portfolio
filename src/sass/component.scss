@@ -158,3 +158,27 @@
         background-image: url("../assets/icone-permis.png");
     }
 }
+
+.vertical-timeline-element--work {
+    h3 {
+        font-size: 1.6rem;
+        font-weight: 700;
+    }
+    
+    h4 {
+        font-size: 1.3rem;
+        font-weight: 500;
+    }
+
+    p {
+        font-size: 1.3rem;
+    }
+}
+
+.skillBubble {
+    padding: 0 .75rem;
+    margin-right: .5rem;
+    background-color: rgb(216, 216, 216);
+    margin-bottom: .5rem;
+    border-radius: 20px;
+}

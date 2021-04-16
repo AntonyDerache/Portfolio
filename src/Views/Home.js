@@ -1,11 +1,11 @@
 import React, { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-import Competences from './pages/competences';
-import Experiences from './pages/experiences';
-import About from './pages/about';
-import Projets from './pages/projects';
-import Formation from './pages/formations';
-import Main from './pages/main';
+import Competences from './pages/Competences';
+import Experiences from './pages/Experiences';
+import About from './pages/About';
+import Projets from './pages/Projects';
+import Formation from './pages/Formations';
+import Main from './pages/Main';
 
 const Home = (props) => {
     const { t } = useTranslation();

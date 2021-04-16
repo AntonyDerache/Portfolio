@@ -86,7 +86,7 @@
     #projets .project-container .project-box:hover.epicture {
       background-image: url("../assets/epicture-background.png"); }
 
-#competences .background-image {
+#skills .background-image {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -95,37 +95,37 @@
   display: inline-flex;
   margin-right: 1rem; }
   @media screen and (min-width: 1024px) {
-    #competences .background-image {
+    #skills .background-image {
       width: 6rem;
       height: 6rem;
       margin-right: 3rem; } }
 
-#competences .c {
+#skills .c {
   background-image: url("../assets/icone-c.svg"); }
 
-#competences .reactjs {
+#skills .reactjs {
   background-image: url("../assets/icone-react.svg"); }
 
-#competences .vuejs {
+#skills .vuejs {
   background-image: url("../assets/icone-vue.png"); }
 
-#competences .nodejs {
+#skills .nodejs {
   background-image: url("../assets/icone-nodejs.svg"); }
 
-#competences .cplusplus {
+#skills .cplusplus {
   background-image: url("../assets/icone-cplusplus.svg"); }
 
-#competences .python {
+#skills .python {
   background-image: url("../assets/icone-python.svg"); }
 
-#competences .unity {
+#skills .unity {
   background-image: url("../assets/icone-unity.png"); }
 
-#competences .photoshop {
+#skills .photoshop {
   background-image: url("../assets/icone-photoshop.svg"); }
 
-#competences .anglais {
+#skills .anglais {
   background-image: url("../assets/icone-anglais.png"); }
 
-#competences .permis {
+#skills .permis {
   background-image: url("../assets/icone-permis.png"); }

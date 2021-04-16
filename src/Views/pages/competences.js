@@ -21,9 +21,9 @@ const Competences = props => {
             <div className="soft-skills">
                 <h2 className="fl full-width">{props.t('skills.extraSkills.title')}</h2>
                 <ul>
-                    <CompetenceItem classImg={"photoshop"} name={props.t('skills.skills.photoshop')} />
-                    <CompetenceItem classImg={"anglais"} name={props.t('skills.skills.anglais')} />
-                    <CompetenceItem classImg={"permis"} name={props.t('skills.skills.permis')} />
+                    <CompetenceItem classImg={"photoshop"} name={props.t('skills.extraSkills.photoshop')} />
+                    <CompetenceItem classImg={"anglais"} name={props.t('skills.extraSkills.english')} />
+                    <CompetenceItem classImg={"permis"} name={props.t('skills.extraSkills.driving')} />
                 </ul>
             </div>
         </div>

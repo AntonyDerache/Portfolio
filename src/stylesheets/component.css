@@ -85,3 +85,47 @@
       background-image: url("../assets/epytodo-background.png"); }
     #projets .project-container .project-box:hover.epicture {
       background-image: url("../assets/epicture-background.png"); }
+
+#competences .background-image {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 3rem;
+  height: 3rem;
+  display: inline-flex;
+  margin-right: 1rem; }
+  @media screen and (min-width: 1024px) {
+    #competences .background-image {
+      width: 6rem;
+      height: 6rem;
+      margin-right: 3rem; } }
+
+#competences .c {
+  background-image: url("../assets/icone-c.svg"); }
+
+#competences .reactjs {
+  background-image: url("../assets/icone-react.svg"); }
+
+#competences .vuejs {
+  background-image: url("../assets/icone-vue.png"); }
+
+#competences .nodejs {
+  background-image: url("../assets/icone-nodejs.svg"); }
+
+#competences .cplusplus {
+  background-image: url("../assets/icone-cplusplus.svg"); }
+
+#competences .python {
+  background-image: url("../assets/icone-python.svg"); }
+
+#competences .unity {
+  background-image: url("../assets/icone-unity.png"); }
+
+#competences .photoshop {
+  background-image: url("../assets/icone-photoshop.svg"); }
+
+#competences .anglais {
+  background-image: url("../assets/icone-anglais.png"); }
+
+#competences .permis {
+  background-image: url("../assets/icone-permis.png"); }

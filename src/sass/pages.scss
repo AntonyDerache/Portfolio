@@ -125,41 +125,6 @@
             margin-right: 3rem;
         }
     }
-
-    .background-image {
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        width: 3rem;
-        height: 3rem;
-        display: inline-flex;
-        margin-right: 1rem;
-
-        @media screen and (min-width: 1024px) {
-            width: 6rem;
-            height: 6rem;
-            margin-right: 3rem;
-        }
-    }
-
-    .c {
-        background-image: url("../assets/icone-c.svg"); }
-    .reactjs {
-        background-image: url("../assets/icone-react.svg"); }
-    .nodejs {
-        background-image: url("../assets/icone-nodejs.svg"); }
-    .cplusplus {
-        background-image: url("../assets/icone-cplusplus.svg"); }
-    .python {
-        background-image: url("../assets/icone-python.svg"); }
-    .unity {
-        background-image: url("../assets/icone-unity.png"); }
-    .photoshop {
-        background-image: url("../assets/icone-photoshop.svg"); }
-    .anglais {
-        background-image: url("../assets/icone-anglais.png"); }
-    .permis {
-        background-image: url("../assets/icone-permis.png"); }
 }
 
 #projets {

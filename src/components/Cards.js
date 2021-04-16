@@ -2,11 +2,14 @@ import React, {useState, useEffect} from 'react';
 
 const HiddenCard = (props) => {
     useEffect(() => {
-        if (props.active === true)
-            document.getElementById("card " + props.title).classList.remove('hide');
-        else
-            document.getElementById("card " + props.title).classList.add('hide');
-    }, [props.active])
+        const activateCard = (active, title) => {
+            if (active === true)
+                document.getElementById("card " + title).classList.remove('hide');
+            else
+                document.getElementById("card " + title).classList.add('hide');
+        }
+        activateCard(props.active, props.title);
+    }, [props.active, props.title])
 
     return (
         <div id={`card ${props.title}`} className="hide hideCard fl">
@@ -20,7 +23,7 @@ const HiddenCard = (props) => {
     )
 }
 
-const Card = (props) => {
+const Card = props => {
     const [active, setActive] = useState(false)
 
     return (

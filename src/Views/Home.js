@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-
 import Competences from './pages/competences';
 import Experiences from './pages/experiences';
 import About from './pages/about';

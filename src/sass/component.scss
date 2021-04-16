@@ -89,17 +89,72 @@
                 }
             }
             &:hover.uj {
-                background-image: url("../assets/preview-brawhalla.png"); }
+                background-image: url("../assets/preview-brawhalla.png");
+            }
             &:hover.ggj {
-                background-image: url("../assets/epitechjam-background.png"); }
+                background-image: url("../assets/epitechjam-background.png");
+            }
             &:hover.sk {
-                background-image: url("../assets/skipty-background.png"); }
+                background-image: url("../assets/skipty-background.png");
+            }
             &:hover.bomberman {
-                background-image: url("../assets/bomberman-background.png"); }
+                background-image: url("../assets/bomberman-background.png");
+            }
             &:hover.epytodo {
-                background-image: url("../assets/epytodo-background.png"); }
+                background-image: url("../assets/epytodo-background.png");
+            }
             &:hover.epicture {
-                background-image: url("../assets/epicture-background.png"); }
+                background-image: url("../assets/epicture-background.png");
+            }
         }
+    }
+}
+
+#competences {
+    .background-image {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 3rem;
+        height: 3rem;
+        display: inline-flex;
+        margin-right: 1rem;
+
+        @media screen and (min-width: 1024px) {
+            width: 6rem;
+            height: 6rem;
+            margin-right: 3rem;
+        }
+    }
+
+    .c {
+        background-image: url("../assets/icone-c.svg");
+    }
+    .reactjs {
+        background-image: url("../assets/icone-react.svg");
+    }
+    .vuejs {
+        background-image: url("../assets/icone-vue.png");
+    }
+    .nodejs {
+        background-image: url("../assets/icone-nodejs.svg");
+    }
+    .cplusplus {
+        background-image: url("../assets/icone-cplusplus.svg");
+    }
+    .python {
+        background-image: url("../assets/icone-python.svg");
+    }
+    .unity {
+        background-image: url("../assets/icone-unity.png");
+    }
+    .photoshop {
+        background-image: url("../assets/icone-photoshop.svg");
+    }
+    .anglais {
+        background-image: url("../assets/icone-anglais.png");
+    }
+    .permis {
+        background-image: url("../assets/icone-permis.png");
     }
 }

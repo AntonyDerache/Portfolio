@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import Header from './Views/Header'
 import Home from './Views/Home';
-
 import './stylesheets/all.css';
 
 const App = () => {

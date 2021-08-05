@@ -14,7 +14,7 @@ const Experiences = (props) => {
             <VerticalTimeline>
                 <ExperienceElement
                     backColor={blue}
-                    skillsName={["NodeJS", "ExpressJS", "VueJS", "MongoDB"]}
+                    skillsName={["NodeJS", "ExpressJS", "VueJS", "MongoDB", "Travis"]}
                     title={props.t('experiences.sobook.date')}
                     substitle={props.t('experiences.sobook.job')}
                     description={props.t('experiences.sobook.description')}

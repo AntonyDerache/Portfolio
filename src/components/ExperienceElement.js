@@ -13,7 +13,7 @@ const ExperienceElement = (props) => {
         >
             <div className="flex align-items flex-wrap py-3">
             { props.skillsName &&
-                props.skillsName.map((i, elem) => <div key={i} className="skillBubble">{elem}</div>)
+                props.skillsName.map((elem, i) => <div key={i} className="skillBubble">{elem}</div>)
             }
             </div>
             <h3 className="vertical-timeline-element-title">{props.title}</h3>

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { useTranslation } from 'react-i18next';
-import FlagFr from "../assets/flag-fr.png";
-import FlagGb from "../assets/flag-gb.png";
+import FlagFr from "../assets/images/flag-fr.png";
+import FlagGb from "../assets/images/flag-gb.png";
 
 const Header = (props) => {
     const [mobil, setMobil] = useState(false);

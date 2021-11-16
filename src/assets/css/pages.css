@@ -1,0 +1,91 @@
+.pages {
+  color: white;
+  padding: 1rem;
+  padding-top: 6rem;
+  overflow-y: scroll; }
+  @media screen and (min-width: 1024px) {
+    .pages::-webkit-scrollbar {
+      display: none; } }
+
+#home {
+  display: -webkit-flex;
+  align-items: flex-end;
+  justify-content: flex-end; }
+  #home div {
+    font-variant: small-caps; }
+    #home div h1, #home div h3 {
+      text-align: right;
+      line-height: 17vw;
+      font-size: 20vw;
+      width: 100%; }
+    #home div h3 {
+      color: #00d1c7; }
+    @media screen and (min-width: 1024px) {
+      #home div h1, #home div h3 {
+        text-align: right;
+        line-height: 11vw;
+        font-size: 10vw; } }
+
+#about p {
+  padding: 1.8rem;
+  text-align: justify;
+  font-size: 2rem; }
+  @media screen and (min-width: 1024px) {
+    #about p {
+      font-size: 2.5rem;
+      padding: 1.8rem 30rem; } }
+
+#formations h3 {
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 1.5rem 0; }
+  @media screen and (min-width: 1024px) {
+    #formations h3 {
+      font-size: 3rem;
+      padding: 3rem 2rem; } }
+  #formations h3 div {
+    font-weight: 500;
+    font-size: 1.1rem; }
+    @media screen and (min-width: 1024px) {
+      #formations h3 div {
+        font-size: 2rem; } }
+
+#skills {
+  overflow-y: scroll; }
+  #skills::-webkit-scrollbar {
+    display: none; }
+  #skills ul {
+    padding-top: 1rem; }
+    #skills ul li {
+      padding: 1rem 2rem;
+      font-size: 2.5rem;
+      font-variant: small-caps;
+      display: flex;
+      align-items: center;
+      justify-content: left; }
+  @media screen and (min-width: 1024px) {
+    #skills {
+      display: flex; }
+      #skills .hard-skills, #skills .soft-skills {
+        width: 50vw; }
+        #skills .hard-skills ul li, #skills .soft-skills ul li {
+          padding: 2rem 2rem;
+          font-size: 3rem;
+          padding-left: 20%; } }
+  #skills .html-css-js {
+    background-image: url("../images/icone-html-css-js.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 9rem;
+    height: 3rem;
+    display: inline-flex;
+    margin-right: 1rem; }
+    @media screen and (min-width: 1024px) {
+      #skills .html-css-js {
+        width: 13rem;
+        height: 5rem;
+        margin-right: 3rem; } }
+
+#projets .project-content {
+  flex-flow: row wrap; }

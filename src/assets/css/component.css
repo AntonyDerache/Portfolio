@@ -74,17 +74,17 @@
         #projets .project-container .project-box:hover {
           width: 20vw; } }
     #projets .project-container .project-box:hover.uj {
-      background-image: url("../assets/preview-brawhalla.png"); }
+      background-image: url("../images/preview-brawhalla.png"); }
     #projets .project-container .project-box:hover.ggj {
-      background-image: url("../assets/epitechjam-background.png"); }
+      background-image: url("../images/epitechjam-background.png"); }
     #projets .project-container .project-box:hover.sk {
-      background-image: url("../assets/skipty-background.png"); }
+      background-image: url("../images/skipty-background.png"); }
     #projets .project-container .project-box:hover.bomberman {
-      background-image: url("../assets/bomberman-background.png"); }
+      background-image: url("../images/bomberman-background.png"); }
     #projets .project-container .project-box:hover.epytodo {
-      background-image: url("../assets/epytodo-background.png"); }
+      background-image: url("../images/epytodo-background.png"); }
     #projets .project-container .project-box:hover.epicture {
-      background-image: url("../assets/epicture-background.png"); }
+      background-image: url("../images/epicture-background.png"); }
 
 #skills .background-image {
   background-size: cover;
@@ -101,34 +101,34 @@
       margin-right: 3rem; } }
 
 #skills .c {
-  background-image: url("../assets/icone-c.svg"); }
+  background-image: url("../images/icone-c.svg"); }
 
 #skills .reactjs {
-  background-image: url("../assets/icone-react.svg"); }
+  background-image: url("../images/icone-react.svg"); }
 
 #skills .vuejs {
-  background-image: url("../assets/icone-vue.png"); }
+  background-image: url("../images/icone-vue.png"); }
 
 #skills .nodejs {
-  background-image: url("../assets/icone-nodejs.svg"); }
+  background-image: url("../images/icone-nodejs.svg"); }
 
 #skills .cplusplus {
-  background-image: url("../assets/icone-cplusplus.svg"); }
+  background-image: url("../images/icone-cplusplus.svg"); }
 
 #skills .python {
-  background-image: url("../assets/icone-python.svg"); }
+  background-image: url("../images/icone-python.svg"); }
 
 #skills .unity {
-  background-image: url("../assets/icone-unity.png"); }
+  background-image: url("../images/icone-unity.png"); }
 
 #skills .photoshop {
-  background-image: url("../assets/icone-photoshop.svg"); }
+  background-image: url("../images/icone-photoshop.svg"); }
 
 #skills .anglais {
-  background-image: url("../assets/icone-anglais.png"); }
+  background-image: url("../images/icone-anglais.png"); }
 
 #skills .permis {
-  background-image: url("../assets/icone-permis.png"); }
+  background-image: url("../images/icone-permis.png"); }
 
 .vertical-timeline-element--work h3 {
   font-size: 1.6rem;

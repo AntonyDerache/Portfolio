@@ -1,3 +1,5 @@
+@import "variables";
+
 .pages {
     color: white;
     padding: 1rem;
@@ -110,7 +112,7 @@
     }
 
     .html-css-js {
-        background-image: url("../assets/icone-html-css-js.png");
+        background-image: url("../images/icone-html-css-js.png");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;

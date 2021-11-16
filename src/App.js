@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Header from './Views/Header'
 import Home from './Views/Home';
-import './stylesheets/all.css';
+import './assets/css/main.css';
 
 const App = () => {
   const [index, setIndex] = useState(1);

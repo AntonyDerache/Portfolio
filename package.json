@@ -15,7 +15,7 @@
   },
   "scripts": {
     "dev": "npm-run-all --parallel start watchCSS",
-    "watchCSS": "node-sass -w src/sass -o src/stylesheets",
+    "watchCSS": "node-sass -w src/assets/sass -o src/assets/css",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

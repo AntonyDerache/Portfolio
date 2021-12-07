@@ -1,0 +1,60 @@
+@import "variables";
+
+html {
+    font-size: $font-size;
+}
+
+body {
+    margin: 0;
+    font-family: $font;
+    color: white;
+    background-color: black;
+}
+
+a {
+    text-decoration: none;
+    color: white !important;
+}
+
+input, button {
+    border: none;
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+    font-family: $font;
+    font-size: $font-size;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.content {
+    transition: .4s ease-in-out;
+    min-height: 100vh;
+
+    h2 {
+        font-size: 4rem;
+        line-height: 10rem;
+
+        @media screen and (min-width: 1024px) {
+            padding: 3rem 0;
+            font-size: 6rem;
+        }
+    }
+
+    &.black {
+        background-color: $black; }
+    &.orange {
+        background-color: $orange; }
+    &.blue {
+        background-color: $blue; }
+    &.red {
+        background-color: $red; }
+    &.gray {
+        background-color: $gray; }
+    &.purple {
+        background-color: $purple; }
+}

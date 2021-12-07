@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { useTranslation } from 'react-i18next';
 import FlagFr from "../assets/images/flag-fr.png";
 import FlagGb from "../assets/images/flag-gb.png";
+import { Link } from "react-router-dom";
 
 const Header = (props) => {
     const [mobil, setMobil] = useState(false);
@@ -33,22 +34,22 @@ const Header = (props) => {
     }
 
     const handleSwap = value => {
-        document.getElementById('background').scrollTo(0, 0);
+        // document.getElementById('background').scrollTo(0, 0);
         document.getElementsByClassName("tab")[props.getIndex() - 1].classList.remove("underlined");
         props.updateIndex(value);
         document.getElementsByClassName("tab")[value - 1].classList.add("underlined");
-        if (window.innerWidth < 1024)
-            clickBurger();
-        else {
-            let elem = document.getElementById("content")
-            for (let child_idx = 0; child_idx < elem.children.length; child_idx++) {
-                if (elem.children[child_idx].scrollTop > 0) {
-                    elem.children[child_idx].scrollTop = 0
-                    document.getElementById("header").classList.remove("is-not-top");
-                    return;
-                }
-            }
-        }
+        // if (window.innerWidth < 1024)
+        //     clickBurger();
+        // else {
+        //     let elem = document.getElementById("content")
+        //     for (let child_idx = 0; child_idx < elem.children.length; child_idx++) {
+        //         if (elem.children[child_idx].scrollTop > 0) {
+        //             elem.children[child_idx].scrollTop = 0
+        //             document.getElementById("header").classList.remove("is-not-top");
+        //             return;
+        //         }
+        //     }
+        // }
     }
 
     const switchLanguage = (lang) => {
@@ -56,19 +57,30 @@ const Header = (props) => {
     }
 
     const buildTabNavigation = () => {
-        let titleTab = ["home", "skills", "experiences", "educations", "projects", "about"];
+        let titleTab = ["home", "skills", "experiences", "projects", "about"];
+        let urlTab = ["", "skills", "experiences", "projects", "about"];
 
         return titleTab.map((title, i) => {
             return (
-                <li key={i}><span className="tab" onClick={() => handleSwap(i + 1)}>{t('header.' + titleTab[i])}</span></li>
+                // <li key={i}><span className="tab" onClick={() => handleSwap(i + 1)}>{t('header.' + titleTab[i])}</span></li>
+                <li
+                    key={i}>
+                    <Link
+                        to={`/${urlTab[i]}`}
+                        className="tab"
+                        onClick={() => handleSwap(i + 1)}
+                    >
+                        {t('header.' + titleTab[i])}
+                    </Link>
+                </li>
             )
         })
     }
 
     return (
-        <div id="header" className="full-width">
-            <nav className="nav full-width full-height">
-                <div className="end-nav full-height full-width">
+        <div id="header" className="w-100">
+            <nav id="nav" className="w-100 h-100 show-nav">
+                <div className="end-nav h-100 w-100">
                     {
                         mobil ?
                         <span onClick={clickBurger}

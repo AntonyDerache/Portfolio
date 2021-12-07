@@ -11,7 +11,7 @@ const ExperienceElement = (props) => {
             contentArrowStyle={{ borderRight: `7px solid ${props.backColor}` }}
             iconStyle={{ background: props.backColor, color: '#fff' }}
         >
-            <div className="flex align-items flex-wrap py-3">
+            <div className="d-flex align-items flex-wrap py-3">
             { props.skillsName &&
                 props.skillsName.map((elem, i) => <div key={i} className="skillBubble">{elem}</div>)
             }

@@ -1,24 +1,6 @@
+@import "general";
+@import "header";
 @import "variables";
-
-@font-face {
-  font-family: $font;
-  font-display: auto;
-  src: url(../fonts/Lato/Lato-Light.ttf)
-}
-
-html {
-  font-size: $font-size;
-  height: 100%;
-  overflow-y: hidden;
-}
-
-body {
-  margin: 0;
-  font-family: $font;
-  height: 100%;
-
-}
-
-#app {
-  background-color: #231f20;
-}
+@import "shortcutClasses";
+@import "component";
+@import "pages";

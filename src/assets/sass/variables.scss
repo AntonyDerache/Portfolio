@@ -1,5 +1,30 @@
+@font-face {
+  font-family: "Lato";
+  font-display: auto;
+  src: url(../fonts/Lato/Lato-Light.ttf)
+}
+
 $font-size: 12px;
-$font: "Lato";
+$font: "Lato", sans-serif;
 
 $header-height: 6rem;
 $global-padding: 2.5rem;
+
+// $blue: #1c65e2;
+// $purple: #7272AB;
+// $black: #09090c;
+// $orange: #e08142;
+// $red: #ff583b;
+// $gray: #a1bb96;
+// $yellow: #e9db5a;
+// $cyan: #20a9df;
+
+$blue: #5c8ad8;
+$purple: #9a9abd;
+$black: #09090c;
+$orange: #ffc198;
+// ff745c
+// ffb3a6
+$red: #aa5858;
+$gray: #abc0a1;
+$yellow: #e9db5a;

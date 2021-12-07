@@ -1,18 +1,16 @@
 @import 'variables';
 
-.is-not-top {
-  background-color: rgba(#122a42, .9); }
-
 #header {
     height: $header-height;
     position: fixed;
-    z-index: 10;
+    z-index: 100;
     transition: .3s ease-in-out;
     @media screen and (min-width: 1024px) {
         padding: 0 $global-padding;
     }
 
-    .nav {
+    #nav {
+        position: relative;
         display: flex;
         flex-flow: row;
 
@@ -68,7 +66,7 @@
                     display: none;
                 }
 
-                span {
+                a {
                     font-size: 2.5rem;
                     font-weight: 700;
                     display: flex;
@@ -76,7 +74,7 @@
                 }
 
                 @media screen and (min-width: 1024px) {
-                    span {
+                    a {
                         position: relative;
                         padding-bottom: .3rem;
                         color: #fff;

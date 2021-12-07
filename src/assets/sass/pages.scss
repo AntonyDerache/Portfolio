@@ -1,21 +1,50 @@
 @import "variables";
+@import "animations";
 
 .pages {
     color: white;
-    padding: 1rem;
-    padding-top: $header-height;
-    overflow-y: scroll;
-    @media screen and (min-width: 1024px) {
-        &::-webkit-scrollbar {
-            display: none;
+
+    .title {
+        z-index: 12;
+        position: relative;
+        font-size: 20rem;
+        color: white;
+
+        span {
+            text-shadow: 1px 1px 3px rgb(204, 204, 204);
+        }
+    }
+
+    .title-container {
+        width: 100%;
+        height: 100vh;
+
+        .img-container {
+            opacity: .75;
+            position: absolute;
+            max-width: 900px;
+            max-height: 600px;
+            width: 80%;
+            height: 80%;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            margin: auto;
+            z-index: 11;
         }
     }
 }
+
 
 #home {
     display: -webkit-flex;
     align-items: flex-end;
     justify-content: flex-end;
+
+    .title-container {
+        background: linear-gradient(-360deg, $gray, #c9dbc0);
+    }
 
     div {
         font-variant: small-caps;
@@ -42,6 +71,17 @@
 }
 
 #about {
+    .title-container {
+        background: linear-gradient(-360deg, $purple, #c3c3f0);
+    }
+
+    .about-background {
+        background-image: url(../images/background-about.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+
     p {
         padding: 1.8rem;
         text-align: justify;
@@ -76,12 +116,31 @@
     }
 }
 
-#skills {
-    overflow-y: scroll;
-
-    &::-webkit-scrollbar {
-        display: none;
+#experiences {
+    .title-container {
+        background: linear-gradient(-360deg, $blue, #7fa7ec);
     }
+
+    .experiences-background {
+        background-image: url(../images/background-exp.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+}
+
+#skills {
+    .title-container {
+        background: linear-gradient(-360deg, $orange, #e9c0a5);
+    }
+
+    .skills-background {
+        background-image: url(../images/background-skills.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+
     ul {
         padding-top: 1rem;
 
@@ -96,10 +155,9 @@
     }
 
     @media screen and (min-width: 1024px) {
-        display: flex;
-
         .hard-skills, .soft-skills {
             width: 50vw;
+            max-width: 50%;
 
             ul {
                 li {
@@ -130,6 +188,17 @@
 }
 
 #projets {
+    .title-container {
+        background: linear-gradient(-360deg, $red, #b36b6b);
+    }
+
+    .project-background {
+        background-image: url(../images/background-project.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+
     .project-content {
         flex-flow: row wrap; }
 }

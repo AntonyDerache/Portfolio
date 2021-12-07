@@ -1,17 +1,43 @@
 import React from 'react';
 import { VerticalTimeline, } from 'react-vertical-timeline-component';
-import PropTypes from 'prop-types';
 import 'react-vertical-timeline-component/style.min.css';
 import ExperienceElement from '../../components/ExperienceElement';
+import PresentationScreen from '../../components/PresentationScreen';
+import { Chrono } from "react-chrono";
 
 const Experiences = (props) => {
     const blue = "rgb(0, 209, 199)";
     const white = "#fff";
 
+    const items = [{
+      title: "May 1940",
+      cardTitle: "Dunkirk",
+      url: "http://www.history.com",
+      cardSubtitle:"Men of the British Expeditionary Force (BEF) wade out to..",
+      cardDetailedText: "Men of the British Expeditionary Force (BEF) wade out to..",
+    }, {
+      title: "May 1940",
+      cardTitle: "Dunkirk",
+      url: "http://www.history.com",
+      cardSubtitle:"Men of the British Expeditionary Force (BEF) wade out to..",
+      cardDetailedText: "Men of the British Expeditionary Force (BEF) wade out to..",
+    }]
+
     return (
-        <div id="experiences" className="pages full-width full-height padding-sections">
-            <h2 className="fl full-width" style={{ paddingBottom: 50 }}>{props.t('experiences.title')}</h2>
-            <VerticalTimeline>
+        <div id="experiences" className="pages w-100 h-100">
+            <PresentationScreen title={props.t('experiences.title')} imgClass={"experiences-background"}/>
+            <Chrono
+                items={items}
+                mode="VERTICAL_ALTERNATING"
+                theme={{
+                    primary: "black",
+                    secondary: "white",
+                    cardBgColor: "white",
+                    cardForeColor: "white",
+                    titleColor: "black"
+                }}
+            />
+            {/* <VerticalTimeline>
                 <ExperienceElement
                     backColor={blue}
                     skillsName={["NodeJS", "ExpressJS", "VueJS", "MongoDB", "Travis"]}
@@ -40,19 +66,15 @@ const Experiences = (props) => {
                     description={props.t('experiences.delpharm.description')}
                 />
                 {/* useless element do not fill */}
-                <ExperienceElement
+                {/* <ExperienceElement
                     backColor={blue}
                     title={"none"}
                     substitle={"none"}
                     description={"none"}
                 />
-            </VerticalTimeline>
+            </VerticalTimeline> */} */}
         </div>
     );
-}
-
-Experiences.propTypes = {
-    t: PropTypes.any,
 }
 
 export default Experiences;

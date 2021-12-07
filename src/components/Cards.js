@@ -34,8 +34,8 @@ const Card = props => {
                     active={active}
                     updateActive={setActive}/>
                 <div>{props.title}</div>
-                <div id={props.id} className="banner full-width hidden">
-                    <i className="info fl full-height fas fa-info-circle" onClick={() => setActive(true)}></i>
+                <div id={props.id} className="banner w-100 hidden">
+                    <i className="info fl h-100 fas fa-info-circle" onClick={() => setActive(true)}></i>
                 </div>
             </div>
         </div>

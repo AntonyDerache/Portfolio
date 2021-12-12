@@ -178,7 +178,8 @@
 .skillBubble {
     padding: 0 .75rem;
     margin-right: .5rem;
-    background-color: rgb(216, 216, 216);
+    background-color: $light-blue;
+    color: white;
     margin-bottom: .5rem;
     border-radius: 20px;
 }

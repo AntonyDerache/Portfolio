@@ -13,8 +13,7 @@ body {
   background-color: black; }
 
 a {
-  text-decoration: none;
-  color: white !important; }
+  text-decoration: none; }
 
 input, button {
   border: none;

@@ -1,77 +1,89 @@
 @import './variables';
 
 @keyframes fade_in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 @keyframes fade_out {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
 }
 
 @keyframes fade_in_img {
-  0% {
-    opacity: 0;
-    transform: scale(.9);
-  }
-  100% {
-    opacity: .6;
-    transform: scale(1);
-  }
+    0% {
+        opacity: 0;
+      transform: scale(.9);
+    }
+    100% {
+        opacity: .6;
+        transform: scale(1);
+    }
 }
 
 @keyframes fade_out_img {
-  0% {
-    opacity: .6;
-    transform: scale(1);
-  }
-  100% {
-    opacity: 0;
-    transform: scale(.9);
-  }
+    0% {
+        opacity: .6;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(.9);
+    }
 }
 
 @keyframes fade_header {
-  0% {
-    opacity: 0;
-    top: -50px;
-  }
-  100% {
-    opacity: 1;
-    top: 0px;
-  }
+    0% {
+        opacity: 0;
+        top: -50px;
+    }
+    100% {
+        opacity: 1;
+        top: 0px;
+    }
 }
 
 @keyframes fade_out_header {
-  0% {
-    opacity: 1;
-    top: 0px;
-  }
-  100% {
-    opacity: 0;
-    top: -50px;
-  }
+    0% {
+        opacity: 1;
+        top: 0px;
+    }
+    100% {
+        opacity: 0;
+        top: -50px;
+    }
 }
 
 @keyframes translate_hover {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-  100% {
-    transform: translateY(0);
-  }
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes balance_hover {
+    0% {
+        transform: scale(1.1, 1.1) skew(0deg, 0deg);
+    }
+    50% {
+        transform: scale(1.1, 1.1) skew(-2deg, 2deg);
+    }
+    100% {
+        transform: scale(1.1, 1.1) skew(0deg, 0deg);
+    }
 }
 
 .show-img {

@@ -4,6 +4,12 @@ export const hideElement = (item, classToRemove, classToAdd) => {
     item.classList.add(classToAdd);
 }
 
+export const showElement = (item, classToRemove, classToAdd) => {
+    if (item.classList.contains(classToRemove))
+        item.classList.add(classToAdd);
+    item.classList.remove(classToRemove);
+}
+
 export const getYScrollAmount = () => {
     return document.documentElement.scrollTop;
 }
@@ -17,9 +23,9 @@ export const hidePresScreen = (img, title, chevron, scrollAmount = getYScrollAmo
         hideElement(title, "show", "hide");
         hideElement(chevron, "show", "hide");
     } else {
-        hideElement(img, "hide-img", "show-img");
-        hideElement(title, "hide", "show");
-        hideElement(chevron, "hide", "show");
+        showElement(img, "hide-img", "show-img");
+        showElement(title, "hide", "show");
+        showElement(chevron, "hide", "show");
     }
 }
 

@@ -16,44 +16,43 @@
         "job2": "Web develeper"
     },
     "skills": {
-        "skills": {
-            "title": "Skills",
-            "react": "reactjs & react native",
-            "vue": "vue js",
-            "node": "node js",
-            "html": "html / css / js",
-            "c": "c",
-            "cpp": "c++",
-            "unity": "unity (c#)",
-            "python": "python"
-        },
-        "extraSkills": {
-            "title": "Extra skills",
-            "photoshop": "photoshop",
-            "english": "english 850 TOEIC",
-            "driving": "driving license"
-        }
+        "title": "Skills",
+        "react": "react js",
+        "vue": "vue js",
+        "node": "node js",
+        "mongo": "mongoDB",
+        "html": "html",
+        "css": "css",
+        "sass": "sass",
+        "js": "javascript",
+        "c": "c",
+        "cpp": "c++",
+        "csharp": "c#",
+        "git": "git",
+        "gitlab": "gitlab",
+        "github": "github",
+        "travis": "travis"
     },
     "experiences": {
         "title": "Experiences",
         "sobook": {
             "date": "2021 april - july",
-            "job": "Developer fullstack for SoBook",
+            "job": "Developer fullstack at SoBook",
             "description": "4-month internship as fullstack developer inside the SoBook company"
         },
         "trackap": {
             "date": "2020 october - 2021 march",
-            "job": "developer front for Trackap",
+            "job": "developer front at Trackap",
             "description": "6-month part-time internship (2 days per week) inside Trackap. Worked as web developer"
         },
         "skipty": {
             "date": "2019 july - december",
-            "job": "developer fullstack for Skipty",
+            "job": "developer fullstack at Skipty",
             "description": "6-month internship as web developer inside the Skipty startup"
         },
         "delpharm": {
             "date": "2018 july",
-            "job": "packaging operator for Delpharm Lille",
+            "job": "packaging operator for Delpharm Lille, France",
             "description": "1 month fixed-term contract as a packaging operator in a pharmaceutical company."
         }
     },

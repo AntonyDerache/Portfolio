@@ -16,23 +16,23 @@
         "job2": "Web develeper"
     },
     "skills": {
-        "skills": {
-            "title": "Compétences",
-            "react": "reactjs & react native",
-            "vue": "vue js",
-            "node": "node js",
-            "html": "html / css / js",
-            "c": "c",
-            "cpp": "c++",
-            "unity": "unity (c#)",
-            "python": "python"
-        },
-        "extraSkills": {
-            "title": "Savoir-faire",
-            "photoshop": "photoshop",
-            "english": "anglais 850 TOEIC",
-            "driving": "permis de conduire"
-        }
+        "title": "Compétences",
+        "react": "react js",
+        "vue": "vue js",
+        "node": "node js",
+        "mongo": "mongoDB",
+        "html": "html",
+        "css": "css",
+        "sass": "sass",
+        "js": "javascript",
+        "c": "c",
+        "cpp": "c++",
+        "csharp": "c#",
+        "unity": "unity",
+        "git": "git",
+        "gitlab": "gitlab",
+        "github": "github",
+        "travis": "travis"
     },
     "experiences": {
         "title": "Expériences",

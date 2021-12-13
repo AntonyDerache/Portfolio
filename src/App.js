@@ -14,7 +14,7 @@ const App = () => {
     const { t } = useTranslation();
     const [index, setIndex] = useState(1);
     const transition = useRef(null);
-    const colorTab = useMemo(() => ["green", "orange", "blue", "red", "purple"], []);
+    const colorTab = useMemo(() => ["green", "brown", "blue", "red", "purple"], []);
 
     useEffect(() => {
         document.addEventListener('scroll', checkScroll)

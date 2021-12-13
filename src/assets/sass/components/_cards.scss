@@ -1,3 +1,24 @@
+.box {
+    position: relative;
+    height: 25vh;
+    max-width: 15rem;
+    background: linear-gradient(-225deg,  #f3d3a9 60%, $light-brown 50%);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+
+    &:hover {
+        animation: balance_hover 1s ease-in-out;
+        animation-iteration-count: infinite;
+    }
+
+    span {
+        color: #50330d;
+        text-align: center;
+        font-size: 1.75rem;
+        text-shadow: none !important;
+    }
+}
+
 .project-container {
     padding: 2rem 0rem;
     min-width: 100%;

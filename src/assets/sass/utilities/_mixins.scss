@@ -46,10 +46,8 @@ ul {
     }
 }
 
-.black {
-    background-color: $black; }
-.orange {
-    background-color: $orange; }
+.brown {
+    background-color: $brown; }
 .blue {
     background-color: $blue; }
 .red {
@@ -69,10 +67,6 @@ ul {
   flex-wrap: wrap;
 }
 
-.align-items {
-  align-items: center;
-}
-
 .underlined {
   border-bottom: 1px solid white;
   &:hover {
@@ -82,10 +76,6 @@ ul {
 
 .hidden {
   opacity: 0;
-}
-
-.fw-black {
-  font-weight: 900;
 }
 
 .cursor-pointer {

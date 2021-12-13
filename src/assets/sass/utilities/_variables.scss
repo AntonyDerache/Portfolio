@@ -1,15 +1,13 @@
-@font-face {
-  font-family: "Lato";
-  font-display: auto;
-  src: url(../fonts/Lato/Lato-Light.ttf)
-}
 
+// Font
 $font-size: 12px;
 $font: "Lato", sans-serif;
 
+// Sizing
 $header-height: 6rem;
 $global-padding: 2.5rem;
 
+// Colors
 $light-blue: #7fa7ec;
 $blue: #5c8ad8;
 $purple: #9a9abd;

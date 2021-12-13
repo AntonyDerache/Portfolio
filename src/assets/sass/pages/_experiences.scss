@@ -1,0 +1,14 @@
+@import '../utilities/variables';
+
+#experiences {
+    .title-container {
+        background: linear-gradient(-360deg, $blue, $light-blue);
+    }
+
+    .background {
+        background-image: url(../images/background-exp.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+}

@@ -1,4 +1,4 @@
-@import "variables";
+@import './variables';
 
 html {
     font-size: $font-size;
@@ -57,3 +57,40 @@ ul {
     background-color: $gray; }
 .purple {
     background-color: $purple; }
+
+.fl {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.align-items {
+  align-items: center;
+}
+
+.underlined {
+  border-bottom: 1px solid white;
+  &:hover {
+    position: absolute;
+  }
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.fw {
+  font-weight: 500;
+}
+
+.fw-bold {
+  font-weight: 700;
+}
+
+.fw-black {
+  font-weight: 900;
+}

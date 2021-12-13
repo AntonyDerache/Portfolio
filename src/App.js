@@ -8,7 +8,7 @@ import Projects from './Views/pages/Projects';
 import Skills from './Views/pages/Competences';
 import Main from './Views/pages/Main';
 import { hidePresScreen, switchNav} from './helpers/Scroll';
-import './assets/css/app.css';
+import './assets/css/main.css';
 
 const App = () => {
     const { t } = useTranslation();

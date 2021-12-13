@@ -1,0 +1,25 @@
+@import '../utilities/variables';
+
+#about {
+    .title-container {
+        background: linear-gradient(-360deg, $purple, #c3c3f0);
+    }
+
+    .background {
+        background-image: url(../images/background-about.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+
+    p {
+        padding: 1.8rem;
+        text-align: justify;
+        font-size: 2rem;
+
+        @media screen and (min-width: 1024px) {
+            font-size: 2.5rem;
+            padding: 1.8rem 30rem;
+        }
+    }
+}

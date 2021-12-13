@@ -1,0 +1,17 @@
+@import '../utilities/variables';
+
+#projects {
+    .title-container {
+        background: linear-gradient(-360deg, $red, #b36b6b);
+    }
+
+    .background {
+        background-image: url(../images/background-project.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+
+    .content {
+        flex-flow: row wrap; }
+}

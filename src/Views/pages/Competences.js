@@ -10,7 +10,7 @@ const Competences = ({updateIndex, t}) => {
     return (
         <div id="skills" className="pages h-100 w-100">
             <PresentationScreen title={t('skills.skills.title')} />
-            <div className="d-flex orange">
+            <div className="content d-flex orange">
                 <div className="hard-skills col-6">
                     <h2 className="fl w-100">{t('skills.skills.title')}</h2>
                     <ul>

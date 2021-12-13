@@ -1,0 +1,106 @@
+@import '../utilities/variables';
+
+#skills {
+    .title-container {
+        background: linear-gradient(-360deg, $orange, #e9c0a5);
+    }
+
+    .background {
+        background-image: url(../images/background-skills.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+
+    ul {
+        padding-top: 1rem;
+
+        li {
+            padding: 1rem 2rem;
+            font-size: 2.5rem;
+            font-variant: small-caps;
+            display: flex;
+            align-items: center;
+            justify-content: left;
+        }
+    }
+
+    @media screen and (min-width: 1024px) {
+        .hard-skills, .soft-skills {
+            width: 50vw;
+            max-width: 50%;
+
+            ul {
+                li {
+                    padding: 2rem 2rem;
+                    font-size: 3rem;
+                    padding-left: 20%;
+                }
+            }
+        }
+    }
+
+    .html-css-js {
+        background-image: url("../images/icone-html-css-js.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 9rem;
+        height: 3rem;
+        display: inline-flex;
+        margin-right: 1rem;
+
+        @media screen and (min-width: 1024px) {
+            width: 13rem;
+            height: 5rem;
+            margin-right: 3rem;
+        }
+    }
+
+    .background-image {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 3rem;
+        height: 3rem;
+        display: inline-flex;
+        margin-right: 1rem;
+
+        @media screen and (min-width: 1024px) {
+            width: 6rem;
+            height: 6rem;
+            margin-right: 3rem;
+        }
+    }
+
+    .c {
+        background-image: url("../images/icone-c.svg");
+    }
+    .reactjs {
+        background-image: url("../images/icone-react.svg");
+    }
+    .vuejs {
+        background-image: url("../images/icone-vue.png");
+    }
+    .nodejs {
+        background-image: url("../images/icone-nodejs.svg");
+    }
+    .cplusplus {
+        background-image: url("../images/icone-cplusplus.svg");
+    }
+    .python {
+        background-image: url("../images/icone-python.svg");
+    }
+    .unity {
+        background-image: url("../images/icone-unity.png");
+    }
+    .photoshop {
+        background-image: url("../images/icone-photoshop.svg");
+    }
+    .anglais {
+        background-image: url("../images/icone-anglais.png");
+    }
+    .permis {
+        background-image: url("../images/icone-permis.png");
+    }
+}

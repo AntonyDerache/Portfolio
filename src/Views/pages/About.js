@@ -8,7 +8,7 @@ const About = ({updateIndex, t}) => {
 
     return (
         <div id="about" className="pages w-100 h-100">
-            <PresentationScreen title={t('about.title')} />
+            <PresentationScreen title={[t('about.title')]} />
             <div className="content purple fl">
                 <p>{t('about.description')}</p>
             </div>

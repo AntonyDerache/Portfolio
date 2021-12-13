@@ -1,12 +1,10 @@
 import React, { useState, useEffect } from 'react'
 import { useTranslation } from 'react-i18next';
 import { Link } from "react-router-dom";
-import FlagFr from "../assets/images/flag-fr.png";
-import FlagGb from "../assets/images/flag-gb.png";
 
 const Header = (props) => {
     const [mobil, setMobil] = useState(false);
-    const { t, i18n } = useTranslation();
+    const { i18n } = useTranslation();
     const [index, setIndex] = useState(props.index);
 
     useEffect(() => {
@@ -72,7 +70,7 @@ const Header = (props) => {
                         className="tab"
                         onClick={() => handleSwap(i + 1)}
                     >
-                        {t('header.' + title)}
+                        {props.t('header.' + title)}
                     </Link>
                 </li>
             )
@@ -93,11 +91,22 @@ const Header = (props) => {
                             <span></span>
                         </span>
                     }
-                    <ul id="nav-bar" className="fl">
+                    <ul id="nav-bar" className="d-flex justify-content-center">
                         {buildTabNavigation()}
-                        <div className="language">
-                            <img onClick={() => switchLanguage("fr")} src={FlagFr} alt="france_flag"></img>
-                            <img onClick={() => switchLanguage("en")} src={FlagGb} alt="great_britain_flag"></img>
+                        <div className="languages">
+                            <span
+                                className="cursor-pointer text-uppercase px-3"
+                                onClick={() => switchLanguage("fr")}
+                            >
+                                {props.t("header.fr")}
+                            </span>
+                            <span className="text-uppercase">/</span>
+                            <span
+                                className="cursor-pointer text-uppercase px-3"
+                                onClick={() => switchLanguage("en")}
+                            >
+                                {props.t("header.en")}
+                            </span>
                         </div>
                     </ul>
                 </div>

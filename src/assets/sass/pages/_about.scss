@@ -2,11 +2,11 @@
 
 #about {
     .title-container {
-        background: linear-gradient(-360deg, $purple, #c3c3f0);
+        background: linear-gradient(-360deg, $purple, $light-purple);
     }
 
     .background {
-        background-image: url(../images/background-about.svg);
+        background-image: url(../images/rock-climbing.svg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;

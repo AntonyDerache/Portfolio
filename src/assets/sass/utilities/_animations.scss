@@ -1,6 +1,6 @@
 @import './variables';
 
-@keyframes fade {
+@keyframes fade_in {
   0% {
     opacity: 0;
   }
@@ -18,20 +18,20 @@
   }
 }
 
-@keyframes fade_img {
+@keyframes fade_in_img {
   0% {
     opacity: 0;
     transform: scale(.9);
   }
   100% {
-    opacity: .75;
+    opacity: .6;
     transform: scale(1);
   }
 }
 
 @keyframes fade_out_img {
   0% {
-    opacity: .75;
+    opacity: .6;
     transform: scale(1);
   }
   100% {
@@ -62,8 +62,20 @@
   }
 }
 
+@keyframes translate_hover {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 .show-img {
-    animation: fade_img .5s ease-in-out;
+    animation: fade_in_img .5s ease-in-out;
     transform: scale(1);
 }
 
@@ -74,7 +86,7 @@
 }
 
 .show {
-    animation: fade .5s ease-in-out;
+    animation: fade_in .5s ease-in-out;
 }
 
 .hide {
@@ -93,5 +105,5 @@
 }
 
 .fast-fade {
-    animation: fade .2s ease-in-out;
+    animation: fade_in .2s ease-in-out;
 }

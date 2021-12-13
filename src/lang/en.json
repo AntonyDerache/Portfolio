@@ -5,10 +5,15 @@
         "experiences": "experiences",
         "educations": "educations",
         "projects": "projects",
-        "about": "about"
+        "about": "about",
+        "en": "en",
+        "fr": "fr"
     },
-    "main": {
-        "job": "developer"
+    "home": {
+        "hello": "Hi, I'm",
+        "name": "Antony",
+        "job1": "Game developer",
+        "job2": "Web develeper"
     },
     "skills": {
         "skills": {
@@ -51,13 +56,6 @@
             "job": "packaging operator for Delpharm Lille",
             "description": "1 month fixed-term contract as a packaging operator in a pharmaceutical company."
         }
-    },
-    "educations": {
-        "title": "Educations",
-        "graduation": "3rd year, Computer expert",
-        "campus": "Epitech Lille, France",
-        "bac": "High school diploma, major in engineering science",
-        "highschool": "Lycée Jean Rostand, Roubaix, France"
     },
     "projects": {
         "title": "Projects"

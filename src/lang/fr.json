@@ -5,10 +5,15 @@
         "experiences": "expériences",
         "educations": "formations",
         "projects": "projets",
-        "about": "à propos"
+        "about": "à propos",
+        "en": "en",
+        "fr": "fr"
     },
-    "main": {
-        "job": "developpeur"
+    "home": {
+        "hello": "Hey, Je suis",
+        "name": "Antony",
+        "job1": "Game developer",
+        "job2": "Web develeper"
     },
     "skills": {
         "skills": {
@@ -51,13 +56,6 @@
             "job": "Operateur de conditionnement chez Delpharm Lille",
             "description": "CDD 1 mois en tant qu'operateur de conditionnement"
         }
-    },
-    "educations": {
-        "title": "Formations",
-        "graduation": "3e année, diplome d'expert en informatique",
-        "campus": "Epitech Lille",
-        "bac": "Bac S Science de l'ingénieur",
-        "highschool": "Lycée Jean Rostand Roubaix"
     },
     "projects": {
         "title": "Projets"

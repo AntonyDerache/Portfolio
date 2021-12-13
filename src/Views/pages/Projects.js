@@ -9,7 +9,7 @@ const Projects = ({updateIndex, t}) => {
 
     return (
         <div id="projects" className="pages w-100 h-100">
-            <PresentationScreen title={t("projects.title")} />
+            <PresentationScreen title={[t("projects.title")]} />
             <div className="content fl w-100 red">
                 <Card id="skipty" classname="sk" title="Skipty" projet="Projet Stage" type="Site web"/>
                 <Card id="united" classname="uj" title="United Jam" projet="Game Jam" type="Jeu vidéo"/>

@@ -6,7 +6,7 @@ import Experiences from './Views/pages/Experiences';
 import About from './Views/pages/About';
 import Projects from './Views/pages/Projects';
 import Skills from './Views/pages/Competences';
-import Main from './Views/pages/Main';
+import Home from './Views/pages/Home';
 import { hidePresScreen, switchNav} from './helpers/Scroll';
 import './assets/css/main.css';
 
@@ -14,7 +14,7 @@ const App = () => {
     const { t } = useTranslation();
     const [index, setIndex] = useState(1);
     const transition = useRef(null);
-    const colorTab = useMemo(() => ["gray", "orange", "blue", "red", "purple"], []);
+    const colorTab = useMemo(() => ["green", "orange", "blue", "red", "purple"], []);
 
     useEffect(() => {
         document.addEventListener('scroll', checkScroll)
@@ -35,8 +35,9 @@ const App = () => {
     const checkScroll = () => {
         const ref_img = document.getElementById("ref-img");
         const ref_title = document.getElementById("ref-title");
+        const ref_chevron = document.getElementById("ref-chevron");
         const ref_nav = document.getElementById("nav");
-        hidePresScreen(ref_img, ref_title);
+        hidePresScreen(ref_img, ref_title, ref_chevron);
         switchNav(ref_nav);
     }
 
@@ -48,9 +49,9 @@ const App = () => {
 
     return (
         <div ref={transition} className="app">
-            <Header index={index} />
+            <Header index={index} t={t}/>
             <Routes>
-                <Route path="/" element={<Main updateIndex={updateIndex} t={t} />} />
+                <Route path="/" element={<Home updateIndex={updateIndex} t={t} />} />
                 <Route path="/skills" element={<Skills updateIndex={updateIndex} t={t} />} />
                 <Route path="/experiences" element={<Experiences updateIndex={updateIndex} t={t} />} />
                 <Route path="/about" element={<About updateIndex={updateIndex} t={t} />} />

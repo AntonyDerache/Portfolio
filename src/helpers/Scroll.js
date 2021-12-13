@@ -1,25 +1,25 @@
+export const hideElement = (item, classToRemove, classToAdd) => {
+    if (item.classList.contains(classToRemove))
+        item.classList.remove(classToRemove);
+    item.classList.add(classToAdd);
+}
+
 export const getYScrollAmount = () => {
     return document.documentElement.scrollTop;
 }
 
-export const hidePresScreen = (img, title, scrollAmount = getYScrollAmount()) => {
-    if (!img || !title)
+export const hidePresScreen = (img, title, chevron, scrollAmount = getYScrollAmount()) => {
+    if (!img || !title || !chevron)
         return;
     title.style.transform = `translateY(-${(scrollAmount * 1.5).toString()}px)`;
     if (scrollAmount > 100) {
-        if (img.classList.contains("show-img"))
-            img.classList.remove("show-img");
-        img.classList.add("hide-img");
-        if (title.classList.contains("show"))
-            title.classList.remove("show");
-        title.classList.add("hide");
+        hideElement(img, "show-img", "hide-img");
+        hideElement(title, "show", "hide");
+        hideElement(chevron, "show", "hide");
     } else {
-        if (img.classList.contains("hide-img"))
-            img.classList.add("show-img");
-        img.classList.remove("hide-img");
-        if (title.classList.contains("hide"))
-            title.classList.add("show");
-        title.classList.remove("hide");
+        hideElement(img, "hide-img", "show-img");
+        hideElement(title, "hide", "show");
+        hideElement(chevron, "hide", "show");
     }
 }
 

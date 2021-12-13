@@ -1,1 +1,23 @@
 @import '../utilities/variables';
+
+
+#home {
+    .title-container {
+        background: linear-gradient(-360deg, $green, $light-green);
+    }
+
+    .background {
+        background-image: url(../images/development.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+
+    .subtitle {
+        font-size: 4rem;
+        text-transform: none;
+        color: #457680;
+        text-shadow: 2px 1px 5px rgb(127, 156, 151);
+        font-weight: 500;
+    }
+}

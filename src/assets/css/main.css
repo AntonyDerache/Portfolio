@@ -1,4 +1,4 @@
-@keyframes fade {
+@keyframes fade_in {
   0% {
     opacity: 0; }
   100% {
@@ -10,17 +10,17 @@
   100% {
     opacity: 0; } }
 
-@keyframes fade_img {
+@keyframes fade_in_img {
   0% {
     opacity: 0;
     transform: scale(0.9); }
   100% {
-    opacity: .75;
+    opacity: .6;
     transform: scale(1); } }
 
 @keyframes fade_out_img {
   0% {
-    opacity: .75;
+    opacity: .6;
     transform: scale(1); }
   100% {
     opacity: 0;
@@ -42,8 +42,16 @@
     opacity: 0;
     top: -50px; } }
 
+@keyframes translate_hover {
+  0% {
+    transform: translateY(0); }
+  50% {
+    transform: translateY(-10px); }
+  100% {
+    transform: translateY(0); } }
+
 .show-img {
-  animation: fade_img .5s ease-in-out;
+  animation: fade_in_img .5s ease-in-out;
   transform: scale(1); }
 
 .hide-img {
@@ -52,7 +60,7 @@
   opacity: 0 !important; }
 
 .show {
-  animation: fade .5s ease-in-out; }
+  animation: fade_in .5s ease-in-out; }
 
 .hide {
   animation: fade_out .5s ease-in-out;
@@ -67,14 +75,51 @@
   opacity: 0; }
 
 .fast-fade {
-  animation: fade .2s ease-in-out; }
+  animation: fade_in .2s ease-in-out; }
+
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato/Lato-Thin.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato/Lato-ThinItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic; }
+
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato/Lato-Light.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato/Lato-LightItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic; }
+
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato/Lato-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato/Lato-BoldItalic.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic; }
 
 html {
-  font-size: 12px; }
+  font-size: 12px;
+  scroll-behavior: smooth; }
 
 body {
   margin: 0;
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", Georgia, serif;
   color: white;
   background-color: black; }
 
@@ -87,7 +132,6 @@ input, button {
 
 button {
   cursor: pointer;
-  font-family: "Lato", sans-serif;
   font-size: 12px; }
 
 ul {
@@ -116,8 +160,8 @@ ul {
 .red {
   background-color: #aa5858; }
 
-.gray {
-  background-color: #abc0a1; }
+.green {
+  background-color: #94a7aa; }
 
 .purple {
   background-color: #9a9abd; }
@@ -141,19 +185,47 @@ ul {
 .hidden {
   opacity: 0; }
 
-.fw {
-  font-weight: 500; }
-
-.fw-bold {
-  font-weight: 700; }
-
 .fw-black {
   font-weight: 900; }
 
+.cursor-pointer:hover {
+  cursor: pointer; }
+
 @font-face {
   font-family: "Lato";
-  font-display: auto;
-  src: url(../fonts/Lato/Lato-Light.ttf); }
+  src: url("../fonts/Lato/Lato-Thin.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato/Lato-ThinItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic; }
+
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato/Lato-Light.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato/Lato-LightItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic; }
+
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato/Lato-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato/Lato-BoldItalic.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic; }
 
 .project-container {
   padding: 2rem 0rem;
@@ -263,7 +335,7 @@ ul {
   border-radius: 20px; }
 
 #header {
-  height: 6rem;
+  height: 8rem;
   position: fixed;
   z-index: 100;
   transition: .3s ease-in-out; }
@@ -282,17 +354,14 @@ ul {
       padding-right: 2rem;
       display: flex;
       color: white; }
-      #header #nav .end-nav .language {
+      #header #nav .end-nav .languages {
         position: absolute;
+        top: 25%;
         right: 0; }
         @media screen and (max-width: 1024px) {
-          #header #nav .end-nav .language {
+          #header #nav .end-nav .languages {
             padding: 1.5rem;
             bottom: 0; } }
-        #header #nav .end-nav .language img {
-          padding: .5rem; }
-          #header #nav .end-nav .language img:hover {
-            cursor: pointer; }
       #header #nav .end-nav #burger {
         color: white;
         background-color: transparent;
@@ -316,7 +385,6 @@ ul {
             display: none; } }
         #header #nav .end-nav #nav-bar a {
           font-size: 2.5rem;
-          font-weight: 700;
           display: flex;
           align-items: center; }
         @media screen and (min-width: 1024px) {
@@ -353,7 +421,7 @@ ul {
   background: linear-gradient(-360deg, #9a9abd, #c3c3f0); }
 
 #about .background {
-  background-image: url(../images/background-about.svg);
+  background-image: url(../images/rock-climbing.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain; }
@@ -463,20 +531,38 @@ ul {
   background-position: center;
   background-size: contain; }
 
+#home .title-container {
+  background: linear-gradient(-360deg, #94a7aa, #b9d1d4); }
+
+#home .background {
+  background-image: url(../images/development.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain; }
+
+#home .subtitle {
+  font-size: 4rem;
+  text-transform: none;
+  color: #457680;
+  text-shadow: 2px 1px 5px #7f9c97;
+  font-weight: 500; }
+
 .pages {
   color: white; }
   .pages .title {
     z-index: 12;
     position: relative;
-    font-size: 20rem;
-    color: white; }
-    .pages .title span {
-      text-shadow: 1px 1px 3px #cccccc; }
+    font-size: 15rem;
+    color: white;
+    line-height: 1;
+    text-transform: uppercase; }
+  .pages span, .pages i {
+    text-shadow: 0px 1px 3px #4b4b4b; }
   .pages .title-container {
     width: 100%;
     height: 100vh; }
     .pages .title-container .img-container {
-      opacity: .75;
+      opacity: .6;
       position: absolute;
       max-width: 900px;
       max-height: 600px;
@@ -488,6 +574,12 @@ ul {
       top: 0;
       margin: auto;
       z-index: 11; }
+  .pages i {
+    z-index: 13;
+    font-size: 5rem; }
+    .pages i:hover {
+      animation: translate_hover 1s ease-in-out;
+      animation-iteration-count: infinite; }
 
 #skills .content, #experiences .content, #projects .content, #about .content {
   min-height: 100vh; }

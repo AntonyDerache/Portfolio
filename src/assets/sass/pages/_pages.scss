@@ -4,12 +4,15 @@
     .title {
         z-index: 12;
         position: relative;
-        font-size: 20rem;
+        font-size: 15rem;
         color: white;
+        line-height: 1;
+        text-transform: uppercase;
 
-        span {
-            text-shadow: 1px 1px 3px rgb(204, 204, 204);
-        }
+    }
+
+    span, i {
+        text-shadow: 0px 1px 3px rgb(75, 75, 75);
     }
 
     .title-container {
@@ -17,7 +20,7 @@
         height: 100vh;
 
         .img-container {
-            opacity: .75;
+            opacity: .6;
             position: absolute;
             max-width: 900px;
             max-height: 600px;
@@ -29,6 +32,16 @@
             top: 0;
             margin: auto;
             z-index: 11;
+        }
+    }
+
+    i {
+        z-index: 13;
+        font-size: 5rem;
+
+        &:hover {
+            animation: translate_hover 1s ease-in-out;
+            animation-iteration-count: infinite;
         }
     }
 }

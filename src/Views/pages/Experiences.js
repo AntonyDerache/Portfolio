@@ -11,7 +11,7 @@ const Experiences = ({updateIndex, t}) => {
 
     return (
         <div id="experiences" className="pages w-100 h-100">
-            <PresentationScreen title={t('experiences.title')} />
+            <PresentationScreen title={[t('experiences.title')]} />
             <div className="content fl blue">
                 <VerticalTimeline>
                     <ExperienceElement

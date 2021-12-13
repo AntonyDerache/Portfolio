@@ -1,7 +1,9 @@
 @import './variables';
+@import '../base/typography';
 
 html {
     font-size: $font-size;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -22,7 +24,6 @@ input, button {
 
 button {
     cursor: pointer;
-    font-family: $font;
     font-size: $font-size;
 }
 
@@ -53,8 +54,8 @@ ul {
     background-color: $blue; }
 .red {
     background-color: $red; }
-.gray {
-    background-color: $gray; }
+.green {
+    background-color: $green; }
 .purple {
     background-color: $purple; }
 
@@ -83,14 +84,12 @@ ul {
   opacity: 0;
 }
 
-.fw {
-  font-weight: 500;
-}
-
-.fw-bold {
-  font-weight: 700;
-}
-
 .fw-black {
   font-weight: 900;
+}
+
+.cursor-pointer {
+    &:hover {
+        cursor: pointer;
+    }
 }

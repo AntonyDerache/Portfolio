@@ -27,28 +27,34 @@ button {
 ul {
   list-style-type: none; }
 
-.content {
+.app {
   transition: .4s ease-in-out;
   min-height: 100vh; }
-  .content h2 {
+  .app h2 {
     font-size: 4rem;
     line-height: 10rem; }
     @media screen and (min-width: 1024px) {
-      .content h2 {
+      .app h2 {
         padding: 3rem 0;
         font-size: 6rem; } }
-  .content.black {
-    background-color: #09090c; }
-  .content.orange {
-    background-color: #ffc198; }
-  .content.blue {
-    background-color: #5c8ad8; }
-  .content.red {
-    background-color: #aa5858; }
-  .content.gray {
-    background-color: #abc0a1; }
-  .content.purple {
-    background-color: #9a9abd; }
+
+.black {
+  background-color: #09090c; }
+
+.orange {
+  background-color: #ffc198; }
+
+.blue {
+  background-color: #5c8ad8; }
+
+.red {
+  background-color: #aa5858; }
+
+.gray {
+  background-color: #abc0a1; }
+
+.purple {
+  background-color: #9a9abd; }
 
 @font-face {
   font-family: "Lato";
@@ -438,73 +444,10 @@ ul {
       margin: auto;
       z-index: 11; }
 
-#home {
-  display: -webkit-flex;
-  align-items: flex-end;
-  justify-content: flex-end; }
-  #home .title-container {
-    background: linear-gradient(-360deg, #abc0a1, #c9dbc0); }
-  #home div {
-    font-variant: small-caps; }
-    #home div h1, #home div h3 {
-      text-align: right;
-      line-height: 17vw;
-      font-size: 20vw;
-      width: 100%; }
-    #home div h3 {
-      color: #00d1c7; }
-    @media screen and (min-width: 1024px) {
-      #home div h1, #home div h3 {
-        text-align: right;
-        line-height: 11vw;
-        font-size: 10vw; } }
-
-#about .title-container {
-  background: linear-gradient(-360deg, #9a9abd, #c3c3f0); }
-
-#about .about-background {
-  background-image: url(../images/background-about.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain; }
-
-#about p {
-  padding: 1.8rem;
-  text-align: justify;
-  font-size: 2rem; }
-  @media screen and (min-width: 1024px) {
-    #about p {
-      font-size: 2.5rem;
-      padding: 1.8rem 30rem; } }
-
-#formations h3 {
-  font-size: 1.5rem;
-  text-align: center;
-  padding: 1.5rem 0; }
-  @media screen and (min-width: 1024px) {
-    #formations h3 {
-      font-size: 3rem;
-      padding: 3rem 2rem; } }
-  #formations h3 div {
-    font-weight: 500;
-    font-size: 1.1rem; }
-    @media screen and (min-width: 1024px) {
-      #formations h3 div {
-        font-size: 2rem; } }
-
-#experiences .title-container {
-  background: linear-gradient(-360deg, #5c8ad8, #7fa7ec); }
-
-#experiences .experiences-background {
-  background-image: url(../images/background-exp.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain; }
-
 #skills .title-container {
   background: linear-gradient(-360deg, #ffc198, #e9c0a5); }
 
-#skills .skills-background {
+#skills .background {
   background-image: url(../images/background-skills.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -544,10 +487,19 @@ ul {
       height: 5rem;
       margin-right: 3rem; } }
 
+#experiences .title-container {
+  background: linear-gradient(-360deg, #5c8ad8, #7fa7ec); }
+
+#experiences .background {
+  background-image: url(../images/background-exp.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain; }
+
 #projets .title-container {
   background: linear-gradient(-360deg, #aa5858, #b36b6b); }
 
-#projets .project-background {
+#projets .background {
   background-image: url(../images/background-project.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -555,3 +507,21 @@ ul {
 
 #projets .project-content {
   flex-flow: row wrap; }
+
+#about .title-container {
+  background: linear-gradient(-360deg, #9a9abd, #c3c3f0); }
+
+#about .background {
+  background-image: url(../images/background-about.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain; }
+
+#about p {
+  padding: 1.8rem;
+  text-align: justify;
+  font-size: 2rem; }
+  @media screen and (min-width: 1024px) {
+    #about p {
+      font-size: 2.5rem;
+      padding: 1.8rem 30rem; } }

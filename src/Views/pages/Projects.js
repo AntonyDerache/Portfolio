@@ -1,12 +1,16 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Card from '../../components/Cards'
 import PresentationScreen from '../../components/PresentationScreen';
 
-const Projets = (props) => {
+const Projets = ({updateIndex, t}) => {
+    useEffect(() => {
+        updateIndex(4);
+    }, [updateIndex])
+
     return (
         <div id="projets" className="pages w-100 h-100">
-            <PresentationScreen title={props.t("projects.title")} imgClass={"project-background"}/>
-            <div className="project-content fl w-100">
+            <PresentationScreen title={t("projects.title")} />
+            <div className="project-content fl w-100 red">
                 <Card id="skipty" classname="sk" title="Skipty" projet="Projet Stage" type="Site web"/>
                 <Card id="united" classname="uj" title="United Jam" projet="Game Jam" type="Jeu vidéo"/>
                 <Card id="global-jam" classname="ggj" title="Epitech Jam" projet="Game Jam inter Epitech" type="Jeu vidéo"/>

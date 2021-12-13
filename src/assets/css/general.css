@@ -27,25 +27,31 @@ button {
 ul {
   list-style-type: none; }
 
-.content {
+.app {
   transition: .4s ease-in-out;
   min-height: 100vh; }
-  .content h2 {
+  .app h2 {
     font-size: 4rem;
     line-height: 10rem; }
     @media screen and (min-width: 1024px) {
-      .content h2 {
+      .app h2 {
         padding: 3rem 0;
         font-size: 6rem; } }
-  .content.black {
-    background-color: #09090c; }
-  .content.orange {
-    background-color: #ffc198; }
-  .content.blue {
-    background-color: #5c8ad8; }
-  .content.red {
-    background-color: #aa5858; }
-  .content.gray {
-    background-color: #abc0a1; }
-  .content.purple {
-    background-color: #9a9abd; }
+
+.black {
+  background-color: #09090c; }
+
+.orange {
+  background-color: #ffc198; }
+
+.blue {
+  background-color: #5c8ad8; }
+
+.red {
+  background-color: #aa5858; }
+
+.gray {
+  background-color: #abc0a1; }
+
+.purple {
+  background-color: #9a9abd; }

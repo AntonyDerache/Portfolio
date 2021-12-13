@@ -1,11 +1,17 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import PresentationScreen from '../../components/PresentationScreen';
 
-const About = (props) => {
+const About = ({updateIndex, t}) => {
+    useEffect(() => {
+        updateIndex(5);
+    }, [updateIndex])
+
     return (
         <div id="about" className="pages w-100 h-100">
-            <PresentationScreen title={props.t('about.title')} imgClass={"about-background"}/>
-            <p>{props.t('about.description')}</p>
+            <PresentationScreen title={t('about.title')} />
+            <div className="purple">
+                <p>{t('about.description')}</p>
+            </div>
         </div>
     );
 }

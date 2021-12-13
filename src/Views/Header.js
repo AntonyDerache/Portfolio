@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from 'react'
 import { useTranslation } from 'react-i18next';
+import { Link } from "react-router-dom";
 import FlagFr from "../assets/images/flag-fr.png";
 import FlagGb from "../assets/images/flag-gb.png";
-import { Link } from "react-router-dom";
 
 const Header = (props) => {
     const [mobil, setMobil] = useState(false);
     const { t, i18n } = useTranslation();
+    const [index, setIndex] = useState(props.index);
 
     useEffect(() => {
         const updateSize = () => {
@@ -17,11 +18,16 @@ const Header = (props) => {
         if (window.innerWidth < 1024)
             setMobil(true);
         window.addEventListener('resize', updateSize);
-        if (!document.getElementsByClassName("tab")[props.getIndex() - 1].classList.contains("underlined"))
-            document.getElementsByClassName("tab")[props.getIndex() - 1].classList.add("underlined");
         return _ => {
             window.removeEventListener('resize', updateSize)}
-    }, [props])
+    }, [])
+
+    useEffect(() => {
+        document.getElementsByClassName("tab")[index - 1].classList.remove("underlined");
+        if (!document.getElementsByClassName("tab")[props.index - 1].classList.contains("underlined"))
+            document.getElementsByClassName("tab")[props.index - 1].classList.add("underlined");
+        setIndex(props.index);
+    }, [index, props.index])
 
     const clickBurger = () => {
         if (document.getElementById("burger").classList.contains("is-active")) {
@@ -34,9 +40,7 @@ const Header = (props) => {
     }
 
     const handleSwap = value => {
-        // document.getElementById('background').scrollTo(0, 0);
-        document.getElementsByClassName("tab")[props.getIndex() - 1].classList.remove("underlined");
-        props.updateIndex(value);
+        document.getElementsByClassName("tab")[index - 1].classList.remove("underlined");
         document.getElementsByClassName("tab")[value - 1].classList.add("underlined");
         // if (window.innerWidth < 1024)
         //     clickBurger();
@@ -62,15 +66,13 @@ const Header = (props) => {
 
         return titleTab.map((title, i) => {
             return (
-                // <li key={i}><span className="tab" onClick={() => handleSwap(i + 1)}>{t('header.' + titleTab[i])}</span></li>
-                <li
-                    key={i}>
+                <li key={i}>
                     <Link
                         to={`/${urlTab[i]}`}
                         className="tab"
                         onClick={() => handleSwap(i + 1)}
                     >
-                        {t('header.' + titleTab[i])}
+                        {t('header.' + title)}
                     </Link>
                 </li>
             )
@@ -82,14 +84,14 @@ const Header = (props) => {
             <nav id="nav" className="w-100 h-100 show-nav">
                 <div className="end-nav h-100 w-100">
                     {
-                        mobil ?
+                        mobil &&
                         <span onClick={clickBurger}
                             id="burger"
                             className="navbar-burger">
                             <span></span>
                             <span></span>
                             <span></span>
-                        </span> : null
+                        </span>
                     }
                     <ul id="nav-bar" className="fl">
                         {buildTabNavigation()}

@@ -1,0 +1,61 @@
+@import '../utilities/variables';
+
+.project-banner {
+    height: 33.33vh;
+    overflow: hidden;
+
+    .bg {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        transition: .5s ease-out;
+    }
+
+    &:hover {
+        .bg {
+            transform: scale(1.05, 1.05);
+        }
+
+        .opac-bg {
+            opacity: 0;
+        }
+    }
+
+    .opac-bg {
+        background-color: $red;
+        opacity: .9;
+        filter: none !important;
+        transition: .5s ease-out;
+    }
+
+    h2 {
+        z-index: 2;
+    }
+
+    span {
+        color: white;
+        font-weight: 300;
+    }
+
+    .uj {
+        background-image: url("../images/preview-brawhalla.png"); }
+    .ggj {
+        background-image: url("../images/epitechjam-background.png"); }
+    .sk {
+        background-image: url("../images/skipty-background.png"); }
+    .bomberman {
+        background-image: url("../images/bomberman-background.png"); }
+    .epytodo {
+        background-image: url("../images/epytodo-background.png"); }
+    .epicture {
+        background-image: url("../images/epicture-background.png"); }
+}
+
+.skew-left {
+    transform: skew(0, -1deg);
+}
+
+
+.skew-right {
+    transform: skew(-1deg, 0);
+}

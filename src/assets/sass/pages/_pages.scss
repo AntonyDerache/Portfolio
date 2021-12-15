@@ -12,7 +12,7 @@
     }
 
     span, i {
-        text-shadow: 0px 1px 3px rgb(75, 75, 75);
+        text-shadow: 2px 1px 10px rgba(27, 27, 27, .4);
     }
 
     .title-container {
@@ -33,15 +33,15 @@
             margin: auto;
             z-index: 11;
         }
-    }
 
-    i {
-        z-index: 13;
-        font-size: 5rem;
+        i {
+            z-index: 13;
+            font-size: 5rem;
 
-        &:hover {
-            animation: translate_hover 1s ease-in-out;
-            animation-iteration-count: infinite;
+            &:hover {
+                animation: translate_hover 1s ease-in-out;
+                animation-iteration-count: infinite;
+            }
         }
     }
 }

@@ -12,7 +12,7 @@ const Home = ({updateIndex, t}) => {
                     <div className={`h-100 w-100 background`}></div>
                 </div>
                 <div className="title h-100 w-100 fl" id="ref-title">
-                    <div className="mx-auto d-flex flex-column">
+                    <div className="d-flex flex-column">
                         <span>{t("home.hello")}</span>
                         <span>{t("home.name")}</span>
                         <span className="subtitle">{t("home.job1")}</span>

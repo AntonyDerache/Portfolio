@@ -38,6 +38,7 @@ const Header = (props) => {
     }
 
     const handleSwap = value => {
+        // console.log(document.getElementsByClassName("tab"))
         document.getElementsByClassName("tab")[index - 1].classList.remove("underlined");
         document.getElementsByClassName("tab")[value - 1].classList.add("underlined");
         // if (window.innerWidth < 1024)
@@ -67,7 +68,7 @@ const Header = (props) => {
                 <li key={i}>
                     <Link
                         to={`/${urlTab[i]}`}
-                        className="tab"
+                        className="tab small-caps"
                         onClick={() => handleSwap(i + 1)}
                     >
                         {props.t('header.' + title)}
@@ -94,15 +95,23 @@ const Header = (props) => {
                     <ul id="nav-bar" className="d-flex justify-content-center">
                         {buildTabNavigation()}
                         <div className="languages">
+                            <Link
+                                to={`/contact`}
+                                className="cursor-pointer mx-3 small-caps tab"
+                                onClick={() => handleSwap(6)}
+                            >
+                                contact
+                            </Link>
+                            <span className="small-caps">-</span>
                             <span
-                                className="cursor-pointer text-uppercase px-3"
+                                className="cursor-pointer small-caps px-3"
                                 onClick={() => switchLanguage("fr")}
                             >
                                 {props.t("header.fr")}
                             </span>
-                            <span className="text-uppercase">/</span>
+                            <span className="small-caps">|</span>
                             <span
-                                className="cursor-pointer text-uppercase px-3"
+                                className="cursor-pointer small-caps px-3"
                                 onClick={() => switchLanguage("en")}
                             >
                                 {props.t("header.en")}

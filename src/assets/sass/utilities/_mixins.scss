@@ -58,20 +58,20 @@ ul {
     background-color: $purple; }
 
 .fl {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .flex-wrap {
-  flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 
 .underlined {
-  border-bottom: 1px solid white;
-  &:hover {
-    position: absolute;
-  }
+    border-bottom: 1px solid white;
+    &:hover {
+        position: absolute;
+    }
 }
 
 .hidden {
@@ -82,4 +82,8 @@ ul {
     &:hover {
         cursor: pointer;
     }
+}
+
+.small-caps {
+    font-variant: small-caps;
 }

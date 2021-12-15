@@ -1,20 +1,22 @@
 import React, { useEffect, useState, useRef, useMemo } from 'react';
 import { Routes, Route } from "react-router-dom";
 import { useTranslation } from 'react-i18next';
-import Header from './Views/Header'
-import Experiences from './Views/pages/Experiences';
-import About from './Views/pages/About';
-import Projects from './Views/pages/Projects';
-import Skills from './Views/pages/Competences';
-import Home from './Views/pages/Home';
-import { hidePresScreen, switchNav} from './helpers/Scroll';
+import Header from './views/Header'
+import Experiences from './views/pages/Experiences';
+import About from './views/pages/About';
+import Projects from './views/pages/Projects';
+import Skills from './views/pages/Competences';
+import Home from './views/pages/Home';
+import Contact from './views/pages/Contact';
+import GameOfLife from './views/projects/GameOfLife';
+import { hidePresScreen, switchNav } from './helpers/Scroll';
 import './assets/css/main.css';
 
 const App = () => {
     const { t } = useTranslation();
     const [index, setIndex] = useState(1);
     const transition = useRef(null);
-    const colorTab = useMemo(() => ["green", "brown", "blue", "red", "purple"], []);
+    const colorTab = useMemo(() => ["green", "brown", "blue", "red", "purple", "black"], []);
 
     useEffect(() => {
         document.addEventListener('scroll', checkScroll)
@@ -32,7 +34,7 @@ const App = () => {
         checkScroll();
     }, [colorTab, index])
 
-    const checkScroll = () => {
+     const checkScroll = () => {
         const ref_img = document.getElementById("ref-img");
         const ref_title = document.getElementById("ref-title");
         const ref_chevron = document.getElementById("ref-chevron");
@@ -56,6 +58,8 @@ const App = () => {
                 <Route path="/experiences" element={<Experiences updateIndex={updateIndex} t={t} />} />
                 <Route path="/about" element={<About updateIndex={updateIndex} t={t} />} />
                 <Route path="/projects" element={<Projects updateIndex={updateIndex} t={t} />} />
+                <Route path="/contact" element={<Contact updateIndex={updateIndex} t={t} />} />
+                <Route path="/projects/game-of-life" element={<GameOfLife t={t} />} />
             </Routes>
         </div>
     );

@@ -1,0 +1,19 @@
+#project-sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 10;
+    padding-right: 1rem;
+    font-size: 1.25rem;
+
+    span {
+        line-height: .8;
+    }
+
+    i {
+        line-height: .8;
+        font-size: 4rem;
+        transform: rotate(90deg);
+    }
+}

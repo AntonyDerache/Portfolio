@@ -4,12 +4,13 @@ import { useTranslation } from 'react-i18next';
 import Header from './views/Header'
 import Experiences from './views/pages/Experiences';
 import About from './views/pages/About';
-import Projects from './views/pages/Projects';
+import Work from './views/pages/Work';
 import Skills from './views/pages/Competences';
 import Home from './views/pages/Home';
 import Contact from './views/pages/Contact';
-import GameOfLife from './views/projects/GameOfLife';
+import Project from './views/pages/Project';
 import { hidePresScreen, switchNav } from './helpers/Scroll';
+import { projectsData } from './helpers/ProjectsData';
 import './assets/css/main.css';
 
 const App = () => {
@@ -38,7 +39,7 @@ const App = () => {
         const ref_img = document.getElementById("ref-img");
         const ref_title = document.getElementById("ref-title");
         const ref_chevron = document.getElementById("ref-chevron");
-        const ref_nav = document.getElementById("nav");
+        const ref_nav = document.getElementById("header");
         hidePresScreen(ref_img, ref_title, ref_chevron);
         switchNav(ref_nav);
     }
@@ -57,9 +58,13 @@ const App = () => {
                 <Route path="/skills" element={<Skills updateIndex={updateIndex} t={t} />} />
                 <Route path="/experiences" element={<Experiences updateIndex={updateIndex} t={t} />} />
                 <Route path="/about" element={<About updateIndex={updateIndex} t={t} />} />
-                <Route path="/projects" element={<Projects updateIndex={updateIndex} t={t} />} />
+                <Route path="/projects" element={<Work updateIndex={updateIndex} t={t} />} />
                 <Route path="/contact" element={<Contact updateIndex={updateIndex} t={t} />} />
-                <Route path="/projects/game-of-life" element={<GameOfLife t={t} />} />
+                <Route path="/projects/game-of-life" element={<Project t={t} updateIndex={updateIndex} data={projectsData.gameOfLife} />} />
+                <Route path="/projects/brawhalla" element={<Project t={t} updateIndex={updateIndex} data={projectsData.brawhalla} />} />
+                <Route path="/projects/epitech-jam" element={<Project t={t} updateIndex={updateIndex} data={projectsData.epitechJam} />} />
+                <Route path="/projects/api-save" element={<Project t={t} updateIndex={updateIndex} data={projectsData.apiSave} />} />
+                <Route path="/projects/epicture" element={<Project t={t} updateIndex={updateIndex} data={projectsData.epicture} />} />
             </Routes>
         </div>
     );

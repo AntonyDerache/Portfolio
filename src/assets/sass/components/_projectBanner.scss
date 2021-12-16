@@ -1,5 +1,3 @@
-@import '../utilities/variables';
-
 .project-banner {
     height: 33.33vh;
     overflow: hidden;
@@ -22,40 +20,19 @@
     }
 
     .opac-bg {
-        background-color: $red;
-        opacity: .9;
+        background-color: $dark-red;
+        opacity: .8;
         filter: none !important;
         transition: .5s ease-out;
     }
 
     h2 {
         z-index: 2;
+        font-size: 5rem;
     }
 
     span {
         color: white;
         font-weight: 300;
     }
-
-    .uj {
-        background-image: url("../images/preview-brawhalla.png"); }
-    .ggj {
-        background-image: url("../images/epitechjam-background.png"); }
-    .sk {
-        background-image: url("../images/skipty-background.png"); }
-    .bomberman {
-        background-image: url("../images/bomberman-background.png"); }
-    .epytodo {
-        background-image: url("../images/epytodo-background.png"); }
-    .epicture {
-        background-image: url("../images/epicture-background.png"); }
-}
-
-.skew-left {
-    transform: skew(0, -1deg);
-}
-
-
-.skew-right {
-    transform: skew(-1deg, 0);
 }

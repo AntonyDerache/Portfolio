@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import { Link } from "react-router-dom";
-// import Card from '../../components/Cards'
 import PresentationScreen from '../../components/PresentationScreen';
 import ProjectBanner from '../../components/ProjectBanner';
+import { bannerProjectsData } from '../../helpers/ProjectsData';
 
 const Projects = ({updateIndex, t}) => {
     useEffect(() => {
@@ -10,16 +10,18 @@ const Projects = ({updateIndex, t}) => {
     }, [updateIndex])
 
     return (
-        <div id="projects" className="pages w-100 h-100">
+        <div id="work" className="pages w-100 h-100">
             <PresentationScreen title={[t("projects.title")]} />
             <div className="content w-100 h-100 red d-flex flex-column">
-                <Link to={`/projects/game-of-life`}>
-                    <ProjectBanner classBg="ggj" title="Game of life"/>
-                </Link>
-                <ProjectBanner classBg="uj" title="Brawhalla"/>
-                <ProjectBanner classBg="epicture" title="Epicture"/>
-                <ProjectBanner classBg="bomberman" title="Bomberman"/>
-                <ProjectBanner classBg="sk" title="Skipty"/>
+                {
+                    bannerProjectsData && bannerProjectsData.map((item, i) => {
+                        return (
+                            <Link to={`/projects/${item.url}`} key={i}>
+                                <ProjectBanner classBg={item.classBg} title={t(`projects.${item.title}.name`)}/>
+                            </Link>
+                        )
+                    })
+                }
             </div>
         </div>
     );

@@ -43,7 +43,7 @@
 @keyframes fade_header {
     0% {
         opacity: 0;
-        top: -50px;
+        top: -100px;
     }
     100% {
         opacity: 1;
@@ -58,7 +58,7 @@
     }
     100% {
         opacity: 0;
-        top: -50px;
+        top: -100px;
     }
 }
 
@@ -112,7 +112,7 @@
 
 .hide-nav {
     animation: fade_out_header 1s ease-in-out;
-    top: -50px;
+    top: -100px;
     opacity: 0;
 }
 

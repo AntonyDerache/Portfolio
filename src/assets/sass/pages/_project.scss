@@ -1,0 +1,36 @@
+.project-layout {
+    padding-top: $header-height;
+    background: linear-gradient(-360deg, $red, $light-red);
+
+    h2 {
+        font-size: 5rem;
+        padding-top: 3rem;
+        text-shadow: 0px 0px 10px rgba(0, 0,0, .5);
+    }
+
+    i {
+        font-size: 3rem;
+    }
+
+    #caroussel {
+        margin: 4rem 0;
+        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.4);
+        border-radius: 6px;
+
+        div {
+            border-radius: 6px;
+        }
+    }
+
+    .project-description {
+        font-size: 1.5rem;
+
+        .value {
+            padding-bottom: 1.5rem;
+        }
+
+        p {
+            color: rgb(243, 243, 243);
+        }
+    }
+}

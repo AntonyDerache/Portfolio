@@ -29,14 +29,14 @@ export const hidePresScreen = (img, title, chevron, scrollAmount = getYScrollAmo
     }
 }
 
-export const switchNav = (nav, scrollAmount = getYScrollAmount()) => {
-    if (nav) {
+export const switchNav = (header, scrollAmount = getYScrollAmount()) => {
+    if (header) {
         if (scrollAmount > 50) {
-            nav.classList.add("hide-nav");
-            nav.classList.remove("show-nav");
+            header.classList.add("hide-nav");
+            header.classList.remove("show-nav");
         } else {
-            nav.classList.remove("hide-nav");
-            nav.classList.add("show-nav");
+            header.classList.remove("hide-nav");
+            header.classList.add("show-nav");
         }
     }
 }

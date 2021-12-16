@@ -4,7 +4,7 @@
         "skills": "skills",
         "experiences": "experiences",
         "educations": "educations",
-        "projects": "projects",
+        "work": "projects",
         "about": "about",
         "en": "en",
         "fr": "fr"
@@ -13,7 +13,7 @@
         "hello": "Hi, I'm",
         "name": "Antony",
         "job1": "Game developer",
-        "job2": "Web develeper"
+        "job2": "Web developer"
     },
     "skills": {
         "title": "Skills",
@@ -57,7 +57,40 @@
         }
     },
     "projects": {
-        "title": "Projects"
+        "title": "Projects",
+        "year": "Year",
+        "genre": "Genre",
+        "what": "What",
+        "epicture": {
+            "name": "Epicture",
+            "genre": "Mobil app",
+            "what": "Project developed with react native for an Epitech's 3rd year project",
+            "description": "Based on already existing app: Imgur, the purpose of the project is to remake a soft version of this app with its basic features using Imgur's API (Categories, add photos, takes photos, user profile, fav, like, comments, research, sort)"
+        },
+        "brawhalla": {
+            "name": "Brawhalla",
+            "genre": "3D Video game",
+            "what": "Project developed with Unity in a context of a game jam within my university",
+            "description": "For theme: 'Space', we went on a Super Smash Bros game like in the space. Having for only capacity a dash, the goal is to throw out of the viewport the other players"
+        },
+        "epitechJam": {
+            "name": "Epitech jam",
+            "genre": "3D Video game",
+            "what": "Project develped with Unity in a context of a game jam within my university",
+            "description": "For theme:"
+        },
+        "gameOfLife": {
+            "name": "Game of life",
+            "genre": "Simulation game",
+            "what": "Project developed with Unity in the context of a game project at my Croatian university",
+            "description": "The Game of Life, is a cellular automaton devised by the British mathematician John Horton Conway in 1970. It is a zero-player game, meaning that its evolution is determined by its initial state. The game follows simple rules that define the living or dead state of a cell"
+        },
+        "apiSave": {
+            "name": "API save",
+            "genre": "APIs",
+            "what": "Project developed with nodeJS in a context of an internship project",
+            "description": "The purpose is to save the databases of clients on a company's server. The project is made of one server which stores the saves of each client as well as a unique API installed on each client's server, which creates the saves and send them to the storage server"
+        }
     },
     "about": {
         "title": "About",

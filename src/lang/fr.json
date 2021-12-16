@@ -13,7 +13,7 @@
         "hello": "Antony",
         "name": "Derache",
         "job1": "Game developer",
-        "job2": "Web develeper"
+        "job2": "Web developer"
     },
     "skills": {
         "title": "Compétences",
@@ -58,7 +58,40 @@
         }
     },
     "projects": {
-        "title": "Projets"
+        "title": "Projets",
+        "year": "Année",
+        "genre": "Genre",
+        "what": "Description",
+        "epicture": {
+            "name": "Epicture",
+            "genre": "Application mobile",
+            "what": "Projet réalisé sous react native dans le cadre d'un projet de 3e année au sein d'Epitech",
+            "description": "Basé sur l'application déjà existante: Imgur, le projet est de recréer une version soft de l'application avec ses features de base en utilisant API Imgur (Catégories, ajouter des photos, prendre des photos, profil utilisateur, fav, like, commentaires, rechercher, trier)"
+        },
+        "brawhalla": {
+            "name": "Brawhalla",
+            "genre": "Jeu vidéo 3D",
+            "what": "Projet réalisé sous Unity dans le cadre d'une game jam au sein d'Epitech ",
+            "description": "Sous le thème: 'espace', nous sommes partis sur un Super Smash Bros game like dans l'espace. Ayant comme seule capacité un dash, l'objectif est simplement de pousser vos adversaires en dehors de l'écran"
+        },
+        "epitechJam": {
+            "name": "Epitech Jam",
+            "genre": "Jeu vidéo 3D",
+            "what": "Projet réalisé sous Unity dans le cadre d'une game jam au sein d'Epitech ",
+            "description": "Sous le thème"
+        },
+        "gameOfLife": {
+            "name": "Game of life",
+            "genre": "Jeu de simulation",
+            "what": "Projet réalisé sous Unity dans le cadre d'un projet de mon université Croate",
+            "description": "Le jeu de la vie est un automate cellulaire imaginé par John Horton Conway en 1970. C'est un jeu de simulation au sens mathématique. Le jeu est régi par des règles très simples qui définissent l'état vivant ou mort d'une cellule"
+        },
+        "apiSave": {
+            "name": "API sauvegarde",
+            "genre": "APIs",
+            "what": "Projet réalisé en nodeJS dans le cadre de mon stage chez SoBook",
+            "description": "L'objectif de ce projet est de sauvegarder les bases de données de clients sur un serveur de l'entreprise. Le projet est composé d'un serveur qui stocke les sauvegardes de chaque client ainsi qu'une API installé sur chaque serveur de clients qui effectue les sauvegardes et les envois au serveur de stockage"
+        }
     },
     "about": {
         "title": "À propos",

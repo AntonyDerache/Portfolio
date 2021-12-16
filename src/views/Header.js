@@ -38,7 +38,6 @@ const Header = (props) => {
     }
 
     const handleSwap = value => {
-        // console.log(document.getElementsByClassName("tab"))
         document.getElementsByClassName("tab")[index - 1].classList.remove("underlined");
         document.getElementsByClassName("tab")[value - 1].classList.add("underlined");
         // if (window.innerWidth < 1024)
@@ -92,7 +91,7 @@ const Header = (props) => {
                             <span></span>
                         </span>
                     }
-                    <ul id="nav-bar" className="d-flex justify-content-center">
+                    <ul id="nav-bar" className="d-flex justify-content-center align-items-center">
                         {buildTabNavigation()}
                         <div className="languages">
                             <Link

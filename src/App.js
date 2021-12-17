@@ -14,17 +14,21 @@ import { projectsData } from './helpers/ProjectsData';
 import './assets/css/main.css';
 
 const App = () => {
-    const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
     const [index, setIndex] = useState(1);
     const transition = useRef(null);
-    const colorTab = useMemo(() => ["green", "brown", "blue", "red", "purple", "black"], []);
+    const colorTab = useMemo(() => ["green", "brown", "blue", "red", "purple"], []);
 
     useEffect(() => {
+        var lang = localStorage.getItem("lang");
+        if (lang) {
+            i18n.changeLanguage(lang);
+        }
         document.addEventListener('scroll', checkScroll)
         return () => {
             document.removeEventListener('scroll', checkScroll);
         }
-    }, [])
+    }, [i18n])
 
     useEffect(() => {
         const classListLength = transition.current.classList.length

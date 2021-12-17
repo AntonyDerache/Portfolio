@@ -3,71 +3,73 @@
     position: fixed;
     z-index: 100;
     transition: .3s ease-in-out;
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: 992px) {
         padding: 0 $global-padding;
+        height: $header-height-lg;
+    }
+
+    ul {
+        display: flex;
+        align-items: space-around;
     }
 
     #nav {
         position: relative;
         display: flex;
         flex-flow: row;
+        font-size: 2rem;
+        @media screen and (min-width: 1200px) {
+            font-size: 2.5rem;
+        }
 
         .navBrand {
             width: 30%;
         }
 
         .end-nav {
+            position: relative;
             align-items: center;
             justify-content: center;
-            padding-right: 2rem;
             display: flex;
             color: white;
+            @media screen and (min-width: 992px) {
+                padding-right: 2rem;
+            }
 
             .languages {
-                position: absolute;
-                top: 25%;
-                right: 0;
-                @media screen and (max-width: 1024px) {
-                    padding: 1.5rem;
-                    bottom: 0;
+                text-align: center;
+                color: black;
+                font-weight: 700;
+                @media screen and (min-width: 992px) {
+                    font-weight: 500;
+                    color: white;
+                    padding: 0;
+                    position: absolute;
+                    right: 0;
+                    left: auto;
                 }
             }
 
-            #burger {
-                color: white;
-                background-color: transparent;
-                position: relative;
-                z-index: 10;
-                transform: scale(1.5);
+            ul {
+                @media screen and (max-width: 991px) {
+                    padding: 0;
+                }
             }
 
             #nav-bar {
-                font-size: 2.5rem;
-                display: flex;
                 position: relative;
                 width: 100%;
                 height: 100%;
-                @media screen and (max-width: 1023px) {
-                    background: linear-gradient(130deg, rgba(13, 79, 82, .85), rgba(38, 117, 128, .85));
-                    position: absolute;
-                    top: 0;
-                    right: 0;
-                    height: 100vh;
-                    width: 100vw;
-                    padding: 5rem 2rem;
-                    display: none;
-                }
 
                 li {
                     a {
-                        font-size: 2.5rem;
                         display: flex;
                         align-items: center;
                     }
                 }
 
                 a {
-                    @media screen and (min-width: 1024px) {
+                    @media screen and (min-width: 992px) {
                         position: relative;
                         padding-bottom: .3rem;
                         color: #fff;
@@ -99,9 +101,8 @@
                 }
 
                 li {
-                    padding: 1rem 2rem;
-                    @media screen and (min-width: 1024px) {
-                        display: inline;
+                    @media screen and (min-width: 992px) {
+                        padding: 1rem 2rem;
                     }
                 }
             }

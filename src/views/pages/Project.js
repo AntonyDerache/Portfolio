@@ -21,12 +21,12 @@ const GameOfLife = ({updateIndex, t, data}) => {
                                 </h2>
                         }
                     </div>
-                    <div className="col-8">
+                    <div className="col-xl-8">
                         {
                             data.pictures && <Caroussel image={data.pictures} />
                         }
                     </div>
-                    <div className="col-4 project-description d-flex justify-content-center flex-column ps-5">
+                    <div className="col-xl-4 project-description d-flex justify-content-center flex-column ps-xl-5">
                         <div className="fw-bold">{t(`projects.year`)}</div>
                         <p className="value">{data.year}</p>
                         <div className="fw-bold">{t(`projects.genre`)}</div>

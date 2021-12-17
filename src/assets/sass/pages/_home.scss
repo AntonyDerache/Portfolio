@@ -11,10 +11,17 @@
     }
 
     .subtitle {
-        font-size: 4rem;
+        font-size: 2rem;
         text-transform: none;
-        color: #457680;
-        text-shadow: 2px 1px 5px rgb(127, 156, 151);
-        font-weight: 500;
+        color: #ffffff;
+        text-shadow: 2px 1px 5px rgba(0, 0, 0, 1);
+        @media (min-width: 768px) {
+            font-size: 3rem;
+        }
+        @media (min-width: 992px) {
+            text-shadow: 2px 1px 10px rgba(97, 116, 112, .6);
+            font-size: 4rem;
+            color: #457680;
+        }
     }
 }

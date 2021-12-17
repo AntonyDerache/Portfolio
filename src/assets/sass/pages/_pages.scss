@@ -4,15 +4,29 @@
     .title {
         z-index: 12;
         position: relative;
-        font-size: 15rem;
+        font-size: 3rem;
         color: white;
         line-height: 1;
         text-transform: uppercase;
-
+        @media (min-width: 576px) {
+            font-size: 5rem;
+        }
+        @media (min-width: 768px) {
+            font-size: 7rem;
+        }
+        @media (min-width: 1200px) {
+            font-size: 12rem;
+        }
+        @media (min-width: 1400px) {
+            font-size: 15rem;
+        }
     }
 
     span, i {
-        text-shadow: 2px 1px 10px rgba(27, 27, 27, .4);
+        text-shadow: 2px 1px 15px rgba(27, 27, 27, .7);
+        @media (min-width: 992px) {
+            text-shadow: 2px 1px 25px rgba(27, 27, 27, .5);
+        }
     }
 
     .title-container {
@@ -20,7 +34,7 @@
         height: 100vh;
 
         .img-container {
-            opacity: .6;
+            opacity: .5;
             position: absolute;
             max-width: 900px;
             max-height: 600px;
@@ -32,6 +46,10 @@
             top: 0;
             margin: auto;
             z-index: 11;
+            @media (min-width: 992px) {
+                opacity: .5;
+                font-size: 15rem;
+            }
         }
 
         i {

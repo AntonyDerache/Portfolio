@@ -8,7 +8,13 @@
 
     &:hover {
         animation: balance_hover 1s ease-in-out;
+        -o-animation: balance_hover 1s ease-in-out;
+        -moz-animation: balance_hover 1s ease-in-out;
+        -webkit-animation: balance_hover 1s ease-in-out;
         animation-iteration-count: infinite;
+        -o-animation-iteration-count: infinite;
+        -moz-animation-iteration-count: infinite;
+        -webkit-animation-iteration-count: infinite;
     }
 
     span {

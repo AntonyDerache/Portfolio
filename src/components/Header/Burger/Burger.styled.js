@@ -4,8 +4,12 @@ export const StyledBurger = styled.button`
   position: absolute;
   right: 2.5rem;
   display: flex;
+  display: -webkit-flex;
   flex-direction: column;
+  -ms-flex-direction: column;
+  -webkit-flex-direction: column;
   justify-content: space-around;
+  -ms-flex-pack: distribute;
   width: 2.5rem;
   height: 2.5rem;
   background: transparent;
@@ -19,6 +23,9 @@ export const StyledBurger = styled.button`
     background: ${({ open }) => open ? "black" : "white"};
     border-radius: 10px;
     transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
     position: relative;
     transform-origin: right;
     :first-child {

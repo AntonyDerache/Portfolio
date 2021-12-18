@@ -3,8 +3,6 @@
     position: fixed;
     z-index: 100;
     transition: .3s ease-in-out;
-    -o-transition: .3s ease-in-out;
-    -moz-transition: .3s ease-in-out;
     -webkit-transition: .3s ease-in-out;
     @media screen and (min-width: 992px) {
         padding: 0 $global-padding;
@@ -99,23 +97,17 @@
                             background-color: #fff;
                             visibility: hidden;
                             transform: scaleX(0);
-                            -o-transform: scaleX(0);
                             -ms-transform: scaleX(0);
                             -webkit-transform: scaleX(0);
-                            -moz-transform: scaleX(0);
                             transition: all 0.3s ease-in-out 0s;
-                            -o-transition: all 0.3s ease-in-out 0s;
-                            -moz-transition: all 0.3s ease-in-out 0s;
                             -webkit-transition: all 0.3s ease-in-out 0s;
                         }
 
                         &:hover::before {
                             visibility: visible;
                             transform: scaleX(1);
-                            -o-transform: scaleX(1);
                             -ms-transform: scaleX(1);
                             -webkit-transform: scaleX(1);
-                            -moz-transform: scaleX(1);
                         }
                     }
                 }

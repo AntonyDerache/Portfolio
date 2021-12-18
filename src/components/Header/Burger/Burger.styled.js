@@ -23,8 +23,6 @@ export const StyledBurger = styled.button`
     background: ${({ open }) => open ? "black" : "white"};
     border-radius: 10px;
     transition: all 0.3s linear;
-    -o-transition: all 0.3s linear;
-    -moz-transition: all 0.3s linear;
     -webkit-transition: all 0.3s linear;
     position: relative;
     transform-origin: right;

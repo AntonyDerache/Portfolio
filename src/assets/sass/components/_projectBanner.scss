@@ -7,18 +7,14 @@
         background-position: center;
         background-size: cover;
         transition: .5s ease-out;
-        -o-transition: .5s ease-out;
-        -moz-transition: .5s ease-out;
         -webkit-transition: .5s ease-out;
     }
 
     &:hover {
         .bg {
             transform: scale(1.05, 1.05);
-            -o-transform: scale(1.05, 1.05);
             -ms-transform: scale(1.05, 1.05);
             -webkit-transform: scale(1.05, 1.05);
-            -moz-transform: scale(1.05, 1.05);
         }
 
         .opac-bg {
@@ -31,8 +27,6 @@
         opacity: .8;
         filter: none !important;
         transition: .5s ease-out;
-        -o-transition: .5s ease-out;
-        -moz-transition: .5s ease-out;
         -webkit-transition: .5s ease-out;
     }
 

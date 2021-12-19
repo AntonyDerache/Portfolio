@@ -1,17 +1,3 @@
-import GameOfLife1 from '../assets/images/gameoflife-1.JPG'
-import GameOfLife2 from '../assets/images/gameoflife-2.JPG'
-import GameOfLife3 from '../assets/images/gameoflife-3.JPG'
-import GameOfLife4 from '../assets/images/gameoflife-4.JPG'
-import AstroBrawl1 from '../assets/images/astro-brawl-1.png'
-import AstroBrawl2 from '../assets/images/astro-brawl-2.png'
-import AstroBrawl3 from '../assets/images/astro-brawl-3.png'
-import EpitechJam1 from '../assets/images/epitech-jam-1.JPG'
-import EpitechJam2 from '../assets/images/epitech-jam-2.JPG'
-import EpitechJam3 from '../assets/images/epitech-jam-3.JPG'
-import EpitechJam4 from '../assets/images/epitech-jam-4.JPG'
-import Epicture from '../assets/images/epicture-background.png'
-import Api1 from '../assets/images/API-1.png'
-
 export const bannerProjectsData = [
     {
         classBg: "gol",
@@ -50,19 +36,19 @@ export const projectsData = {
         description: "description",
         pictures: [
             {
-                img: GameOfLife1,
+                img: "/images/gameoflife-1.JPG",
                 alt: "game-of-life-1"
             },
             {
-                img: GameOfLife2,
+                img: "/images/gameoflife-2.JPG",
                 alt: "game-of-life-2"
             },
             {
-                img: GameOfLife3,
+                img: "/images/gameoflife-3.JPG",
                 alt: "game-of-life-3"
             },
             {
-                img: GameOfLife4,
+                img: "/images/gameoflife-4.JPG",
                 alt: "game-of-life-4"
             },
         ],
@@ -76,15 +62,15 @@ export const projectsData = {
         description: "description",
         pictures: [
             {
-                img: AstroBrawl1,
+                img: "/images/astro-brawl-1.png",
                 alt: "astrobrawl-1"
             },
             {
-                img: AstroBrawl2,
+                img: "/images/astro-brawl-2.png",
                 alt: "astrobraw-2"
             },
             {
-                img: AstroBrawl3,
+                img: "/images/astro-brawl-3.png",
                 alt: "astrobrawl-3"
             },
         ],
@@ -97,19 +83,19 @@ export const projectsData = {
         description: "description",
         pictures: [
             {
-                img: EpitechJam4,
+                img: "/images/epitech-jam-4.JPG",
                 alt: "epitechJam-4"
             },
             {
-                img: EpitechJam2,
+                img: "/images/epitech-jam-2.JPG",
                 alt: "epitechJam-2"
             },
             {
-                img: EpitechJam3,
+                img: "/images/epitech-jam-3.JPG",
                 alt: "epitechJam-3"
             },
             {
-                img: EpitechJam1,
+                img: "/images/epitech-jam-1.JPG",
                 alt: "epitechJam-1"
             },
         ],
@@ -122,7 +108,7 @@ export const projectsData = {
         description: "description",
         pictures: [
             {
-                img: Api1,
+                img: "/images/API-1.png",
                 alt: "api-1"
             }
         ],
@@ -135,7 +121,7 @@ export const projectsData = {
         description: "description",
         pictures: [
             {
-                img: Epicture,
+                img: "/images/epicture-background.png",
                 alt: "epicture"
             }
         ],

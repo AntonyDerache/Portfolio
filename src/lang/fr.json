@@ -12,8 +12,8 @@
     "home": {
         "hello": "Antony",
         "name": "Derache",
-        "job1": "Game developer",
-        "job2": "Web developer"
+        "job1": "Game développeur",
+        "job2": "Web développeur"
     },
     "skills": {
         "title": "Compétences",
@@ -38,17 +38,17 @@
         "title": "Expériences",
         "sobook": {
             "date": "2021 avril - juillet",
-            "job": "Developpeur fullstack chez SoBook",
-            "description": "Stage de 4 mois en tant que developpeur fullstack au sein de l'entreprise SoBook"
+            "job": "Développeur fullstack chez SoBook",
+            "description": "Stage de 4 mois en tant que développeur fullstack au sein de l'entreprise SoBook"
         },
         "trackap": {
             "date": "2020 octobre - 2021 mars",
-            "job": "Developpeur front chez Trackap",
+            "job": "Développeur front chez Trackap",
             "description": "Part-time 6 mois en tant que développeur web front-end au sein de la jeune entreprise Trackap"
         },
         "skipty": {
             "date": "2019 juillet - decembre",
-            "job": "Developpeur fullstack chez Skipty",
+            "job": "Développeur fullstack chez Skipty",
             "description": "Stage 6 mois en tant que développeur web au sein de la startup Skipty"
         },
         "delpharm": {

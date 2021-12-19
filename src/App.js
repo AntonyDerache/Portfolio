@@ -65,7 +65,7 @@ const App = () => {
                 <Route path="/projects" element={<Work updateIndex={updateIndex} t={t} />} />
                 <Route path="/contact" element={<Contact updateIndex={updateIndex} t={t} />} />
                 <Route path="/projects/game-of-life" element={<Project t={t} updateIndex={updateIndex} data={projectsData.gameOfLife} />} />
-                <Route path="/projects/brawhalla" element={<Project t={t} updateIndex={updateIndex} data={projectsData.brawhalla} />} />
+                <Route path="/projects/astro-brawl" element={<Project t={t} updateIndex={updateIndex} data={projectsData.astroBrawl} />} />
                 <Route path="/projects/epitech-jam" element={<Project t={t} updateIndex={updateIndex} data={projectsData.epitechJam} />} />
                 <Route path="/projects/api-save" element={<Project t={t} updateIndex={updateIndex} data={projectsData.apiSave} />} />
                 <Route path="/projects/epicture" element={<Project t={t} updateIndex={updateIndex} data={projectsData.epicture} />} />

@@ -1,6 +1,5 @@
 import React from 'react';
 import { VerticalTimelineElement } from 'react-vertical-timeline-component';
-import PropTypes from 'prop-types';
 import 'react-vertical-timeline-component/style.min.css';
 
 const ExperienceElement = (props) => {
@@ -25,14 +24,6 @@ const ExperienceElement = (props) => {
             </p>
         </VerticalTimelineElement>
     )
-}
-
-ExperienceElement.propTypes = {
-    skillsName: PropTypes.array,
-    backColor: PropTypes.string.isRequired,
-    title: PropTypes.string.isRequired,
-    substitle: PropTypes.string.isRequired,
-    description: PropTypes.string.isRequired,
 }
 
 export default ExperienceElement;

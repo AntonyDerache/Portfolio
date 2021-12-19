@@ -68,17 +68,17 @@
             "what": "Projet réalisé sous react native dans le cadre d'un projet de 3e année au sein d'Epitech",
             "description": "Basé sur l'application déjà existante: Imgur, le projet est de recréer une version soft de l'application avec ses features de base en utilisant API Imgur (Catégories, ajouter des photos, prendre des photos, profil utilisateur, fav, like, commentaires, rechercher, trier)"
         },
-        "brawhalla": {
-            "name": "Brawhalla",
+        "astroBrawl": {
+            "name": "Astro Brawl",
             "genre": "Jeu vidéo 3D",
             "what": "Projet réalisé sous Unity dans le cadre d'une game jam au sein d'Epitech ",
-            "description": "Sous le thème: 'espace', nous sommes partis sur un Super Smash Bros game like dans l'espace. Ayant comme seule capacité un dash, l'objectif est simplement de pousser vos adversaires en dehors de l'écran"
+            "description": "Sous le thème: 'espace', nous sommes partis sur un Super Smash Bros game like dans l'espace (2 à 4 joueurs). Ayant comme seule capacité un dash, l'objectif est de pousser vos adversaires en dehors de l'écran afin de les éliminer"
         },
         "epitechJam": {
             "name": "Epitech Jam",
             "genre": "Jeu vidéo 3D",
             "what": "Projet réalisé sous Unity dans le cadre d'une game jam au sein d'Epitech ",
-            "description": "Sous le thème"
+            "description": "Sous le thème: 'recherche', nous sommes partis sur un jeu genre escape game. Coincé dans le tombeau d'un ancien pharaon, vous devrez trouver les indices qui vous permettrons d'ouvrir la porte scellé!"
         },
         "gameOfLife": {
             "name": "Game of life",

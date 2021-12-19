@@ -67,17 +67,17 @@
             "what": "Project developed with react native for an Epitech's 3rd year project",
             "description": "Based on already existing app: Imgur, the purpose of the project is to remake a soft version of this app with its basic features using Imgur's API (Categories, add photos, takes photos, user profile, fav, like, comments, research, sort)"
         },
-        "brawhalla": {
-            "name": "Brawhalla",
+        "astroBrawl": {
+            "name": "Astro Brawl",
             "genre": "3D Video game",
             "what": "Project developed with Unity in a context of a game jam within my university",
-            "description": "For theme: 'Space', we went on a Super Smash Bros game like in the space. Having for only capacity a dash, the goal is to throw out of the viewport the other players"
+            "description": "For theme: 'space', we went on a Super Smash Bros game like in the space (up to 4 players). Having for only capacity a dash, the goal is to throw out of the viewport the other players to eliminate them"
         },
         "epitechJam": {
             "name": "Epitech jam",
             "genre": "3D Video game",
             "what": "Project develped with Unity in a context of a game jam within my university",
-            "description": "For theme:"
+            "description": "For theme: 'seek', we went on an solo escape game type game. Stuck inside the tomb oh a pharaon, you will have to find the different clues if you wish exit the tomb!"
         },
         "gameOfLife": {
             "name": "Game of life",

@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { Link } from "react-router-dom";
 import Caroussel from '../../components/Caroussel';
 
 const GameOfLife = ({updateIndex, t, data}) => {
@@ -10,6 +11,9 @@ const GameOfLife = ({updateIndex, t, data}) => {
         <div className="project-layout content">
             <div className="container">
                 <div className="row">
+                    <Link to="/projects">
+                        <i className="bi bi-arrow-left-circle"></i>
+                    </Link>
                     <div className="d-flex">
                         <h2 className="fw-light d-flex">{t(`projects.${data.name}.name`)}</h2>
                         {

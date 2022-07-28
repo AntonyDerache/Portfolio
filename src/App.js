@@ -11,7 +11,7 @@ import Contact from './views/pages/Contact';
 import Project from './views/pages/Project';
 import { hidePresScreen, switchNav } from './helpers/Scroll';
 import { projectsData } from './helpers/ProjectsData';
-import './assets/css/main.css';
+import './assets/sass/main.scss';
 
 const App = () => {
     const { t, i18n } = useTranslation();

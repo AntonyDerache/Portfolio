@@ -47,7 +47,11 @@ export const projectsData = {
     //         },
     //         ...
     //     ],
-    //     github: "github link (not mandatory)"
+    //     github: "github link (not mandatory)",
+    //     installer: {
+    //         mac: "installer.dmg",
+    //         win: "installer.exe",
+    //     }
     // },
     forestBoy: {
         name: "forestBoy",
@@ -77,6 +81,10 @@ export const projectsData = {
                 alt: "forest-boy-4"
             },
         ],
+        installer: {
+            mac: "ForestBoy.dmg",
+            win: "ForestBoySetup.exe",
+        },
     },
     gameOfLife: {
         name: "gameOfLife",
@@ -102,7 +110,7 @@ export const projectsData = {
                 alt: "game-of-life-4"
             },
         ],
-        github: "https://github.com/AntonyDerache/game-of-life"
+        github: "https://github.com/AntonyDerache/game-of-life",
     },
     astroBrawl: {
         name: "astroBrawl",

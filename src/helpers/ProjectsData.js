@@ -16,9 +16,9 @@ export const bannerProjectsData = [
 
     },
     {
-        classBg: "epi-jam",
-        title: "epitechJam",
-        url: "epitech-jam"
+        classBg: "rewinder",
+        title: "rewinder",
+        url: "rewinder"
     },
     {
         classBg: "api-save",
@@ -133,28 +133,28 @@ export const projectsData = {
             },
         ],
     },
-    epitechJam: {
-        name: "epitechJam",
-        year: "2019",
+    rewinder: {
+        name: "rewinder",
+        year: "2020",
         genre: "genre",
         what: "what",
         description: "description",
         pictures: [
             {
-                img: "/images/epitech-jam-4.JPG",
-                alt: "epitechJam-4"
+                img: "/images/rewinder-1.png",
+                alt: "rewinderGame-4"
             },
             {
-                img: "/images/epitech-jam-2.JPG",
-                alt: "epitechJam-2"
+                img: "/images/rewinder-2.png",
+                alt: "rewinderGame-2"
             },
             {
-                img: "/images/epitech-jam-3.JPG",
-                alt: "epitechJam-3"
+                img: "/images/rewinder-3.png",
+                alt: "rewinderGame-3"
             },
             {
-                img: "/images/epitech-jam-1.JPG",
-                alt: "epitechJam-1"
+                img: "/images/rewinder-4.png",
+                alt: "rewinderGame-1"
             },
         ],
     },

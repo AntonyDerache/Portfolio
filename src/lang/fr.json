@@ -80,11 +80,11 @@
             "what": "Projet réalisé sous Unity dans le cadre d'une game jam au sein d'Epitech ",
             "description": "Sous le thème: 'espace', nous sommes partis sur un Super Smash Bros game like dans l'espace (2 à 4 joueurs). Ayant comme seule capacité un dash, l'objectif est de pousser vos adversaires en dehors de l'écran afin de les éliminer"
         },
-        "epitechJam": {
-            "name": "Epitech Jam",
+        "rewinder": {
+            "name": "Rewinder",
             "genre": "Jeu vidéo 3D",
-            "what": "Projet réalisé sous Unity dans le cadre d'une game jam au sein d'Epitech ",
-            "description": "Sous le thème: 'recherche', nous sommes partis sur un jeu genre escape game. Coincé dans le tombeau d'un ancien pharaon, vous devrez trouver les indices qui vous permettrons d'ouvrir la porte scellé!"
+            "what": "Projet réalisé sous Unity dans le cadre d'une game jam",
+            "description": "Sous le thème: 'temporalité', nous sommes partis sur un jeu Aventure à énigmes. Dans un château dont le roi est ensorcelé par un sort, parcourez, évitez et succédez aux énigmes en remontant le temps grace à votre pouvoir surnaturel !"
         },
         "gameOfLife": {
             "name": "Game of life",

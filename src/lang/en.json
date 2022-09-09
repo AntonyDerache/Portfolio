@@ -79,11 +79,11 @@
             "what": "Project developed with Unity in a context of a game jam within my university",
             "description": "For theme: 'space', we went on a Super Smash Bros game like in the space (up to 4 players). Having for only capacity a dash, the goal is to throw out of the viewport the other players to eliminate them"
         },
-        "epitechJam": {
-            "name": "Epitech jam",
+        "rewinder": {
+            "name": "Rewinder",
             "genre": "3D Video game",
-            "what": "Project develped with Unity in a context of a game jam within my university",
-            "description": "For theme: 'seek', we went on an solo escape game type game. Stuck inside the tomb oh a pharaon, you will have to find the different clues if you wish exit the tomb!"
+            "what": "Project develped with Unity in a context of a game jam",
+            "description": "For theme: 'temporality', we went on an solo Adventure and enigma game. In a castle with a witched king, explore, avoid and succeed the enigmas using your back in time power!"
         },
         "gameOfLife": {
             "name": "Game of life",

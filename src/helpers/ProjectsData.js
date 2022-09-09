@@ -1,4 +1,9 @@
 export const bannerProjectsData = [
+     {
+        classBg: "forest-boy",
+        title: "forestBoy",
+        url: "forest-boy"
+    },
     {
         classBg: "gol",
         title: "gameOfLife",
@@ -28,6 +33,51 @@ export const bannerProjectsData = [
 ];
 
 export const projectsData = {
+    // -- Template --
+    // name: {
+    //     name: "json item of lang objet",
+    //     year: "2022",
+    //     genre: "genre // DO NOT CHANGE",
+    //     what: "what // DO NOT CHANGE",
+    //     description: "description of the project",
+    //     pictures: [
+    //         {
+    //             img: "/images/{name}",
+    //             alt: "alt"
+    //         },
+    //         ...
+    //     ],
+    //     github: "github link (not mandatory)"
+    // },
+    forestBoy: {
+        name: "forestBoy",
+        year: "2022",
+        genre: "genre",
+        what: "what",
+        description: "description",
+        pictures: [
+            {
+                img: "/images/forest-boy-1.jpg",
+                alt: "forest-boy-1"
+            },
+            {
+                img: "/images/forest-boy-2.jpg",
+                alt: "forest-boy-2"
+            },
+            {
+                img: "/images/forest-boy-3.jpg",
+                alt: "forest-boy-3"
+            },
+            {
+                img: "/images/forest-boy-4.jpg",
+                alt: "forest-boy-4"
+            },
+            {
+                img: "/images/forest-boy-5.jpg",
+                alt: "forest-boy-4"
+            },
+        ],
+    },
     gameOfLife: {
         name: "gameOfLife",
         year: "2021",

@@ -62,6 +62,12 @@
         "year": "Année",
         "genre": "Genre",
         "what": "Description",
+        "forestBoy": {
+            "name": "Forest Boy",
+            "genre": "Jeu vidéo 2D",
+            "what": "Projet réalisé sous Unity",
+            "description": "Jeu de plates-formes die & retry inspiré des jeux actuelle: Super Meat Boy et Ori And The Blind Forest. Vous incarnez un petit personnage rouge dont l'objectif et de terminer les niveaux sans mourir"
+        },
         "epicture": {
             "name": "Epicture",
             "genre": "Application mobile",
@@ -95,6 +101,6 @@
     },
     "about": {
         "title": "À propos",
-        "description": "Étudiant 4e année à Epitech Lille, je suis actuellement en étude en Croatie dans une université partenaire suivant le programme de développement de jeu vidéo. Pratiquant le dessin avant de commencer mes études en informatique, j'apprécie particulièrement les projets visuels tels que le développement de jeu vidéo ou de développement web. Outre l'informatique, je pratique l'escalade encore aujourd'hui depuis plus de 10 ans, c'est une activité importante pour mon développement personnel car elle me permet de décompresser et de me maintenir en forme."
+        "description": "Étudiant 5e année à Epitech Lille, j'apprécie particulièrement les projets visuels tels que le développement de jeu vidéo ou de développement web. J'ai passé lors de ma 4e année, à l'occasion de mes études, 1 an en Croatie effectuant le programme jeu-vidéo. Outre l'informatique, je pratique l'escalade encore aujourd'hui depuis plus de 10 ans, c'est une activité importante pour mon développement personnel car elle me permet de décompresser et de me maintenir en forme."
     }
 }

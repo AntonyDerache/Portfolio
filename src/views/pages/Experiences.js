@@ -16,7 +16,7 @@ const Experiences = ({updateIndex, t}) => {
                 <VerticalTimeline>
                     <ExperienceElement
                         backColor={"#fff"}
-                        skillsName={["ReactJS", "NodeJS", "ExpressJS", "TypeScript",]}
+                        skillsName={["ReactJS", "NodeJS", "ExpressJS", "TypeScript", "Ionic",]}
                         title={t('experiences.trackapBis.job')}
                         substitle={t('experiences.trackapBis.date')}
                         description={t('experiences.trackapBis.description')}
@@ -30,7 +30,7 @@ const Experiences = ({updateIndex, t}) => {
                     />
                     <ExperienceElement
                         backColor={"#fff"}
-                        skillsName={["ReactJS", "NodeJS", "ExpressJS", "TypeScript", "AWS S3"]}
+                        skillsName={["ReactJS", "NodeJS", "ExpressJS", "TypeScript", "Ionic", "AWS S3"]}
                         substitle={t('experiences.trackap.date')}
                         title={t('experiences.trackap.job')}
                         description={t('experiences.trackap.description')}

@@ -35,25 +35,30 @@
     },
     "experiences": {
         "title": "Experiences",
+        "trackapBis": {
+            "date": "2022 September - 2023 February",
+            "job": "Front-end developer at Trackap",
+            "description": "6-month part-time internship (3 days per week) for Trackap. Worked as web developer"
+        },
         "sobook": {
             "date": "2021 april - july",
-            "job": "Developer fullstack at SoBook",
-            "description": "4-month internship as fullstack developer inside the SoBook company"
+            "job": "Fullstack developer at SoBook",
+            "description": "4-month internship as fullstack developer for SoBook company"
         },
         "trackap": {
             "date": "2020 october - 2021 march",
-            "job": "developer front at Trackap",
-            "description": "6-month part-time internship (2 days per week) inside Trackap. Worked as web developer"
+            "job": "Front-end developer at Trackap",
+            "description": "6-month part-time internship (2 days per week) for Trackap. Worked as web developer"
         },
         "skipty": {
             "date": "2019 july - december",
-            "job": "developer fullstack at Skipty",
-            "description": "6-month internship as web developer inside the Skipty startup"
+            "job": "Fullstack developer at Skipty",
+            "description": "6-month internship as web developer for the Skipty startup"
         },
         "delpharm": {
             "date": "2018 july",
-            "job": "packaging operator for Delpharm Lille, France",
-            "description": "1 month fixed-term contract as a packaging operator in a pharmaceutical company."
+            "job": "Packaging operator for Delpharm Lille, France",
+            "description": "1 month fixed-term contract as a packaging operator for a pharmaceutical company."
         }
     },
     "projects": {
@@ -61,7 +66,9 @@
         "year": "Year",
         "genre": "Genre",
         "what": "What",
-          "forestBoy": {
+        "download": "Download",
+        "playIt": "Play it now!",
+        "forestBoy": {
             "name": "Forest Boy",
             "genre": "2D Video Game",
             "what": "Project developed with Unity",
@@ -76,7 +83,7 @@
         "astroBrawl": {
             "name": "Astro Brawl",
             "genre": "3D Video game",
-            "what": "Project developed with Unity in a context of a game jam within my university",
+            "what": "Project developed with Unity in a context of a game jam within my university [Reworking in progress]",
             "description": "For theme: 'space', we went on a Super Smash Bros game like in the space (up to 4 players). Having for only capacity a dash, the goal is to throw out of the viewport the other players to eliminate them"
         },
         "rewinder": {
@@ -100,6 +107,6 @@
     },
     "about": {
         "title": "About",
-        "description": "A 5th year student in Epitech Lille, I particularly appreciate working on visual projects such as games or web development. As part of my studies, I lived 1 year in Croatia during my 4th year and followed the Game Development program. Besides IT, I have been a climber for more than 10 years now. That is a very important activity to me because it allow me to relax, giving my best and keeping me in good shape."
+        "description": "A 5th year student in Epitech Lille, I particularly appreciate working on visual projects such as games or web development. As part of my studies, I lived 1 year in Croatia as an Erasmus during my 4th year and followed the Game Development program. Besides IT, I have been a climber for more than 10 years now. That is a very important activity to me because it allow me to relax, giving my best and keeping me in good shape."
     }
 }

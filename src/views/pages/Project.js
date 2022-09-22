@@ -51,7 +51,7 @@ const GameOfLife = ({updateIndex, t, data}) => {
                     </div>
                     { pc && data.installer &&
                         <div className="w-100 text-center pb-5">
-                            <h2 className="pb-5">Download</h2>
+                            <h2 className="fw-light pb-5">{t(`projects.download`)}</h2>
                             <div className="d-flex justify-content-around">
                                 <div className="h3">
                                     <a href={"/installer/" + data.installer.win}>
@@ -75,6 +75,24 @@ const GameOfLife = ({updateIndex, t, data}) => {
                                 </div>
                             </div>
                         </div>
+                    }
+                    { pc && data.hasWebGL ?
+                        <div className="w-100 pb-5">
+                            <h2 className="fw-light pb-5">{t(`projects.playIt`)}</h2>
+                            <div className="d-flex justify-content-center py-5 w-100">
+                                <div className='w-75' style={{ aspectRatio: "16/9" }}>
+                                    <iframe
+                                        title={`Play ${data.name}`}
+                                        allow="autoplay; fullscreen"
+                                        src={`http://${window.location.host}/#/games/gameOfLife`}
+                                        scrolling="no"
+                                        // frameborder="0"
+                                        height="100%" width="100%"
+                                    >
+                                    </iframe>
+                                </div>
+                            </div>
+                        </div> : null
                     }
                 </div>
             </div>

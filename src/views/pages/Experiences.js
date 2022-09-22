@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import { VerticalTimeline, } from 'react-vertical-timeline-component';
-import 'react-vertical-timeline-component/style.min.css';
 import ExperienceElement from '../../components/ExperienceElement';
 import PresentationScreen from '../../components/PresentationScreen';
+import 'react-vertical-timeline-component/style.min.css';
 
 const Experiences = ({updateIndex, t}) => {
     useEffect(() => {
@@ -14,6 +14,13 @@ const Experiences = ({updateIndex, t}) => {
             <PresentationScreen title={[t('experiences.title')]} />
             <div className="content fl blue">
                 <VerticalTimeline>
+                    <ExperienceElement
+                        backColor={"#fff"}
+                        skillsName={["ReactJS", "NodeJS", "ExpressJS", "TypeScript",]}
+                        title={t('experiences.trackapBis.job')}
+                        substitle={t('experiences.trackapBis.date')}
+                        description={t('experiences.trackapBis.description')}
+                    />
                     <ExperienceElement
                         backColor={"#fff"}
                         skillsName={["NodeJS", "ExpressJS", "VueJS", "MongoDB", "Travis"]}

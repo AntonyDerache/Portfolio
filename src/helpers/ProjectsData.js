@@ -51,7 +51,10 @@ export const projectsData = {
     //     installer: {
     //         mac: "installer.dmg",
     //         win: "installer.exe",
-    //     }
+    //     },
+    //     hasWebGL: boolean,
+    //     WebGLPath: "/WebGL/Name/Build/"
+    //     Filename: "WebGL" if files of build have different name than the game
     // },
     forestBoy: {
         name: "forestBoy",
@@ -111,10 +114,13 @@ export const projectsData = {
             },
         ],
         github: "https://github.com/AntonyDerache/game-of-life",
+        hasWebGL: true,
+        WebGLPath: "/WebGL/GameOfLife/Build/",
+        Filename: "WebGL"
     },
     astroBrawl: {
         name: "astroBrawl",
-        year: "2019",
+        year: "2019 [Reworking in progress]",
         genre: "genre",
         what: "what",
         description: "description",

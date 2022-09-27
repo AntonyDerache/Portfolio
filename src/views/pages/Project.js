@@ -54,7 +54,7 @@ const GameOfLife = ({updateIndex, t, data}) => {
                             <h2 className="fw-light pb-5">{t(`projects.download`)}</h2>
                             <div className="d-flex justify-content-around">
                                 <div className="h3">
-                                    <a href={"/installer/" + data.installer.win}>
+                                    <a download href={"/installer/" + data.installer.win}>
                                         <div
                                             className="btn btn-info justify-content-center text-white d-flex flex-column"
                                             style={{ width: '200px', height: '70px' }}>
@@ -64,7 +64,7 @@ const GameOfLife = ({updateIndex, t, data}) => {
                                     </a>
                                 </div>
                                 <div className="h3">
-                                    <a href={"/installer/" + data.installer.mac}>
+                                    <a download href={"/installer/" + data.installer.mac}>
                                         <div
                                             className="btn btn-success justify-content-center text-white d-flex flex-column"
                                             style={{ width: '200px', height: '70px' }}>
@@ -84,7 +84,7 @@ const GameOfLife = ({updateIndex, t, data}) => {
                                     <iframe
                                         title={`Play ${data.name}`}
                                         allow="autoplay; fullscreen"
-                                        src={`http://${window.location.host}/#/games/gameOfLife`}
+                                        src={`/#/games/gameOfLife`}
                                         scrolling="no"
                                         // frameborder="0"
                                         height="100%" width="100%"

@@ -6,7 +6,7 @@ const GameOfLife = ({updateIndex, t, data}) => {
     const [pc, setPc] = useState(false);
 
     useEffect(() => {
-        if (window.navigator.platform.indexOf('Mac') > -1 || window.navigator.platform.indexOf('Win') > -1) {
+        if (window.navigator.platform.indexOf('Mac') > -1 || window.navigator.platform.indexOf('Win') > -1 || window.navigator.platform.indexOf('Linux') > -1 ) {
             setPc(true);
         }
     }, [])
@@ -86,7 +86,6 @@ const GameOfLife = ({updateIndex, t, data}) => {
                                         allow="autoplay; fullscreen"
                                         src={`/#/games/gameOfLife`}
                                         scrolling="no"
-                                        // frameborder="0"
                                         height="100%" width="100%"
                                     >
                                     </iframe>

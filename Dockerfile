@@ -1,9 +1,18 @@
+## Builds APP
+
 FROM node:16.17.0-buster-slim AS build 
 
 WORKDIR /app
+
+COPY package.json .
+
+RUN npm install
+
 COPY . .
 
-RUN npm install && npm run build
+RUN npm run build
+
+## Build WEB Server
 
 FROM nginx
 

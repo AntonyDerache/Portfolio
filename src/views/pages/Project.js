@@ -15,6 +15,8 @@ const GameOfLife = ({updateIndex, t, data}) => {
         updateIndex(4);
     }, [updateIndex])
 
+    console.log(data);
+
     return (
         <div className="project-layout content">
             <div className="container">
@@ -26,11 +28,19 @@ const GameOfLife = ({updateIndex, t, data}) => {
                         <h2 className="fw-light d-flex">{t(`projects.${data.name}.name`)}</h2>
                         {
                             data.github &&
-                                <h2 className="px-5">
+                                <h2 className="ps-5">
                                     <a href={data.github} rel="noreferrer" target="_blank">
                                         <i className="cursor-pointer bi bi-github" />
                                     </a>
                                 </h2>
+                        }
+                        {
+                            data.itchio &&
+                            <h2 className="ps-5">
+                                <a href={data.itchio} rel="noreferrer" target="_blank">
+                                    <i className="cursor-pointer fab fa-itch-io"></i>
+                                </a>
+                            </h2>
                         }
                     </div>
                     <div className="col-xl-8">
@@ -79,12 +89,13 @@ const GameOfLife = ({updateIndex, t, data}) => {
                     { pc && data.hasWebGL ?
                         <div className="w-100 pb-5">
                             <h2 className="fw-light pb-5">{t(`projects.playIt`)}</h2>
+                            <div>{t("projects.lagTips")}</div>
                             <div className="d-flex justify-content-center py-5 w-100">
                                 <div className='w-75' style={{ aspectRatio: "16/9" }}>
                                     <iframe
                                         title={`Play ${data.name}`}
                                         allow="autoplay; fullscreen"
-                                        src={`/#/games/gameOfLife`}
+                                        src={`/#/games/${data.name}`}
                                         scrolling="no"
                                         height="100%" width="100%"
                                     >

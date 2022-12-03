@@ -68,10 +68,11 @@
         "what": "What",
         "download": "Download",
         "playIt": "Play it now!",
+        "lagTips": "In case you encounter lag issues on play, please try switching to a different web browser",
         "forestBoy": {
             "name": "Forest Boy",
-            "genre": "2D Video Game",
-            "what": "Project developed with Unity",
+            "genre": "2D Video Game, solo",
+            "what": "Project developed using Unity",
             "description": "Die & Retry platform game inspired by current Super Meat Boy et Ori And The Blind Forest games. You embody a little red character and have as purpose to reach the end of the level alive"
         },
         "epicture": {
@@ -82,27 +83,33 @@
         },
         "astroBrawl": {
             "name": "Astro Brawl",
-            "genre": "3D Video game",
-            "what": "Project developed with Unity in a context of a game jam within my university [Reworking in progress]",
+            "genre": "3D Video game, multiplayer local & host based",
+            "what": "Project developed using Unity in a context of a game jam within my university [Reworking in progress]",
             "description": "For theme: 'space', we went on a Super Smash Bros game like in the space (up to 4 players). Having for only capacity a dash, the goal is to throw out of the viewport the other players to eliminate them"
         },
         "rewinder": {
             "name": "Rewinder",
-            "genre": "3D Video game",
-            "what": "Project develped with Unity in a context of a game jam",
+            "genre": "3D Video game, solo",
+            "what": "Project develped using Unity in a context of a game jam",
             "description": "For theme: 'temporality', we went on an solo Adventure and enigma game. In a castle with a witched king, explore, avoid and succeed the enigmas using your back in time power!"
         },
         "gameOfLife": {
             "name": "Game of life",
             "genre": "Simulation game",
-            "what": "Project developed with Unity in the context of a game project at my Croatian university",
+            "what": "Project developed using Unity in the context of a game project at my Croatian university",
             "description": "The Game of Life, is a cellular automaton devised by the British mathematician John Horton Conway in 1970. It is a zero-player game, meaning that its evolution is determined by its initial state. The game follows simple rules that define the living or dead state of a cell"
         },
         "apiSave": {
             "name": "API save",
             "genre": "APIs",
-            "what": "Project developed with nodeJS in a context of an internship project",
+            "what": "Project developed using nodeJS in a context of an internship project",
             "description": "The purpose is to save the databases of clients on a company's server. The project is made of one server which stores the saves of each client as well as a unique API installed on each client's server, which creates the saves and send them to the storage server"
+        },
+        "pong": {
+            "name": "3D Pong",
+            "genre": "3D Video game, multiplayer local",
+            "what": "Project developed using Unity",
+            "description": "Jump back in the famous pong game restyled in 3D! You will be able to play with new gameplay mechanics such as powerups, obtsacles and a time evolutive ball speed to give a more competitive game experience!"
         }
     },
     "about": {

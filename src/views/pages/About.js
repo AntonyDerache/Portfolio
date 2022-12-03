@@ -16,6 +16,9 @@ const About = ({updateIndex, t}) => {
                         <a href="https://github.com/AntonyDerache" rel="noreferrer" target="_blank">
                             <i className="pe-md-5 bi bi-github"></i>
                         </a>
+                        <a href="https://antotogames.itch.io/" rel="noreferrer" target="_blank">
+                            <i className="pe-md-5 fab fa-itch-io"></i>
+                        </a>
                         <a href="https://www.linkedin.com/in/antony-derache-9780b5181/" rel="noreferrer" target="_blank">
                             <i className="pe-md-5 bi bi-linkedin"></i>
                         </a>

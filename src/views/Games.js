@@ -6,7 +6,7 @@ const Games = ({data}) => {
     let { name } = useParams();
 
     return (
-        <WebGL path={data[name].WebGLPath} filename={data[name].Filename} />
+        <WebGL path={data[name].webGLPath} filename={data[name].filename} />
     )
 }
 

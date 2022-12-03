@@ -1,5 +1,13 @@
 const skillsData = [
     {
+        class: "unity",
+        name: "skills.unity"
+    },
+    {
+        class: "csharp",
+        name: "skills.csharp"
+    },
+    {
         class: "reactjs",
         name: "skills.react"
     },
@@ -12,16 +20,16 @@ const skillsData = [
         name: "skills.node"
     },
     {
-        class: "mongodb",
-        name: "skills.mongo"
+        class: "github",
+        name: "skills.github"
     },
     {
-        class: "unity",
-        name: "skills.unity"
+        class: "gitlab",
+        name: "skills.gitlab"
     },
     {
-        class: "csharp",
-        name: "skills.csharp"
+        class: "git",
+        name: "skills.git"
     },
     {
         class: "cplusplus",
@@ -48,16 +56,8 @@ const skillsData = [
         name: "skills.sass"
     },
     {
-        class: "github",
-        name: "skills.github"
-    },
-    {
-        class: "gitlab",
-        name: "skills.gitlab"
-    },
-    {
-        class: "git",
-        name: "skills.git"
+        class: "mongodb",
+        name: "skills.mongo"
     },
     {
         class: "travis",

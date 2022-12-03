@@ -71,6 +71,7 @@ const App = () => {
                     <Route path="/contact" element={<Contact updateIndex={updateIndex} t={t} />} />
                     <Route path="/projects/forest-boy" element={<Project t={t} updateIndex={updateIndex} data={projectsData.forestBoy} />} />
                     <Route path="/projects/game-of-life" element={<Project t={t} updateIndex={updateIndex} data={projectsData.gameOfLife} />} />
+                    <Route path="/projects/3d-pong" element={<Project t={t} updateIndex={updateIndex} data={projectsData.pong} />} />
                     <Route path="/projects/astro-brawl" element={<Project t={t} updateIndex={updateIndex} data={projectsData.astroBrawl} />} />
                     <Route path="/projects/rewinder" element={<Project t={t} updateIndex={updateIndex} data={projectsData.rewinder} />} />
                     <Route path="/projects/api-save" element={<Project t={t} updateIndex={updateIndex} data={projectsData.apiSave} />} />

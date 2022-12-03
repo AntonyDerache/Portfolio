@@ -5,6 +5,11 @@ export const bannerProjectsData = [
         url: "forest-boy"
     },
     {
+        classBg: "pong",
+        title: "pong",
+        url: "3d-pong"
+    },
+    {
         classBg: "gol",
         title: "gameOfLife",
         url: "game-of-life"
@@ -39,7 +44,7 @@ export const projectsData = {
     //     year: "2022",
     //     genre: "genre // DO NOT CHANGE",
     //     what: "what // DO NOT CHANGE",
-    //     description: "description of the project",
+    //     description: "description // DO NOT CHANGE",
     //     pictures: [
     //         {
     //             img: "/images/{name}",
@@ -48,13 +53,14 @@ export const projectsData = {
     //         ...
     //     ],
     //     github: "github link (not mandatory)",
+    //     itchio: "itch.io link (not mandatory)",
     //     installer: {
     //         mac: "installer.dmg",
     //         win: "installer.exe",
     //     },
     //     hasWebGL: boolean,
-    //     WebGLPath: "/WebGL/Name/Build/"
-    //     Filename: "WebGL" if files of build have different name than the game
+    //     webGLPath: "/WebGL/Name/Build/"
+    //     filename: "WebGL" if files of build have different name than the game
     // },
     forestBoy: {
         name: "forestBoy",
@@ -62,6 +68,7 @@ export const projectsData = {
         genre: "genre",
         what: "what",
         description: "description",
+        itchio: "https://antotogames.itch.io/forest-boy",
         pictures: [
             {
                 img: "/images/forest-boy-1.jpg",
@@ -89,6 +96,32 @@ export const projectsData = {
             win: "ForestBoySetup.exe",
         },
     },
+    pong: {
+        name: "pong",
+        year: "2021",
+        genre: "genre",
+        what: "what",
+        description: "description",
+        pictures: [
+            {
+                img: "/images/pong.png",
+                alt: "pong-1"
+            },
+            {
+                img: "/images/pong-1.png",
+                alt: "pong-2"
+            },
+            {
+                img: "/images/pong-2.png",
+                alt: "pong-3"
+            },
+        ],
+        github: "https://github.com/AntonyDerache/3D-pong",
+        itchio: "https://antotogames.itch.io/3d-pong",
+        hasWebGL: true,
+        webGLPath: "/WebGL/3Dpong/Build/",
+        filename: "Build",
+    },
     gameOfLife: {
         name: "gameOfLife",
         year: "2021",
@@ -115,8 +148,8 @@ export const projectsData = {
         ],
         github: "https://github.com/AntonyDerache/game-of-life",
         hasWebGL: true,
-        WebGLPath: "/WebGL/GameOfLife/Build/",
-        Filename: "WebGL"
+        webGLPath: "/WebGL/GameOfLife/Build/",
+        filename: "WebGL"
     },
     astroBrawl: {
         name: "astroBrawl",

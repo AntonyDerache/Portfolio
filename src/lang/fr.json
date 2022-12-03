@@ -69,9 +69,10 @@
         "what": "Description",
         "download": "Télécharger",
         "playIt": "Jouer dès maintenant !",
+        "lagTips": "Dans le cas ou vous rencontrez des problèmes de performance en jeu, essayez de changer de navigateur",
         "forestBoy": {
             "name": "Forest Boy",
-            "genre": "Jeu vidéo 2D",
+            "genre": "Jeu vidéo 2D, solo",
             "what": "Projet réalisé sous Unity",
             "description": "Jeu de plates-formes die & retry inspiré des jeux actuelle: Super Meat Boy et Ori And The Blind Forest. Vous incarnez un petit personnage rouge dont l'objectif et de terminer les niveaux sans mourir"
         },
@@ -83,13 +84,13 @@
         },
         "astroBrawl": {
             "name": "Astro Brawl",
-            "genre": "Jeu vidéo 3D",
+            "genre": "Jeu vidéo 3D, multijoueur local & host based",
             "what": "Projet réalisé sous Unity dans le cadre d'une game jam au sein d'Epitech",
             "description": "Sous le thème: 'espace', nous sommes partis sur un Super Smash Bros game like dans l'espace (2 à 4 joueurs). Ayant comme seule capacité un dash, l'objectif est de pousser vos adversaires en dehors de l'écran afin de les éliminer"
         },
         "rewinder": {
             "name": "Rewinder",
-            "genre": "Jeu vidéo 3D",
+            "genre": "Jeu vidéo 3D, solo",
             "what": "Projet réalisé sous Unity dans le cadre d'une game jam",
             "description": "Sous le thème: 'temporalité', nous sommes partis sur un jeu Aventure à énigmes. Dans un château dont le roi est ensorcelé par un sort, parcourez, évitez et succédez aux énigmes en remontant le temps grace à votre pouvoir surnaturel !"
         },
@@ -104,6 +105,12 @@
             "genre": "APIs",
             "what": "Projet réalisé en nodeJS dans le cadre de mon stage chez SoBook",
             "description": "L'objectif de ce projet est de sauvegarder les bases de données de clients sur un serveur de l'entreprise. Le projet est composé d'un serveur qui stocke les sauvegardes de chaque client ainsi qu'une API installé sur chaque serveur de clients qui effectue les sauvegardes et les envois au serveur de stockage"
+        },
+        "pong": {
+            "name": "3D Pong",
+            "genre": "Jeu vidéo 3D, multijoueur local",
+            "what": "Projet réalisé sous Unity",
+            "description": "Retrouver le très célèbre jeu pong revisité en version 3D et affrontez vous avec un amis ! Vous pourrez jouer avec de nouveaux éléments de gameplay tel que des powerups, des obstacles et une vitesse de balle évolutive sur le temps afin de pimenter l'expérience de jeu !"
         }
     },
     "about": {

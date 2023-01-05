@@ -15,8 +15,8 @@ const Home = ({updateIndex, t}) => {
                     <div className="d-flex flex-column">
                         <span>{t("home.hello")}</span>
                         <span>{t("home.name")}</span>
-                        <span className="subtitle">{t("home.job1")}</span>
                         <span className="subtitle">{t("home.job2")}</span>
+                        <span className="subtitle">{t("home.job1")}</span>
                     </div>
                 </div>
             </div>

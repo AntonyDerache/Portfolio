@@ -15,9 +15,8 @@ const PresentationScreen = ({title}) => {
                 {
                     title.length > 0 && title.map((value, i) => {
                         return (
-                            <span key={i}
-                            className="w-100 ">
-                                    {value}
+                            <span key={i} className="w-100">
+                                {value}
                             </span>
                         )
                     })

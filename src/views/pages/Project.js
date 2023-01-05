@@ -6,7 +6,9 @@ const GameOfLife = ({updateIndex, t, data}) => {
     const [pc, setPc] = useState(false);
 
     useEffect(() => {
-        if (window.navigator.platform.indexOf('Mac') > -1 || window.navigator.platform.indexOf('Win') > -1 || window.navigator.platform.indexOf('Linux') > -1 ) {
+        const platform = (window.navigator.userAgentData?.platform ||  window.navigator.platform).toLowerCase();
+
+        if (platform.indexOf('mac') > -1 || platform.indexOf('win') > -1 || platform.indexOf('Linux') > -1 || !window.navigator.userAgentData?.mobile) {
             setPc(true);
         }
     }, [])
@@ -14,8 +16,6 @@ const GameOfLife = ({updateIndex, t, data}) => {
     useEffect(() => {
         updateIndex(4);
     }, [updateIndex])
-
-    console.log(data);
 
     return (
         <div className="project-layout content">

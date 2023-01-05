@@ -21,11 +21,6 @@ export const bannerProjectsData = [
 
     },
     {
-        classBg: "rewinder",
-        title: "rewinder",
-        url: "rewinder"
-    },
-    {
         classBg: "api-save",
         title: "apiSave",
         url: "api-save"
@@ -34,6 +29,11 @@ export const bannerProjectsData = [
         classBg: "epicture",
         title: "epicture",
         url: "epicture"
+    },
+    {
+        classBg: "rewinder",
+        title: "rewinder",
+        url: "rewinder"
     },
 ];
 
@@ -172,31 +172,6 @@ export const projectsData = {
             },
         ],
     },
-    rewinder: {
-        name: "rewinder",
-        year: "2020",
-        genre: "genre",
-        what: "what",
-        description: "description",
-        pictures: [
-            {
-                img: "/images/rewinder-1.png",
-                alt: "rewinderGame-4"
-            },
-            {
-                img: "/images/rewinder-2.png",
-                alt: "rewinderGame-2"
-            },
-            {
-                img: "/images/rewinder-3.png",
-                alt: "rewinderGame-3"
-            },
-            {
-                img: "/images/rewinder-4.png",
-                alt: "rewinderGame-1"
-            },
-        ],
-    },
     apiSave: {
         name: "apiSave",
         year: "2021",
@@ -221,6 +196,31 @@ export const projectsData = {
                 img: "/images/epicture-background.png",
                 alt: "epicture"
             }
+        ],
+    },
+    rewinder: {
+        name: "rewinder",
+        year: "2020",
+        genre: "genre",
+        what: "what",
+        description: "description",
+        pictures: [
+            {
+                img: "/images/rewinder-1.png",
+                alt: "rewinderGame-4"
+            },
+            {
+                img: "/images/rewinder-2.png",
+                alt: "rewinderGame-2"
+            },
+            {
+                img: "/images/rewinder-3.png",
+                alt: "rewinderGame-3"
+            },
+            {
+                img: "/images/rewinder-4.png",
+                alt: "rewinderGame-1"
+            },
         ],
     },
 }

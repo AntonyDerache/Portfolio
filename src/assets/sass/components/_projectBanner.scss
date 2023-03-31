@@ -26,11 +26,13 @@
     }
 
     .opac-bg {
-        background-color: $dark-red;
-        opacity: .8;
+        background-color: rgba($dark-red, .8);
+        // opacity: .8;
         filter: none !important;
         transition: .5s ease-out;
         -webkit-transition: .5s ease-out;
+        backdrop-filter: blur(2px);
+        -webkit-backdrop-filter: blur(2px);
     }
 
     h2 {

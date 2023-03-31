@@ -8,7 +8,7 @@ const CompetenceCard = ({classImg, name}) => {
                     <div className={`${classImg} background-image`}></div>
                 </div>
                 <div className="h-25 w-100 fl">
-                    <span className="fw-bold text-capitalize">{name}</span>
+                    <span className="fw-bold hover:fw-bold text-uppercase fs-4 ">{name}</span>
                 </div>
             </div>
         </div>

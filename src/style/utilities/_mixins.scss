@@ -1,0 +1,102 @@
+@import '../base/typography';
+
+html {
+    font-size: $font-size;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: $font;
+    color: white;
+    background-color: black;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+
+    &:hover {
+        color: white;
+    }
+}
+
+input, button {
+    border: none;
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+    font-size: $font-size;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.app {
+    transition: .4s ease-in-out;
+    -webkit-transition: .4s ease-in-out;
+    min-height: 100vh;
+}
+
+.brown {
+    background-color: $brown; }
+.blue {
+    background-color: $blue; }
+.red {
+    background-color: $red; }
+.green {
+    background-color: $green; }
+.purple {
+    background-color: $purple; }
+
+.fl {
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+}
+
+.underlined {
+    border-bottom: 1px solid white;
+    &:hover {
+        position: absolute;
+    }
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.cursor-pointer {
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.small-caps {
+    font-variant: small-caps;
+}
+
+.astro-brawl {
+    background-image: url("/images/astro-brawl-3.png"); }
+.rewinder {
+    background-image: url("/images/rewinder-banner.png"); }
+.gol {
+    background-image: url("/images/gameoflife-banner.png"); }
+.api-save {
+    background-image: url("/images/API-banner.svg"); }
+.epicture {
+    background-image: url("/images/epicture-background.png"); }
+.forest-boy {
+    background-image: url("/images/forest-boy-banner.jpg"); }
+.pong {
+    background-image: url("/images/pong-banner.png");}

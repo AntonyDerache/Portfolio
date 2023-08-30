@@ -1,14 +1,20 @@
 import React, { useEffect } from 'react';
 import PresentationScreen from '../../layouts/presentationScreen/PresentationScreen';
+import type { TFunction } from 'i18next';
 
-const About = ({ updateIndex, t }) => {
+export interface AboutProps {
+  updateIndex: Function;
+  t: TFunction
+}
+
+const About = ({ updateIndex, t }: AboutProps) => {
   useEffect(() => {
     updateIndex(5);
   }, [updateIndex])
 
   return (
     <div id="about" className="pages w-100 h-100">
-      <PresentationScreen title={[t('about.title')]} />
+      <PresentationScreen title={t('about.title')} />
       <div className="content purple fl">
         <div className="container">
           <p className="pb-5">{t('about.description')}</p>

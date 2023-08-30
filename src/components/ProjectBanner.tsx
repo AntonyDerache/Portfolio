@@ -1,6 +1,11 @@
 import React from 'react';
 
-const ProjectBanner = ({ classBg, title }) => {
+export interface ProjectBannerProps {
+  classBg: string;
+  title: string;
+};
+
+const ProjectBanner = ({ classBg, title }: ProjectBannerProps) => {
   return (
     <div className="project-banner w-100 position-relative cursor-pointer">
       <div className={`${classBg} position-absolute bg d-flex w-100 h-100`}></div>

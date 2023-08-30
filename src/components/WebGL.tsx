@@ -1,7 +1,12 @@
 import React from 'react'
 import { Unity, useUnityContext } from "react-unity-webgl";
 
-const WebGL = ({ path, filename }) => {
+export interface WebGLProps {
+  path: string;
+  filename: string;
+}
+
+const WebGL = ({ path, filename }: WebGLProps) => {
   const { unityProvider } = useUnityContext({
     loaderUrl: path + filename + ".loader.js",
     dataUrl: path + filename + ".data",

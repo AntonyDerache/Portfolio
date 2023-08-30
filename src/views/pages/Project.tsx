@@ -17,7 +17,6 @@ const GameOfLife = ({ updateIndex, t, data }: GameOfLifeProps) => {
   useEffect(() => {
     const platform = (window.navigator.userAgentData?.platform || window.navigator.platform).toLowerCase();
 
-    console.log(platform);
     if (platform.indexOf('mac') > -1 || platform.indexOf('win') > -1 || platform.indexOf('Linux') > -1 || !window.navigator.userAgentData?.mobile) {
       setPc(true);
     }
@@ -35,7 +34,7 @@ const GameOfLife = ({ updateIndex, t, data }: GameOfLifeProps) => {
             <i className="bi bi-arrow-left-circle"></i>
           </Link>
           <div className="d-flex social">
-            <h2 className="fw-light d-flex">{t(`projects.${data.name}.name`)}</h2>
+            <h2 className="fw-light d-flex">{t(`projects.${data.name}.name` as const)}</h2>
             {
               data.github &&
               <h2 className="ps-5">
@@ -62,9 +61,9 @@ const GameOfLife = ({ updateIndex, t, data }: GameOfLifeProps) => {
             <div className="fw-bold">{t(`projects.year`)}</div>
             <p className="value">{data.year}</p>
             <div className="fw-bold">{t(`projects.genre`)}</div>
-            <p className="value">{t(`projects.${data.name}.${data.genre}`)}</p>
+            <p className="value">{t(`projects.${data.name}.${data.genre}` as const)}</p>
             <div className="fw-bold">{t(`projects.what`)}</div>
-            <p className="value">{t(`projects.${data.name}.${data.what}`)}</p>
+            <p className="value">{t(`projects.${data.name}.${data.what}` as const)}</p>
             <p>
               {t(`projects.${data.name}.${data.description}`)}
             </p>

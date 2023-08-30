@@ -1,2 +1,2 @@
 /// <reference types="vite/client />"
-/// <reference types="user-agent-data-types"
+/// <reference types="user-agent-data-types" />

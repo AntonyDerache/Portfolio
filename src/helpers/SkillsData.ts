@@ -1,4 +1,6 @@
-const skillsData = [
+import type { SkillData } from "@/types/skillsData.types"
+
+const skillsData: Array<SkillData> =  [
   {
     class: "reactjs",
     name: "skills.react"

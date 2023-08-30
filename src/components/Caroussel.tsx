@@ -1,6 +1,13 @@
 import React from 'react';
 
-const Caroussel = ({ image }) => {
+export interface CarousselProps {
+  image: Array<{
+    img: string;
+    alt: string;
+  }>;
+}
+
+const Caroussel = ({ image }: CarousselProps) => {
   return (
     <div id="caroussel" className="carousel slide" data-bs-ride="carousel">
       <div className="carousel-indicators">

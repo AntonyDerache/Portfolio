@@ -1,17 +1,24 @@
 import React, { useEffect } from 'react';
 import { VerticalTimeline, } from 'react-vertical-timeline-component';
-import ExperienceElement from '../../components/ExperienceElement';
-import PresentationScreen from '../../layouts/presentationScreen/PresentationScreen';
+import type { TFunction } from 'i18next';
+
+import ExperienceElement from '@/components/ExperienceElement';
+import PresentationScreen from '@/layouts/presentationScreen/PresentationScreen';
 import 'react-vertical-timeline-component/style.min.css';
 
-const Experiences = ({ updateIndex, t }) => {
+export interface ExperiencesProps {
+  updateIndex: Function,
+  t: TFunction,
+}
+
+const Experiences = ({ updateIndex, t }: ExperiencesProps) => {
   useEffect(() => {
     updateIndex(3);
   }, [updateIndex])
 
   return (
     <div id="experiences" className="pages w-100 h-100">
-      <PresentationScreen title={[t('experiences.title')]} />
+      <PresentationScreen title={t('experiences.title')} />
       <div className="content fl blue">
         <VerticalTimeline>
           <ExperienceElement

@@ -1,6 +1,11 @@
 import React from 'react';
 
-const CompetenceCard = ({ classImg, name }) => {
+export interface CompetenceCard {
+  classImg: string;
+  name: string;
+}
+
+const CompetenceCard = ({ classImg, name }: CompetenceCard) => {
   return (
     <div className="col-6 col-md-4 col-xl-3">
       <div className="box d-flex flex-column align-items-center mx-auto">

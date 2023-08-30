@@ -14,6 +14,7 @@ import WithHeader from '@/components/WithHeader';
 import WithoutHeader from '@/components/WithoutHeader';
 import { hidePresScreen, switchNav } from '@/helpers/Scroll';
 import { projectsData } from '@/helpers/ProjectsData';
+import { ProjectData } from './types';
 
 const App = () => {
   const { t, i18n } = useTranslation();
@@ -58,6 +59,8 @@ const App = () => {
     }
   }
 
+  const findProjectData = (name: string): ProjectData => projectsData.find((data: ProjectData) => data.name === name)
+
   return (
     <div ref={transition} className="app">
       <Routes>
@@ -71,13 +74,13 @@ const App = () => {
           <Route path="/about" element={<About updateIndex={updateIndex} t={t} />} />
           <Route path="/projects" element={<Work updateIndex={updateIndex} t={t} />} />
           <Route path="/contact" element={<Contact updateIndex={updateIndex} />} />
-          <Route path="/projects/forest-boy" element={<Project t={t} updateIndex={updateIndex} data={projectsData.find(data => data.name === 'forestBoy')!} />} />
-          <Route path="/projects/game-of-life" element={<Project t={t} updateIndex={updateIndex} data={projectsData.find(data => data.name === 'gameOfLife')!} />} />
-          <Route path="/projects/3d-pong" element={<Project t={t} updateIndex={updateIndex} data={projectsData.find(data => data.name === 'pong')!} />} />
-          <Route path="/projects/astro-brawl" element={<Project t={t} updateIndex={updateIndex} data={projectsData.find(data => data.name === 'astroBrawl')!} />} />
-          <Route path="/projects/rewinder" element={<Project t={t} updateIndex={updateIndex} data={projectsData.find(data => data.name === 'rewinder')!} />} />
-          <Route path="/projects/api-save" element={<Project t={t} updateIndex={updateIndex} data={projectsData.find(data => data.name === 'apiSave')!} />} />
-          <Route path="/projects/epicture" element={<Project t={t} updateIndex={updateIndex} data={projectsData.find(data => data.name === 'epicture')!} />} />
+          <Route path="/projects/forest-boy" element={<Project t={t} updateIndex={updateIndex} data={findProjectData('forestBoy')} />} />
+          <Route path="/projects/game-of-life" element={<Project t={t} updateIndex={updateIndex} data={findProjectData('gameOfLife')} />} />
+          <Route path="/projects/3d-pong" element={<Project t={t} updateIndex={updateIndex} data={findProjectData('pong')} />} />
+          <Route path="/projects/astro-brawl" element={<Project t={t} updateIndex={updateIndex} data={findProjectData('astroBrawl')} />} />
+          <Route path="/projects/rewinder" element={<Project t={t} updateIndex={updateIndex} data={findProjectData('rewinder')} />} />
+          <Route path="/projects/api-save" element={<Project t={t} updateIndex={updateIndex} data={findProjectData('apiSave')} />} />
+          <Route path="/projects/epicture" element={<Project t={t} updateIndex={updateIndex} data={findProjectData('epicture')} />} />
         </Route>
       </Routes>
     </div>

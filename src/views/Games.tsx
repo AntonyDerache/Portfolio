@@ -2,9 +2,13 @@ import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom';
 
 import WebGL from '@/components/WebGL';
-import { ProjectData } from '@/types/projectData.types';
+import { ProjectData } from '@/types';
 
-const Games = ({ data }: { data: Array<ProjectData> }) => {
+export interface GamesProps {
+  data: Array<ProjectData>;
+};
+
+const Games = ({ data }: GamesProps) => {
   const { name } = useParams();
   const [gameData, setGameData] = useState<ProjectData>()
 
@@ -14,7 +18,7 @@ const Games = ({ data }: { data: Array<ProjectData> }) => {
   }, [data, name])
 
   return (
-    <WebGL path={gameData!.webGLPath} filename={gameData!.filename} />
+    <WebGL path={gameData?.webGLPath!} filename={gameData?.filename!} />
   )
 }
 

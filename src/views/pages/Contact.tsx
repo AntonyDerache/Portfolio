@@ -1,6 +1,10 @@
 import React, { useEffect } from 'react';
 
-const Contact = ({ updateIndex }) => {
+export interface ContactProps {
+  updateIndex: Function;
+}
+
+const Contact = ({ updateIndex }: ContactProps) => {
   useEffect(() => {
     updateIndex(6);
   }, [updateIndex])

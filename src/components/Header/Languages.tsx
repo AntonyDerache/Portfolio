@@ -1,10 +1,15 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import type { TFunction } from 'i18next';
 
-const Languages = ({ t }) => {
+export interface LanguagesProps {
+  t: TFunction;
+}
+
+const Languages = ({ t }: LanguagesProps) => {
   const { i18n } = useTranslation();
 
-  const switchLanguage = (lang) => {
+  const switchLanguage = (lang: string) => {
     i18n.changeLanguage(lang);
     localStorage.setItem("lang", lang);
   }

@@ -9,7 +9,7 @@ export const StyledMenu = styled.nav`
   justify-content: center;
   align-items: center;
   background: white};
-  transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(-100%)'};
+  transform: ${({ open }: { open: boolean}) => open ? 'translateX(0)' : 'translateX(-100%)'};
   height: 100vh;
   text-align: left;
   position: absolute;

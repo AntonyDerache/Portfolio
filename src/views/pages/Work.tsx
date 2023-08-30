@@ -8,7 +8,7 @@ import { bannerProjectsData } from '@/helpers/ProjectsData';
 
 export interface ProjectProps {
   updateIndex: Function,
-  t: TFunction,
+  t: TFunction
 };
 
 const Projects = ({ updateIndex, t }: ProjectProps) => {
@@ -21,13 +21,11 @@ const Projects = ({ updateIndex, t }: ProjectProps) => {
       <PresentationScreen title={t("projects.title")} />
       <div className="content w-100 h-100 red d-flex flex-column">
         {
-          bannerProjectsData && bannerProjectsData.map((item, i) => {
-            return (
-              <Link to={`/projects/${item.url}`} key={i}>
-                <ProjectBanner classBg={item.classBg} title={t(`projects.${item.title}.name`)} />
-              </Link>
-            )
-          })
+          bannerProjectsData && bannerProjectsData.map((item, i) =>
+            <Link to={`/projects/${item.url}`} key={i}>
+              <ProjectBanner classBg={item.classBg} title={t(`projects.${item.title}.name` as const)} />
+            </Link>
+          )
         }
       </div>
     </div>

@@ -4,7 +4,7 @@ export interface PresentationScreenProps {
   title: string
 }
 
-const PresentationScreen = ({ title } :PresentationScreenProps) => {
+const PresentationScreen = ({ title }: PresentationScreenProps) => {
   const scrollDown = () => {
     window.scrollBy(0, window.innerHeight);
   }
@@ -16,15 +16,9 @@ const PresentationScreen = ({ title } :PresentationScreenProps) => {
       </div>
       <div className="title h-100 w-100 fl" id="ref-title">
         <div className="mx-auto d-flex flex-column">
-          {
-            title.length > 0 && title.map((value, i) => {
-              return (
-                <span key={i} className="w-100">
-                  {value}
-                </span>
-              )
-            })
-          }
+          <span className="w-100">
+            {title}
+          </span>
         </div>
       </div>
       <div className="position-absolute bottom-0 w-100 fl">

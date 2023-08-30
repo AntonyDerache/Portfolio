@@ -40,7 +40,7 @@ export const bannerProjectsData: Array<BannerProjectsDataType> = [
   },
 ];
 
-export const projectsData: Array<ProjectData> = [
+export const projectsData: any = [
   {
     name: "forestBoy",
     year: "2022",

@@ -1,19 +1,27 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { Link } from "react-router-dom";
-import Burger from '../../components/Header/Burger/Burger';
-import Menu from '../../components/Header/Menu/Menu';
-import Languages from '../../components/Header/Languages';
+import type { TFunction } from 'i18next';
+
+import { HeaderTitle } from '@/types';
+import Burger from '@/components/Header/Burger/Burger';
+import Menu from '@/components/Header/Menu/Menu';
+import Languages from '@/components/Header/Languages';
 import './header.scss';
 
-const Header = (props) => {
+export interface WithHeaderProps {
+  index: number;
+  t: TFunction;
+}
+
+const Header = ({ index, t }: WithHeaderProps) => {
   const [mobil, setMobil] = useState(false);
-  const [index, setIndex] = useState(props.index);
+  const [currentIndex, setIndex] = useState(index);
 
   const [open, setOpen] = useState(false);
   const node = useRef<HTMLDivElement>(null);
   const menuId = "main-menu";
 
-  const titleTab = ["home", "skills", "experiences", "projects", "about"];
+  const titleTab: HeaderTitle = ["home", "skills", "experiences", "projects", "about"];
   const urlTab = ["", "skills", "experiences", "projects", "about"];
 
 
@@ -31,18 +39,18 @@ const Header = (props) => {
 
   useEffect(() => {
     if (!mobil) {
-      document.getElementsByClassName("tab")[index - 1].classList.remove("underlined");
-      if (!document.getElementsByClassName("tab")[props.index - 1].classList.contains("underlined"))
-        document.getElementsByClassName("tab")[props.index - 1].classList.add("underlined");
+      document.getElementsByClassName("tab")[currentIndex - 1].classList.remove("underlined");
+      if (!document.getElementsByClassName("tab")[index - 1].classList.contains("underlined"))
+        document.getElementsByClassName("tab")[index - 1].classList.add("underlined");
     }
-    setIndex(props.index);
-  }, [index, props.index, mobil])
+    setIndex(index);
+  }, [currentIndex, index, mobil])
 
-  const handleSwap = value => {
+  const handleSwap = (value: number) => {
     if (mobil) {
       setOpen(false);
     } else {
-      document.getElementsByClassName("tab")[index - 1].classList.remove("underlined");
+      document.getElementsByClassName("tab")[currentIndex - 1].classList.remove("underlined");
       document.getElementsByClassName("tab")[value - 1].classList.add("underlined");
     }
   }
@@ -56,7 +64,7 @@ const Header = (props) => {
             className="tab small-caps"
             onClick={() => handleSwap(i + 1)}
           >
-            {props.t('header.' + title)}
+            {t(`header.${title}`)}
           </Link>
         </li>
       )
@@ -70,19 +78,18 @@ const Header = (props) => {
           {
             mobil &&
             <div ref={node} className="w-100 h-100 d-lg-none d-flex align-items-center position-relative">
-              <Burger open={open} setOpen={setOpen} aria-controls={menuId} />
+              <Burger open={open} setOpen={setOpen} ariaControls={menuId} />
               <Menu
                 open={open}
                 buildTabNavigation={buildTabNavigation}
-                t={props.t}
-                setOpen={setOpen}
+                t={t}
                 id={menuId}
               />
             </div>
           }
           <ul id="nav-bar" className="d-none d-lg-flex justify-content-lg-center align-items-lg-center position-relative">
             {buildTabNavigation()}
-            <Languages t={props.t} />
+            <Languages t={t} />
           </ul>
         </div>
       </nav>

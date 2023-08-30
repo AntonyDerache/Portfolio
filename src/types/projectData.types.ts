@@ -4,11 +4,11 @@ export type ProjectPictures = {
 };
 
 export type ProjectData = {
-  name: string,
+  name: 'forestBoy' | 'pong' | 'gameOfLife' | 'astroBrawl' | 'apiSave' | 'epicture' | 'rewinder',
   year: string,
-  genre: string,
-  what: string,
-  description: string,
+  genre: 'genre',
+  what: 'what',
+  description: "description",
   itchio?: string,
   pictures: Array<ProjectPictures>
   installer?: {

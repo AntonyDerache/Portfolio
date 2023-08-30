@@ -1,6 +1,12 @@
 import React, { useEffect } from 'react';
+import type { TFunction } from 'i18next';
 
-const Home = ({ updateIndex, t }) => {
+export interface HomeProps {
+  updateIndex: Function,
+  t: TFunction
+}
+
+const Home = ({ updateIndex, t }: HomeProps) => {
   useEffect(() => {
     updateIndex(1);
   }, [updateIndex])

@@ -1,7 +1,13 @@
 import React from 'react';
 import { StyledBurger } from './Burger.styled';
 
-const Burger = ({ open, setOpen, ...props }) => {
+export interface BurgerProps {
+  open: boolean;
+  setOpen: Function;
+  ariaControls: string;
+}
+
+const Burger = ({ open, setOpen, ariaControls }: BurgerProps) => {
   const isExpanded = open ? true : false;
 
   return (
@@ -10,7 +16,8 @@ const Burger = ({ open, setOpen, ...props }) => {
       aria-label="Toggle menu"
       aria-expanded={isExpanded}
       open={open}
-      onClick={() => setOpen(!open)} {...props}
+      onClick={() => setOpen(!open)}
+      aria-controls={ariaControls}
     >
       <span />
       <span />

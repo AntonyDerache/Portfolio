@@ -1,14 +1,14 @@
 import React from 'react';
-import { StyledBurger } from './Burger.styled';
+import StyledBurger from './Burger.styled';
 
 export interface BurgerProps {
   open: boolean;
-  setOpen: Function;
+  setOpen: (open: boolean) => void;
   ariaControls: string;
 }
 
-const Burger = ({ open, setOpen, ariaControls }: BurgerProps) => {
-  const isExpanded = open ? true : false;
+function Burger({ open, setOpen, ariaControls }: BurgerProps) {
+  const isExpanded = !!open;
 
   return (
     <StyledBurger
@@ -23,7 +23,7 @@ const Burger = ({ open, setOpen, ariaControls }: BurgerProps) => {
       <span />
       <span />
     </StyledBurger>
-  )
+  );
 }
 
 export default Burger;

@@ -11,28 +11,35 @@ export interface ExperienceElementProps {
   description: string;
 }
 
-const ExperienceElement = ({ backColor, skillsName, title, substitle, description}: ExperienceElementProps) => {
+function ExperienceElement({
+  backColor, skillsName, title, substitle, description,
+}: ExperienceElementProps) {
   return (
     <VerticalTimelineElement
       className="vertical-timeline-element--work"
       contentStyle={{ background: backColor, color: 'black' }}
       contentArrowStyle={{ borderRight: `7px solid ${backColor}` }}
-      iconStyle={{ background: "#7fa7ec", color: 'black' }}
+      iconStyle={{ background: '#7fa7ec', color: 'black' }}
     >
-      {skillsName &&
+      {skillsName
+        && (
         <div className="d-flex align-items flex-wrap py-3">
           {
             skillsName.map((elem: string) => <div key={elem} className="skillBubble fw-bold">{elem}</div>)
           }
         </div>
-      }
+        )}
       <h3 className="vertical-timeline-element-title">{title}</h3>
       <h4 className="vertical-timeline-element-subtitle">{substitle}</h4>
       <p>
         {description}
       </p>
     </VerticalTimelineElement>
-  )
+  );
 }
+
+ExperienceElement.defaultProps = {
+  skillsName: [],
+};
 
 export default ExperienceElement;

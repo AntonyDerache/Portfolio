@@ -1,5 +1,10 @@
-import React, { useEffect, useState, useRef, useMemo } from 'react';
-import { Routes, Route } from "react-router-dom";
+import React, {
+  useEffect,
+  useState,
+  useRef,
+  useMemo,
+} from 'react';
+import { Routes, Route } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
 import Experiences from '@/views/pages/Experiences';
@@ -16,50 +21,51 @@ import { hidePresScreen, switchNav } from '@/helpers/Scroll';
 import { projectsData } from '@/helpers/ProjectsData';
 import { ProjectData } from './types';
 
-const App = () => {
+function App() {
   const { t, i18n } = useTranslation();
   const [index, setIndex] = useState<number>(1);
   const transition = useRef<HTMLDivElement>(null);
-  const colorTab = useMemo<Array<string>>(() => ["green", "brown", "blue", "red", "purple"], []);
+  const colorTab = useMemo<Array<string>>(() => ['green', 'brown', 'blue', 'red', 'purple'], []);
+
+  const checkScroll = () => {
+    const refImg = document.getElementById('ref-img');
+    const refTitle = document.getElementById('ref-title');
+    const refChevron = document.getElementById('ref-chevron');
+    const refNav = document.getElementById('header');
+    hidePresScreen(refImg, refTitle, refChevron);
+    switchNav(refNav);
+  };
 
   useEffect(() => {
-    var lang = localStorage.getItem("lang");
+    const lang = localStorage.getItem('lang');
     if (lang) {
       i18n.changeLanguage(lang);
     }
-    document.addEventListener('scroll', checkScroll)
+    document.addEventListener('scroll', checkScroll);
     return () => {
       document.removeEventListener('scroll', checkScroll);
-    }
-  }, [i18n])
+    };
+  }, [i18n]);
 
   useEffect(() => {
     if (transition.current) {
-      const classListLength = transition.current.classList.length
+      const classListLength = transition.current.classList.length;
       if (classListLength === 2) {
         transition.current.classList.remove(transition.current.classList[classListLength - 1]);
       }
       transition.current.classList.add(colorTab[index - 1]);
     }
     checkScroll();
-  }, [colorTab, index])
-
-  const checkScroll = () => {
-    const refImg = document.getElementById("ref-img");
-    const refTitle = document.getElementById("ref-title");
-    const refChevron = document.getElementById("ref-chevron");
-    const refNav = document.getElementById("header");
-    hidePresScreen(refImg, refTitle, refChevron);
-    switchNav(refNav);
-  }
+  }, [colorTab, index]);
 
   const updateIndex = (newIndex: number) => {
     if (newIndex !== index) {
       setIndex(newIndex);
     }
-  }
+  };
 
-  const findProjectData = (name: string): ProjectData => projectsData.find((data: ProjectData) => data.name === name)
+  const findProjectData = (name: string): ProjectData => projectsData
+    .find((data: ProjectData) => data.name === name)!;
 
   return (
     <div ref={transition} className="app">

@@ -6,14 +6,14 @@ import PresentationScreen from '@/layouts/presentationScreen/PresentationScreen'
 import SkillsData from '@/helpers/SkillsData';
 
 export interface CompetencesProps {
-  updateIndex: Function;
+  updateIndex: (index: number) => void;
   t: TFunction
 }
 
-const Competences = ({ updateIndex, t }: CompetencesProps) => {
+function Competences({ updateIndex, t }: CompetencesProps) {
   useEffect(() => {
     updateIndex(2);
-  }, [updateIndex])
+  }, [updateIndex]);
 
   return (
     <div id="skills" className="pages h-100 w-100">
@@ -21,7 +21,13 @@ const Competences = ({ updateIndex, t }: CompetencesProps) => {
       <div className="content d-flex brown h-100">
         <div className="container fl">
           <div className="row w-100 gy-5 py-5">
-            {SkillsData.map((item, i) => <CompetenceCard key={i} classImg={item.class} name={t(item.name)} />)}
+            {SkillsData.map((item) => (
+              <CompetenceCard
+                key={item.name}
+                classImg={item.class}
+                name={t(item.name)}
+              />
+            ))}
           </div>
         </div>
       </div>

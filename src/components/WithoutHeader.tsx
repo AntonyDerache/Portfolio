@@ -1,5 +1,8 @@
+import React from 'react';
 import { Outlet } from 'react-router-dom';
 
-const WithoutHeader = () => <Outlet />
+function WithoutHeader() {
+  return <Outlet />;
+}
 
 export default WithoutHeader;

@@ -1,1 +1,1 @@
-export type HeaderTitle = ["home", "skills", "experiences", "projects", "about"];
+export type HeaderTitle = ['home', 'skills', 'experiences', 'projects', 'about']

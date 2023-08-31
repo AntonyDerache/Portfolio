@@ -1,18 +1,17 @@
 import React, { useEffect } from 'react';
 
 export interface ContactProps {
-  updateIndex: Function;
+  updateIndex: (index: number) => void;
 }
 
-const Contact = ({ updateIndex }: ContactProps) => {
+function Contact({ updateIndex }: ContactProps) {
   useEffect(() => {
     updateIndex(6);
-  }, [updateIndex])
+  }, [updateIndex]);
 
   return (
-    <div id="contact">
-    </div>
+    <div id="contact" />
   );
-};
+}
 
 export default Contact;

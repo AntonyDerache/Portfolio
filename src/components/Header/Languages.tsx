@@ -6,31 +6,33 @@ export interface LanguagesProps {
   t: TFunction;
 }
 
-const Languages = ({ t }: LanguagesProps) => {
+function Languages({ t }: LanguagesProps) {
   const { i18n } = useTranslation();
 
   const switchLanguage = (lang: string) => {
     i18n.changeLanguage(lang);
-    localStorage.setItem("lang", lang);
-  }
+    localStorage.setItem('lang', lang);
+  };
 
   return (
     <div className="languages">
-      <span
+      <button
+        type="button"
         className="cursor-pointer small-caps px-3"
-        onClick={() => switchLanguage("fr")}
+        onClick={() => switchLanguage('fr')}
       >
-        {t("header.fr")}
-      </span>
+        {t('header.fr')}
+      </button>
       <span className="small-caps">|</span>
-      <span
+      <button
+        type="button"
         className="cursor-pointer small-caps px-3"
-        onClick={() => switchLanguage("en")}
+        onClick={() => switchLanguage('en')}
       >
-        {t("header.en")}
-      </span>
+        {t('header.en')}
+      </button>
     </div>
   );
-};
+}
 
 export default Languages;

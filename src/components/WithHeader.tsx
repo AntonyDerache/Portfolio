@@ -9,13 +9,13 @@ export interface WithHeaderProps {
   t: TFunction;
 }
 
-const WithHeader = ({ index, t }: WithHeaderProps) => {
+function WithHeader({ index, t }: WithHeaderProps) {
   return (
     <>
       <Header index={index} t={t} />
       <Outlet />
     </>
   );
-};
+}
 
 export default WithHeader;

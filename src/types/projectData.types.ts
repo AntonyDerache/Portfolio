@@ -8,7 +8,7 @@ export type ProjectData = {
   year: string,
   genre: 'genre',
   what: 'what',
-  description: "description",
+  description: 'description',
   itchio?: string,
   pictures: Array<ProjectPictures>
   installer?: {

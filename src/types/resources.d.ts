@@ -115,7 +115,7 @@ interface Resources {
     },
     'about': {
       'title': 'About',
-      'description': 'A 5th year student in Epitech Lille, I particularly appreciate working on visual projects such as games or web development. As part of my studies, I lived 1 year in Croatia as an Erasmus during my 4th year and followed the Game Development program. Besides IT, I have been a climber for more than 10 years now. That is a very important activity to me because it allow me to relax, giving my best and keeping me in good shape.'
+      'description': 'A 5th year student in Epitech Lille, I particularly appreciate working on visual projects such as games or web development. As part of my studies, I lived 1 year in Croatia as an Erasmus during my 4th year and followed the Game Development program. Besides IT, I have been a climber for more than 10 years now. That is a very important activity to me because it allows me to relax, giving my best and keeping me in good shape.'
     }
   },
   'fr': {

@@ -22,6 +22,9 @@ function Games({ data }: GamesProps) {
       <WebGL path={gameData?.webGLPath} filename={gameData?.filename} />
     );
   }
+  return (
+    <div />
+  );
 }
 
 export default Games;

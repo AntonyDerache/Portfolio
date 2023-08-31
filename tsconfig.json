@@ -109,5 +109,5 @@
     "skipLibCheck": true                                 /* Skip type checking all .d.ts files. */
   },
   "include": ["**/*.ts", "***/*/tsx", "src/index.tsx", "src/components/Header/Languages.tsx"],
-  "exclude": ["build", "./node_modules"],
+  "exclude": ["build", "./node_modules", "./src/types/resources.d.ts"],
 }

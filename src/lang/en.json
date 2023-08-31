@@ -19,22 +19,32 @@
         "title": "Skills",
         "react": "react js",
         "vue": "vue js",
-        "node": "node js",
-        "mongo": "mongoDB",
-        "html": "html",
-        "css": "css",
-        "sass": "sass",
+        "svelte": "svelte js",
+        "ts": "typescript",
         "js": "javascript",
-        "c": "c",
-        "cpp": "c++",
+        "node": "node js",
+        "playwright": "playwright",
+        "storybook": "storybook",
+        "unity": "unity",
         "csharp": "c#",
-        "git": "git",
-        "gitlab": "gitlab",
         "github": "github",
-        "travis": "travis"
+        "gitlab": "gitlab",
+        "git": "git",
+        "mongo": "mongoDB",
+        "sass": "sass"
     },
     "experiences": {
         "title": "Experiences",
+        "ipponBis": {
+            "date": "2023 September - Now",
+            "job": "Fullstack consultant at Ippon Technologies",
+            "description": "Fullstack consultant for Ippon Technologies"
+        },
+        "ippon": {
+            "date": "2023 March - 2023 August",
+            "job": "Fullstack developer at Ippon Technologies",
+            "description": "6-month internship as fullstack developer for Ippon Technologies"
+        },
         "trackapBis": {
             "date": "2022 September - 2023 February",
             "job": "Front-end developer at Trackap",
@@ -114,6 +124,6 @@
     },
     "about": {
         "title": "About",
-        "description": "A 5th year student in Epitech Lille, I particularly appreciate working on visual projects such as games or web development. As part of my studies, I lived 1 year in Croatia as an Erasmus during my 4th year and followed the Game Development program. Besides IT, I have been a climber for more than 10 years now. That is a very important activity to me because it allows me to relax, giving my best and keeping me in good shape."
+        "description": "Fullstack consultant for Ippon Technologies, I particularly appreciate working on visual projects such as web or game development. During my 4th study year, I lived 1 year in Croatia as an Erasmus and followed the Game Development program. Besides IT, I have been a climber for more than 10 years now. That is a very important activity to me because it allows me to relax, giving my best and keeping me in good shape."
     }
 }

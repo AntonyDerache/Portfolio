@@ -19,27 +19,36 @@
         "title": "Compétences",
         "react": "react js",
         "vue": "vue js",
-        "node": "node js",
-        "mongo": "mongoDB",
-        "html": "html",
-        "css": "css",
-        "sass": "sass",
+        "svelte": "svelte js",
+        "ts": "typescript",
         "js": "javascript",
-        "c": "c",
-        "cpp": "c++",
-        "csharp": "c#",
+        "node": "node js",
+        "playwright": "playwright",
+        "storybook": "storybook",
         "unity": "unity",
-        "git": "git",
-        "gitlab": "gitlab",
+        "csharp": "c#",
         "github": "github",
-        "travis": "travis"
+        "gitlab": "gitlab",
+        "git": "git",
+        "mongo": "mongoDB",
+        "sass": "sass"
     },
     "experiences": {
         "title": "Expériences",
+        "ipponBis": {
+            "date": "2023 Septembre - Maintenant",
+            "job": "Consultant fullstack chez Ippon Technologies",
+            "description": "Consultant fullstack chez Ippon Technologies"
+        },
+        "ippon": {
+            "date": "2023 Mars - 2023 Aout",
+            "job": "Développeur fullstack chez Ippon Technologies",
+            "description": "Stage 6 de mois en tant que développeur fullstack chez Ippon Technologies"
+        },
         "trackapBis": {
             "date": "2022 Septembre - 2023 Fevrier",
             "job": "Développeur front chez Trackap",
-            "description": "Part-time 6 mois en tant que développeur front-end au sein de la start-up Trackap"
+            "description": "Part-time de 6 mois en tant que développeur front-end au sein de la start-up Trackap"
         },
         "sobook": {
             "date": "2021 avril - juillet",
@@ -49,12 +58,12 @@
         "trackap": {
             "date": "2020 octobre - 2021 mars",
             "job": "Développeur front chez Trackap",
-            "description": "Part-time 6 mois en tant que développeur front-end au sein de la start-up Trackap"
+            "description": "Part-time de 6 mois en tant que développeur front-end au sein de la start-up Trackap"
         },
         "skipty": {
             "date": "2019 juillet - decembre",
             "job": "Développeur fullstack chez Skipty",
-            "description": "Stage 6 mois en tant que développeur web au sein de la startup Skipty"
+            "description": "Stage de 6 mois en tant que développeur web au sein de la startup Skipty"
         },
         "delpharm": {
             "date": "2018 juillet",
@@ -115,6 +124,6 @@
     },
     "about": {
         "title": "À propos",
-        "description": "Étudiant 5e année à Epitech Lille, j'apprécie particulièrement les projets visuels tels que le développement de jeu vidéo ou de développement web. J'ai passé lors de ma 4e année, à l'occasion de mes études, 1 année Erasmus en Croatie effectuant le programme jeu-vidéo. Outre l'informatique, je pratique l'escalade encore aujourd'hui depuis plus de 10 ans, c'est une activité importante pour mon développement personnel car elle me permet de décompresser et de me maintenir en forme."
+        "description": "Consultant Fullstack chez Ippon Technologies, j'apprécie énormement les projets visuels tels que le développement web et le développement de jeux vidéos. J'ai passé lors de ma 4e année d'études à Epitech Lille, 1 année Erasmus en Croatie effectuant le programme jeu-vidéo. Outre l'informatique, je pratique l'escalade encore aujourd'hui depuis plus de 10 ans, c'est une activité importante pour mon développement personnel car elle me permet de décompresser et de me maintenir en forme."
     }
 }

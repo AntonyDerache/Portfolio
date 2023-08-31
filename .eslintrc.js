@@ -9,6 +9,7 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
     'airbnb',
   ],
+  ignorePatterns: ['src/types/resources.d.ts'],
   overrides: [
   ],
   parser: '@typescript-eslint/parser',

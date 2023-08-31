@@ -6,6 +6,18 @@ const skillsData: Array<SkillData> = [
     name: 'skills.react',
   },
   {
+    class: 'vuejs',
+    name: 'skills.vue',
+  },
+  {
+    class: 'svelte',
+    name: 'skills.svelte',
+  },
+  {
+    class: 'typescript',
+    name: 'skills.ts',
+  },
+  {
     class: 'javascript',
     name: 'skills.js',
   },
@@ -14,16 +26,20 @@ const skillsData: Array<SkillData> = [
     name: 'skills.node',
   },
   {
+    class: 'playwright',
+    name: 'skills.playwright',
+  },
+  {
+    class: 'storybook',
+    name: 'skills.storybook',
+  },
+  {
     class: 'unity',
     name: 'skills.unity',
   },
   {
     class: 'csharp',
     name: 'skills.csharp',
-  },
-  {
-    class: 'vuejs',
-    name: 'skills.vue',
   },
   {
     class: 'github',
@@ -37,34 +53,13 @@ const skillsData: Array<SkillData> = [
     class: 'git',
     name: 'skills.git',
   },
-
-  {
-    class: 'html',
-    name: 'skills.html',
-  },
-  {
-    class: 'css',
-    name: 'skills.css',
-  },
-  {
-    class: 'cplusplus',
-    name: 'skills.cpp',
-  },
-  {
-    class: 'c',
-    name: 'skills.c',
-  },
-  {
-    class: 'sass',
-    name: 'skills.sass',
-  },
   {
     class: 'mongodb',
     name: 'skills.mongo',
   },
   {
-    class: 'travis',
-    name: 'skills.travis',
+    class: 'sass',
+    name: 'skills.sass',
   },
 ];
 

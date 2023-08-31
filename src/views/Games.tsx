@@ -17,9 +17,11 @@ function Games({ data }: GamesProps) {
     setGameData(dataFound);
   }, [data, name]);
 
-  return (
-    <WebGL path={gameData?.webGLPath || ''} filename={gameData?.filename || ''} />
-  );
+  if (gameData?.webGLPath && gameData?.filename) {
+    return (
+      <WebGL path={gameData?.webGLPath} filename={gameData?.filename} />
+    );
+  }
 }
 
 export default Games;

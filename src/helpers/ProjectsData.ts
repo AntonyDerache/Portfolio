@@ -67,7 +67,7 @@ export const projectsData: Array<ProjectData> = [
       },
       {
         img: '/images/forest-boy-5.jpg',
-        alt: 'forest-boy-4',
+        alt: 'forest-boy-5',
       },
     ],
     installer: {

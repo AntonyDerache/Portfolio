@@ -1,4 +1,5 @@
 import React from 'react';
+import './projectBanner.scss';
 
 export interface ProjectBannerProps {
   classBg: string;

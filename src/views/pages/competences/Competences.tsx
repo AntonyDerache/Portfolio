@@ -1,9 +1,10 @@
 import React, { useEffect } from 'react';
 import type { TFunction } from 'i18next';
 
-import CompetenceCard from '@/components/CompetenceCard';
+import CompetenceCard from '@/components/competence-card/CompetenceCard';
 import PresentationScreen from '@/layouts/presentationScreen/PresentationScreen';
-import SkillsData from '@/helpers/SkillsData';
+import SkillsData from '@/helpers/skillsData';
+import './competences.scss';
 
 export interface CompetencesProps {
   updateIndex: (index: number) => void;

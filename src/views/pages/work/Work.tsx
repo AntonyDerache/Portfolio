@@ -3,8 +3,9 @@ import { Link } from 'react-router-dom';
 import type { TFunction } from 'i18next';
 
 import PresentationScreen from '@/layouts/presentationScreen/PresentationScreen';
-import ProjectBanner from '@/components/ProjectBanner';
-import { bannerProjectsData } from '@/helpers/ProjectsData';
+import ProjectBanner from '@/components/project-banner/ProjectBanner';
+import { bannerProjectsData } from '@/helpers/projectsData';
+import './work.scss';
 
 export interface ProjectProps {
   updateIndex: (index: number) => void;

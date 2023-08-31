@@ -4,6 +4,7 @@ import type { TFunction } from 'i18next';
 
 import Caroussel from '@/components/Caroussel';
 import type { ProjectData } from '@/types/projectData.types';
+import './project.scss';
 
 export interface GameOfLifeProps {
   updateIndex: (index: number) => void,

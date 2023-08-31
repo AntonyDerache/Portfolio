@@ -1,6 +1,7 @@
 import React from 'react';
 import { VerticalTimelineElement } from 'react-vertical-timeline-component';
 
+import './experienceElement.scss';
 import 'react-vertical-timeline-component/style.min.css';
 
 export interface ExperienceElementProps {

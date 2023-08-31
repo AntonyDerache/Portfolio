@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import type { TFunction } from 'i18next';
-import PresentationScreen from '../../layouts/presentationScreen/PresentationScreen';
+import PresentationScreen from '../../../layouts/presentationScreen/PresentationScreen';
+import './about.scss';
 
 export interface AboutProps {
   updateIndex: (index: number) => void;

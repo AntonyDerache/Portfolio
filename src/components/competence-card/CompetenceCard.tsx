@@ -1,4 +1,5 @@
 import React from 'react';
+import './competenecCards.scss';
 
 export interface CompetenceCardProps {
   classImg: string;
@@ -7,7 +8,7 @@ export interface CompetenceCardProps {
 
 function CompetenceCard({ classImg, name }: CompetenceCardProps) {
   return (
-    <div className="col-6 col-md-4 col-xl-3">
+    <div className="competence-card col-6 col-md-4 col-xl-3">
       <div className="box d-flex flex-column align-items-center mx-auto">
         <div className="h-75 w-75 fl">
           <div className={`${classImg} background-image`} />

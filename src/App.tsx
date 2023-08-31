@@ -7,18 +7,18 @@ import React, {
 import { Routes, Route } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
-import Experiences from '@/views/pages/Experiences';
-import About from '@/views/pages/About';
-import Work from '@/views/pages/Work';
-import Skills from '@/views/pages/Competences';
-import Home from '@/views/pages/Home';
-import Contact from '@/views/pages/Contact';
-import Project from '@/views/pages/Project';
+import Experiences from '@/views/pages/experiences/Experiences';
+import About from '@/views/pages/about/About';
+import Work from '@/views/pages/work/Work';
+import Skills from '@/views/pages/competences/Competences';
+import Home from '@/views/pages/home/Home';
+import Contact from '@/views/pages/contact/Contact';
+import Project from '@/views/pages/project/Project';
 import Games from '@/views/Games';
-import WithHeader from '@/components/WithHeader';
-import WithoutHeader from '@/components/WithoutHeader';
-import { hidePresScreen, switchNav } from '@/helpers/Scroll';
-import { projectsData } from '@/helpers/ProjectsData';
+import { projectsData } from '@/helpers/projectsData';
+import { hidePresScreen, switchNav } from '@/helpers/scroll';
+import WithHeader from '@/layouts/WithHeader';
+import WithoutHeader from '@/layouts/WithoutHeader';
 import { ProjectData } from './types';
 
 function App() {

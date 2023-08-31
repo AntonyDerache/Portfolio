@@ -5,7 +5,7 @@ interface Resources {
       'skills': 'skills',
       'experiences': 'experiences',
       'educations': 'educations',
-      'work': 'projects',
+      'projects': 'projects',
       'about': 'about',
       'en': 'en',
       'fr': 'fr'

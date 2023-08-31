@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 
-import WebGL from '@/components/WebGL';
+import WebGL from '@/layouts/WebGL';
 import { ProjectData } from '@/types';
 
 export interface GamesProps {

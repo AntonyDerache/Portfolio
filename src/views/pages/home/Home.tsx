@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
 import type { TFunction } from 'i18next';
 
+import './home.scss';
+
 export interface HomeProps {
   updateIndex: (index: number) => void,
   t: TFunction

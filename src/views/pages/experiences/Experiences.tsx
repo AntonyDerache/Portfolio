@@ -2,9 +2,10 @@ import React, { useEffect } from 'react';
 import { VerticalTimeline } from 'react-vertical-timeline-component';
 import type { TFunction } from 'i18next';
 
-import ExperienceElement from '@/components/ExperienceElement';
+import ExperienceElement from '@/components/experience-element/ExperienceElement';
 import PresentationScreen from '@/layouts/presentationScreen/PresentationScreen';
 import 'react-vertical-timeline-component/style.min.css';
+import './experiences.scss';
 
 export interface ExperiencesProps {
   updateIndex: (index: number) => void,

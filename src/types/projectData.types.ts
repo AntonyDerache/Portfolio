@@ -6,9 +6,6 @@ export type ProjectPictures = {
 export type ProjectData = {
   name: 'forestBoy' | 'pong' | 'gameOfLife' | 'astroBrawl' | 'apiSave' | 'epicture' | 'rewinder',
   year: string,
-  genre: 'genre',
-  what: 'what',
-  description: 'description',
   itchio?: string,
   pictures: Array<ProjectPictures>
   installerLinks?: {

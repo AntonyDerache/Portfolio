@@ -1,52 +1,9 @@
-import type { BannerProjectsDataType } from '../types/bannerProjectData.types';
 import type { ProjectData } from '../types/projectData.types';
 
-export const bannerProjectsData: Array<BannerProjectsDataType> = [
-  {
-    classBg: 'forest-boy',
-    title: 'forestBoy',
-    url: 'forest-boy',
-  },
-  {
-    classBg: 'pong',
-    title: 'pong',
-    url: '3d-pong',
-  },
-  {
-    classBg: 'gol',
-    title: 'gameOfLife',
-    url: 'game-of-life',
-  },
-  {
-    classBg: 'astro-brawl',
-    title: 'astroBrawl',
-    url: 'astro-brawl',
-
-  },
-  {
-    classBg: 'api-save',
-    title: 'apiSave',
-    url: 'api-save',
-  },
-  {
-    classBg: 'epicture',
-    title: 'epicture',
-    url: 'epicture',
-  },
-  {
-    classBg: 'rewinder',
-    title: 'rewinder',
-    url: 'rewinder',
-  },
-];
-
-export const projectsData: Array<ProjectData> = [
+const projectsData: Array<ProjectData> = [
   {
     name: 'forestBoy',
     year: '2022',
-    genre: 'genre',
-    what: 'what',
-    description: 'description',
     itchio: 'https://antotogames.itch.io/forest-boy',
     pictures: [
       {
@@ -78,9 +35,6 @@ export const projectsData: Array<ProjectData> = [
   {
     name: 'pong',
     year: '2021',
-    genre: 'genre',
-    what: 'what',
-    description: 'description',
     pictures: [
       {
         img: '/images/pong.png',
@@ -104,9 +58,6 @@ export const projectsData: Array<ProjectData> = [
   {
     name: 'gameOfLife',
     year: '2021',
-    genre: 'genre',
-    what: 'what',
-    description: 'description',
     pictures: [
       {
         img: '/images/gameoflife-1.JPG',
@@ -133,9 +84,6 @@ export const projectsData: Array<ProjectData> = [
   {
     name: 'astroBrawl',
     year: '2019 [Reworking in progress]',
-    genre: 'genre',
-    what: 'what',
-    description: 'description',
     pictures: [
       {
         img: '/images/astro-brawl-1.png',
@@ -154,9 +102,6 @@ export const projectsData: Array<ProjectData> = [
   {
     name: 'apiSave',
     year: '2021',
-    genre: 'genre',
-    what: 'what',
-    description: 'description',
     pictures: [
       {
         img: '/images/API-1.png',
@@ -167,9 +112,6 @@ export const projectsData: Array<ProjectData> = [
   {
     name: 'epicture',
     year: '2020',
-    genre: 'genre',
-    what: 'what',
-    description: 'description',
     pictures: [
       {
         img: '/images/epicture-background.png',
@@ -180,9 +122,6 @@ export const projectsData: Array<ProjectData> = [
   {
     name: 'rewinder',
     year: '2020',
-    genre: 'genre',
-    what: 'what',
-    description: 'description',
     pictures: [
       {
         img: '/images/rewinder-1.png',
@@ -203,3 +142,5 @@ export const projectsData: Array<ProjectData> = [
     ],
   },
 ];
+
+export default projectsData;

@@ -97,8 +97,8 @@ export const projectsData: Array<ProjectData> = [
     ],
     github: 'https://github.com/AntonyDerache/3D-pong',
     itchio: 'https://antotogames.itch.io/3d-pong',
-    hasWebGL: true,
-    webGLPath: '/WebGL/3Dpong/Build/',
+    // hasWebGL: true,
+    // webGLPath: '/WebGL/3Dpong/Build/',
     filename: 'Build',
   },
   {

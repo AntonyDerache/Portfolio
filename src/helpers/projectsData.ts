@@ -71,8 +71,8 @@ export const projectsData: Array<ProjectData> = [
       },
     ],
     installerLinks: {
-      mac: 'https://www.dropbox.com/scl/fi/abhv5lw63oqtach80ykyy/ForestBoy.dmg?rlkey=32ydpz5d59uu2kiijgtmwfuss&st=bconf35i&dl=0',
-      win: 'https://www.dropbox.com/scl/fi/o39x8e7qzdy9se3f31obx/ForestBoySetup.exe?rlkey=ww715sjr8u4ssaldgeabyq9eo&st=o65t9hpq&dl=0',
+      mac: 'https://www.dropbox.com/scl/fi/abhv5lw63oqtach80ykyy/ForestBoy.dmg?rlkey=32ydpz5d59uu2kiijgtmwfuss&st=bconf35i&dl=1',
+      win: 'https://www.dropbox.com/scl/fi/o39x8e7qzdy9se3f31obx/ForestBoySetup.exe?rlkey=ww715sjr8u4ssaldgeabyq9eo&st=o65t9hpq&dl=1',
     },
   },
   {

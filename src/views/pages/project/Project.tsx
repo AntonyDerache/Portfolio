@@ -80,7 +80,7 @@ function GameOfLife({ updateIndex, t, data }: GameOfLifeProps) {
                 <h2 className="fw-light pb-5">{t('projects.download')}</h2>
                 <div className="d-flex justify-content-around">
                   <div className="h3">
-                    <a target="_blank" href={data.installerLinks.win} rel="noreferrer">
+                    <a download href={data.installerLinks.win}>
                       <div
                         className="btn btn-info justify-content-center text-white d-flex flex-column"
                         style={{ width: '200px', height: '70px' }}
@@ -91,7 +91,7 @@ function GameOfLife({ updateIndex, t, data }: GameOfLifeProps) {
                     </a>
                   </div>
                   <div className="h3">
-                    <a target="_blank" href={data.installerLinks.mac} rel="noreferrer">
+                    <a download href={data.installerLinks.mac}>
                       <div
                         className="btn btn-success justify-content-center text-white d-flex flex-column"
                         style={{ width: '200px', height: '70px' }}

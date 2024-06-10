@@ -70,9 +70,9 @@ export const projectsData: Array<ProjectData> = [
         alt: 'forest-boy-5',
       },
     ],
-    installer: {
-      mac: 'ForestBoy.dmg',
-      win: 'ForestBoySetup.exe',
+    installerLinks: {
+      mac: 'https://www.dropbox.com/scl/fi/abhv5lw63oqtach80ykyy/ForestBoy.dmg?rlkey=32ydpz5d59uu2kiijgtmwfuss&st=bconf35i&dl=0',
+      win: 'https://www.dropbox.com/scl/fi/o39x8e7qzdy9se3f31obx/ForestBoySetup.exe?rlkey=ww715sjr8u4ssaldgeabyq9eo&st=o65t9hpq&dl=0',
     },
   },
   {

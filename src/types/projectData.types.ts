@@ -11,7 +11,7 @@ export type ProjectData = {
   description: 'description',
   itchio?: string,
   pictures: Array<ProjectPictures>
-  installer?: {
+  installerLinks?: {
     mac: string,
     win: string,
   },

@@ -40,21 +40,21 @@ function GameOfLife({ updateIndex, t, data }: GameOfLifeProps) {
             {
               data.github
               && (
-              <h2 className="ps-5">
-                <a href={data.github} rel="noreferrer" target="_blank">
-                  <i className="cursor-pointer bi bi-github" />
-                </a>
-              </h2>
+                <h2 className="ps-5">
+                  <a href={data.github} rel="noreferrer" target="_blank">
+                    <i className="cursor-pointer bi bi-github" />
+                  </a>
+                </h2>
               )
             }
             {
               data.itchio
               && (
-              <h2 className="ps-5">
-                <a href={data.itchio} rel="noreferrer" target="_blank">
-                  <i className="cursor-pointer fab fa-itch-io" />
-                </a>
-              </h2>
+                <h2 className="ps-5">
+                  <a href={data.itchio} rel="noreferrer" target="_blank">
+                    <i className="cursor-pointer fab fa-itch-io" />
+                  </a>
+                </h2>
               )
             }
           </div>
@@ -74,35 +74,35 @@ function GameOfLife({ updateIndex, t, data }: GameOfLifeProps) {
               {t(`projects.${data.name}.${data.description}`)}
             </p>
           </div>
-          {pc && data.installer
+          {pc && data.installerLinks
             && (
-            <div className="w-100 text-center pb-5">
-              <h2 className="fw-light pb-5">{t('projects.download')}</h2>
-              <div className="d-flex justify-content-around">
-                <div className="h3">
-                  <a download href={`/installer/${data.installer.win}`}>
-                    <div
-                      className="btn btn-info justify-content-center text-white d-flex flex-column"
-                      style={{ width: '200px', height: '70px' }}
-                    >
-                      <h4>Windows x86</h4>
-                      <i className="cursor-pointer fa fa-download" />
-                    </div>
-                  </a>
-                </div>
-                <div className="h3">
-                  <a download href={`/installer/${data.installer.mac}`}>
-                    <div
-                      className="btn btn-success justify-content-center text-white d-flex flex-column"
-                      style={{ width: '200px', height: '70px' }}
-                    >
-                      <h4>MacOs</h4>
-                      <i className="cursor-pointer fa fa-download" />
-                    </div>
-                  </a>
+              <div className="w-100 text-center pb-5">
+                <h2 className="fw-light pb-5">{t('projects.download')}</h2>
+                <div className="d-flex justify-content-around">
+                  <div className="h3">
+                    <a target="_blank" href={data.installerLinks.win} rel="noreferrer">
+                      <div
+                        className="btn btn-info justify-content-center text-white d-flex flex-column"
+                        style={{ width: '200px', height: '70px' }}
+                      >
+                        <h4>Windows x86</h4>
+                        <i className="cursor-pointer fa fa-download" />
+                      </div>
+                    </a>
+                  </div>
+                  <div className="h3">
+                    <a target="_blank" href={data.installerLinks.mac} rel="noreferrer">
+                      <div
+                        className="btn btn-success justify-content-center text-white d-flex flex-column"
+                        style={{ width: '200px', height: '70px' }}
+                      >
+                        <h4>MacOs</h4>
+                        <i className="cursor-pointer fa fa-download" />
+                      </div>
+                    </a>
+                  </div>
                 </div>
               </div>
-            </div>
             )}
           {pc && data.hasWebGL
             ? (

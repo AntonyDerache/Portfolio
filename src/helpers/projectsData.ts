@@ -1,52 +1,9 @@
-import type { BannerProjectsDataType } from '../types/bannerProjectData.types';
 import type { ProjectData } from '../types/projectData.types';
 
-export const bannerProjectsData: Array<BannerProjectsDataType> = [
-  {
-    classBg: 'forest-boy',
-    title: 'forestBoy',
-    url: 'forest-boy',
-  },
-  {
-    classBg: 'pong',
-    title: 'pong',
-    url: '3d-pong',
-  },
-  {
-    classBg: 'gol',
-    title: 'gameOfLife',
-    url: 'game-of-life',
-  },
-  {
-    classBg: 'astro-brawl',
-    title: 'astroBrawl',
-    url: 'astro-brawl',
-
-  },
-  {
-    classBg: 'api-save',
-    title: 'apiSave',
-    url: 'api-save',
-  },
-  {
-    classBg: 'epicture',
-    title: 'epicture',
-    url: 'epicture',
-  },
-  {
-    classBg: 'rewinder',
-    title: 'rewinder',
-    url: 'rewinder',
-  },
-];
-
-export const projectsData: Array<ProjectData> = [
+const projectsData: Array<ProjectData> = [
   {
     name: 'forestBoy',
     year: '2022',
-    genre: 'genre',
-    what: 'what',
-    description: 'description',
     itchio: 'https://antotogames.itch.io/forest-boy',
     pictures: [
       {
@@ -70,17 +27,14 @@ export const projectsData: Array<ProjectData> = [
         alt: 'forest-boy-5',
       },
     ],
-    installer: {
-      mac: 'ForestBoy.dmg',
-      win: 'ForestBoySetup.exe',
+    installerLinks: {
+      mac: 'https://www.dropbox.com/scl/fi/abhv5lw63oqtach80ykyy/ForestBoy.dmg?rlkey=32ydpz5d59uu2kiijgtmwfuss&st=bconf35i&dl=1',
+      win: 'https://www.dropbox.com/scl/fi/o39x8e7qzdy9se3f31obx/ForestBoySetup.exe?rlkey=ww715sjr8u4ssaldgeabyq9eo&st=o65t9hpq&dl=1',
     },
   },
   {
     name: 'pong',
     year: '2021',
-    genre: 'genre',
-    what: 'what',
-    description: 'description',
     pictures: [
       {
         img: '/images/pong.png',
@@ -97,16 +51,13 @@ export const projectsData: Array<ProjectData> = [
     ],
     github: 'https://github.com/AntonyDerache/3D-pong',
     itchio: 'https://antotogames.itch.io/3d-pong',
-    hasWebGL: true,
-    webGLPath: '/WebGL/3Dpong/Build/',
+    // hasWebGL: true,
+    // webGLPath: '/WebGL/3Dpong/Build/',
     filename: 'Build',
   },
   {
     name: 'gameOfLife',
     year: '2021',
-    genre: 'genre',
-    what: 'what',
-    description: 'description',
     pictures: [
       {
         img: '/images/gameoflife-1.JPG',
@@ -133,9 +84,6 @@ export const projectsData: Array<ProjectData> = [
   {
     name: 'astroBrawl',
     year: '2019 [Reworking in progress]',
-    genre: 'genre',
-    what: 'what',
-    description: 'description',
     pictures: [
       {
         img: '/images/astro-brawl-1.png',
@@ -154,9 +102,6 @@ export const projectsData: Array<ProjectData> = [
   {
     name: 'apiSave',
     year: '2021',
-    genre: 'genre',
-    what: 'what',
-    description: 'description',
     pictures: [
       {
         img: '/images/API-1.png',
@@ -167,9 +112,6 @@ export const projectsData: Array<ProjectData> = [
   {
     name: 'epicture',
     year: '2020',
-    genre: 'genre',
-    what: 'what',
-    description: 'description',
     pictures: [
       {
         img: '/images/epicture-background.png',
@@ -180,9 +122,6 @@ export const projectsData: Array<ProjectData> = [
   {
     name: 'rewinder',
     year: '2020',
-    genre: 'genre',
-    what: 'what',
-    description: 'description',
     pictures: [
       {
         img: '/images/rewinder-1.png',
@@ -203,3 +142,5 @@ export const projectsData: Array<ProjectData> = [
     ],
   },
 ];
+
+export default projectsData;

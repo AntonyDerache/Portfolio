@@ -40,21 +40,21 @@ function GameOfLife({ updateIndex, t, data }: GameOfLifeProps) {
             {
               data.github
               && (
-              <h2 className="ps-5">
-                <a href={data.github} rel="noreferrer" target="_blank">
-                  <i className="cursor-pointer bi bi-github" />
-                </a>
-              </h2>
+                <h2 className="ps-5">
+                  <a href={data.github} rel="noreferrer" target="_blank">
+                    <i className="cursor-pointer bi bi-github" />
+                  </a>
+                </h2>
               )
             }
             {
               data.itchio
               && (
-              <h2 className="ps-5">
-                <a href={data.itchio} rel="noreferrer" target="_blank">
-                  <i className="cursor-pointer fab fa-itch-io" />
-                </a>
-              </h2>
+                <h2 className="ps-5">
+                  <a href={data.itchio} rel="noreferrer" target="_blank">
+                    <i className="cursor-pointer fab fa-itch-io" />
+                  </a>
+                </h2>
               )
             }
           </div>
@@ -67,42 +67,42 @@ function GameOfLife({ updateIndex, t, data }: GameOfLifeProps) {
             <div className="fw-bold">{t('projects.year')}</div>
             <p className="value">{data.year}</p>
             <div className="fw-bold">{t('projects.genre')}</div>
-            <p className="value">{t(`projects.${data.name}.${data.genre}` as const)}</p>
+            <p className="value">{t(`projects.${data.name}.genre`)}</p>
             <div className="fw-bold">{t('projects.what')}</div>
-            <p className="value">{t(`projects.${data.name}.${data.what}` as const)}</p>
+            <p className="value">{t(`projects.${data.name}.what`)}</p>
             <p>
-              {t(`projects.${data.name}.${data.description}`)}
+              {t(`projects.${data.name}.description`)}
             </p>
           </div>
-          {pc && data.installer
+          {pc && data.installerLinks
             && (
-            <div className="w-100 text-center pb-5">
-              <h2 className="fw-light pb-5">{t('projects.download')}</h2>
-              <div className="d-flex justify-content-around">
-                <div className="h3">
-                  <a download href={`/installer/${data.installer.win}`}>
-                    <div
-                      className="btn btn-info justify-content-center text-white d-flex flex-column"
-                      style={{ width: '200px', height: '70px' }}
-                    >
-                      <h4>Windows x86</h4>
-                      <i className="cursor-pointer fa fa-download" />
-                    </div>
-                  </a>
-                </div>
-                <div className="h3">
-                  <a download href={`/installer/${data.installer.mac}`}>
-                    <div
-                      className="btn btn-success justify-content-center text-white d-flex flex-column"
-                      style={{ width: '200px', height: '70px' }}
-                    >
-                      <h4>MacOs</h4>
-                      <i className="cursor-pointer fa fa-download" />
-                    </div>
-                  </a>
+              <div className="w-100 text-center pb-5">
+                <h2 className="fw-light pb-5">{t('projects.download')}</h2>
+                <div className="d-flex justify-content-around">
+                  <div className="h3">
+                    <a download href={data.installerLinks.win}>
+                      <div
+                        className="btn btn-info justify-content-center text-white d-flex flex-column"
+                        style={{ width: '200px', height: '70px' }}
+                      >
+                        <h4>Windows x86</h4>
+                        <i className="cursor-pointer fa fa-download" />
+                      </div>
+                    </a>
+                  </div>
+                  <div className="h3">
+                    <a download href={data.installerLinks.mac}>
+                      <div
+                        className="btn btn-success justify-content-center text-white d-flex flex-column"
+                        style={{ width: '200px', height: '70px' }}
+                      >
+                        <h4>MacOs</h4>
+                        <i className="cursor-pointer fa fa-download" />
+                      </div>
+                    </a>
+                  </div>
                 </div>
               </div>
-            </div>
             )}
           {pc && data.hasWebGL
             ? (

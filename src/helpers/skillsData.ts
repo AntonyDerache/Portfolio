@@ -34,6 +34,14 @@ const skillsData: Array<SkillData> = [
     name: 'skills.storybook',
   },
   {
+    class: 'flutter',
+    name: 'skills.flutter',
+  },
+  {
+    class: 'sass',
+    name: 'skills.sass',
+  },
+  {
     class: 'unity',
     name: 'skills.unity',
   },
@@ -56,14 +64,6 @@ const skillsData: Array<SkillData> = [
   {
     class: 'mongodb',
     name: 'skills.mongo',
-  },
-  {
-    class: 'sass',
-    name: 'skills.sass',
-  },
-  {
-    class: 'sass',
-    name: 'skills.flutter',
   },
 ];
 

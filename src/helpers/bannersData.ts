@@ -7,6 +7,11 @@ const bannerProjectsData: Array<BannerProjectsDataType> = [
     url: 'forest-boy',
   },
   {
+    classBg: 'skull-king-score',
+    title: 'skullKingScore',
+    url: 'skull-king-score',
+  },
+  {
     classBg: 'pong',
     title: 'pong',
     url: '3d-pong',

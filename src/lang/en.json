@@ -64,11 +64,6 @@
             "date": "2019 july - december",
             "job": "Fullstack developer at Skipty",
             "description": "6-month internship as web developer for the Skipty startup"
-        },
-        "delpharm": {
-            "date": "2018 july",
-            "job": "Packaging operator for Delpharm Lille, France",
-            "description": "1 month fixed-term contract as a packaging operator for a pharmaceutical company."
         }
     },
     "projects": {
@@ -120,6 +115,12 @@
             "genre": "3D Video game, multiplayer local",
             "what": "Project developed using Unity",
             "description": "Jump back in the famous pong game restyled in 3D! You will be able to play with new gameplay mechanics such as powerups, obtsacles and a time evolutive ball speed to give a more competitive game experience!"
+        },
+        "skullKingScore": {
+            "name": "Skull King Score",
+            "genre": "Mobile application",
+            "what": "Personal project developed using Flutter",
+            "description": "Skull King Score is a scorer counter application for the social board game 'Skull King'. The application give automatically compute players scores based on the data input.\n\n*The application is for now only available as .apk file for android"
         }
     },
     "about": {

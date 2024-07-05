@@ -65,11 +65,6 @@ interface Resources {
         "date": "2019 july - december",
         "job": "Fullstack developer at Skipty",
         "description": "6-month internship as web developer for the Skipty startup"
-      },
-      "delpharm": {
-        "date": "2018 july",
-        "job": "Packaging operator for Delpharm Lille, France",
-        "description": "1 month fixed-term contract as a packaging operator for a pharmaceutical company."
       }
     },
     "projects": {
@@ -121,6 +116,12 @@ interface Resources {
         "genre": "3D Video game, multiplayer local",
         "what": "Project developed using Unity",
         "description": "Jump back in the famous pong game restyled in 3D! You will be able to play with new gameplay mechanics such as powerups, obtsacles and a time evolutive ball speed to give a more competitive game experience!"
+      },
+      "skullKingScore": {
+        "name": "Skull King Score",
+        "genre": "Mobile application",
+        "what": "Personal project developed using Flutter",
+        "description": "Skull King Score is a scorer counter application for the social board game 'Skull King'. The application give automatically compute players scores based on the data input.\n\n*The application is for now only available as .apk file for android"
       }
     },
     "about": {
@@ -161,7 +162,8 @@ interface Resources {
       "gitlab": "gitlab",
       "git": "git",
       "mongo": "mongoDB",
-      "sass": "sass"
+      "sass": "sass",
+      "flutter": "Flutter"
     },
     "experiences": {
       "title": "Expériences",
@@ -194,11 +196,6 @@ interface Resources {
         "date": "2019 juillet - decembre",
         "job": "Développeur fullstack chez Skipty",
         "description": "Stage de 6 mois en tant que développeur web au sein de la startup Skipty"
-      },
-      "delpharm": {
-        "date": "2018 juillet",
-        "job": "Operateur de conditionnement chez Delpharm Lille",
-        "description": "CDD 1 mois en tant qu'operateur de conditionnement"
       }
     },
     "projects": {
@@ -250,6 +247,12 @@ interface Resources {
         "genre": "Jeu vidéo 3D, multijoueur local",
         "what": "Projet réalisé sous Unity",
         "description": "Retrouver le très célèbre jeu pong revisité en version 3D et affrontez vous avec un amis ! Vous pourrez jouer avec de nouveaux éléments de gameplay tel que des powerups, des obstacles et une vitesse de balle évolutive sur le temps afin de pimenter l'expérience de jeu !"
+      },
+      "skullKingScore": {
+        "name": "Skull King Score",
+        "genre": "Application mobile",
+        "what": "Projet perso développé en Flutter",
+        "description": "Skull King Score est une application d'aide pour le comptage des points du jeu de société 'Skull King'. L'application permet de renseigner les résultats de chaque manche pour chaque joueur et de calculer automatiquement les points basés sur les résultats rentrés par l'utilisateur.\n\n*L'application est pour l'instant disponible uniquement sous format .apk pour android"
       }
     },
     "about": {

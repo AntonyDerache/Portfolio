@@ -38,6 +38,7 @@
 
     .project-description {
         font-size: 1.25rem;
+        white-space: pre-line;
         @media screen and (min-width: 992px) {
             font-size: 1.5rem;
         }
@@ -48,6 +49,17 @@
 
         p {
             color: rgb(243, 243, 243);
+        }
+    }
+
+    .project-installer {
+        .btn {
+            background-color: #98c690;
+            border-radius: 5px;
+
+            &:hover {
+                background-color: #80a878;
+            }
         }
     }
 }

@@ -7,52 +7,72 @@ const projectsData: Array<ProjectData> = [
     itchio: 'https://antotogames.itch.io/forest-boy',
     pictures: [
       {
-        img: '/images/forest-boy-1.jpg',
+        img: '/images/forest-boy/forest-boy-1.jpg',
         alt: 'forest-boy-1',
       },
       {
-        img: '/images/forest-boy-2.jpg',
+        img: '/images/forest-boy/forest-boy-2.jpg',
         alt: 'forest-boy-2',
       },
       {
-        img: '/images/forest-boy-3.jpg',
+        img: '/images/forest-boy/forest-boy-3.jpg',
         alt: 'forest-boy-3',
       },
       {
-        img: '/images/forest-boy-4.jpg',
+        img: '/images/forest-boy/forest-boy-4.jpg',
         alt: 'forest-boy-4',
       },
       {
-        img: '/images/forest-boy-5.jpg',
+        img: '/images/forest-boy/forest-boy-5.jpg',
         alt: 'forest-boy-5',
       },
     ],
-    installerLinks: {
-      mac: 'https://www.dropbox.com/scl/fi/abhv5lw63oqtach80ykyy/ForestBoy.dmg?rlkey=32ydpz5d59uu2kiijgtmwfuss&st=bconf35i&dl=1',
-      win: 'https://www.dropbox.com/scl/fi/o39x8e7qzdy9se3f31obx/ForestBoySetup.exe?rlkey=ww715sjr8u4ssaldgeabyq9eo&st=o65t9hpq&dl=1',
-    },
+    installerLinks: [
+      {
+        title: 'MacOs',
+        link: 'https://www.dropbox.com/scl/fi/abhv5lw63oqtach80ykyy/ForestBoy.dmg?rlkey=32ydpz5d59uu2kiijgtmwfuss&st=bconf35i&dl=1',
+      },
+      {
+        title: 'Window x86',
+        link: 'https://www.dropbox.com/scl/fi/o39x8e7qzdy9se3f31obx/ForestBoySetup.exe?rlkey=ww715sjr8u4ssaldgeabyq9eo&st=o65t9hpq&dl=1',
+      },
+    ],
+  },
+  {
+    name: 'skullKingScore',
+    year: '2024',
+    pictures: [
+      {
+        img: '/images/skull-king-score/skull-king-score-1.png',
+        alt: 'forest-boy-1',
+      },
+    ],
+    installerLinks: [
+      {
+        title: 'Android .apk',
+        link: 'https://www.dropbox.com/scl/fi/zt2v45z9u889qu94nn37r/skull_king_score_v1.0.0.apk?rlkey=wdpvshbeofezkvj3fwbasfy92&st=2tcab271&dl=1',
+      },
+    ],
   },
   {
     name: 'pong',
     year: '2021',
     pictures: [
       {
-        img: '/images/pong.png',
+        img: '/images/pong/pong.png',
         alt: 'pong-1',
       },
       {
-        img: '/images/pong-1.png',
+        img: '/images/pong/pong-1.png',
         alt: 'pong-2',
       },
       {
-        img: '/images/pong-2.png',
+        img: '/images/pong/pong-2.png',
         alt: 'pong-3',
       },
     ],
     github: 'https://github.com/AntonyDerache/3D-pong',
     itchio: 'https://antotogames.itch.io/3d-pong',
-    // hasWebGL: true,
-    // webGLPath: '/WebGL/3Dpong/Build/',
     filename: 'Build',
   },
   {
@@ -60,19 +80,19 @@ const projectsData: Array<ProjectData> = [
     year: '2021',
     pictures: [
       {
-        img: '/images/gameoflife-1.JPG',
+        img: '/images/game-of-life/gameoflife-1.JPG',
         alt: 'game-of-life-1',
       },
       {
-        img: '/images/gameoflife-2.JPG',
+        img: '/images/game-of-life/gameoflife-2.JPG',
         alt: 'game-of-life-2',
       },
       {
-        img: '/images/gameoflife-3.JPG',
+        img: '/images/game-of-life/gameoflife-3.JPG',
         alt: 'game-of-life-3',
       },
       {
-        img: '/images/gameoflife-4.JPG',
+        img: '/images/game-of-life/gameoflife-4.JPG',
         alt: 'game-of-life-4',
       },
     ],
@@ -86,15 +106,15 @@ const projectsData: Array<ProjectData> = [
     year: '2019 [Reworking in progress]',
     pictures: [
       {
-        img: '/images/astro-brawl-1.png',
+        img: '/images/astro-brawl/astro-brawl-1.png',
         alt: 'astrobrawl-1',
       },
       {
-        img: '/images/astro-brawl-2.png',
+        img: '/images/astro-brawl/astro-brawl-2.png',
         alt: 'astrobraw-2',
       },
       {
-        img: '/images/astro-brawl-3.png',
+        img: '/images/astro-brawl/astro-brawl-3.png',
         alt: 'astrobrawl-3',
       },
     ],
@@ -104,7 +124,7 @@ const projectsData: Array<ProjectData> = [
     year: '2021',
     pictures: [
       {
-        img: '/images/API-1.png',
+        img: '/images/sobook/API-1.png',
         alt: 'api-1',
       },
     ],
@@ -114,7 +134,7 @@ const projectsData: Array<ProjectData> = [
     year: '2020',
     pictures: [
       {
-        img: '/images/epicture-background.png',
+        img: '/images/epicture/epicture-background.png',
         alt: 'epicture',
       },
     ],
@@ -124,19 +144,19 @@ const projectsData: Array<ProjectData> = [
     year: '2020',
     pictures: [
       {
-        img: '/images/rewinder-1.png',
+        img: '/images/rewinder/rewinder-1.png',
         alt: 'rewinderGame-4',
       },
       {
-        img: '/images/rewinder-2.png',
+        img: '/images/rewinder/rewinder-2.png',
         alt: 'rewinderGame-2',
       },
       {
-        img: '/images/rewinder-3.png',
+        img: '/images/rewinder/rewinder-3.png',
         alt: 'rewinderGame-3',
       },
       {
-        img: '/images/rewinder-4.png',
+        img: '/images/rewinder/rewinder-4.png',
         alt: 'rewinderGame-1',
       },
     ],

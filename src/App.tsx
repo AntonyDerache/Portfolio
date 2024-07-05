@@ -15,7 +15,7 @@ import Home from '@/views/pages/home/Home';
 import Contact from '@/views/pages/contact/Contact';
 import Project from '@/views/pages/project/Project';
 import Games from '@/views/Games';
-import { projectsData } from '@/helpers/projectsData';
+import projectsData from '@/helpers/projectsData';
 import { hidePresScreen, switchNav } from '@/helpers/scroll';
 import WithHeader from '@/layouts/WithHeader';
 import WithoutHeader from '@/layouts/WithoutHeader';
@@ -81,6 +81,7 @@ function App() {
           <Route path="/projects" element={<Work updateIndex={updateIndex} t={t} />} />
           <Route path="/contact" element={<Contact updateIndex={updateIndex} />} />
           <Route path="/projects/forest-boy" element={<Project t={t} updateIndex={updateIndex} data={findProjectData('forestBoy')} />} />
+          <Route path="/projects/skull-king-score" element={<Project t={t} updateIndex={updateIndex} data={findProjectData('skullKingScore')} />} />
           <Route path="/projects/game-of-life" element={<Project t={t} updateIndex={updateIndex} data={findProjectData('gameOfLife')} />} />
           <Route path="/projects/3d-pong" element={<Project t={t} updateIndex={updateIndex} data={findProjectData('pong')} />} />
           <Route path="/projects/astro-brawl" element={<Project t={t} updateIndex={updateIndex} data={findProjectData('astroBrawl')} />} />

@@ -33,14 +33,19 @@ function Caroussel({ image }: CarousselProps) {
           ))
         }
       </div>
-      <button className="carousel-control-prev" type="button" data-bs-target="#caroussel" data-bs-slide="prev">
-        <span className="carousel-control-prev-icon" aria-hidden="true" />
-        <span className="visually-hidden">Previous</span>
-      </button>
-      <button className="carousel-control-next" type="button" data-bs-target="#caroussel" data-bs-slide="next">
-        <span className="carousel-control-next-icon" aria-hidden="true" />
-        <span className="visually-hidden">Next</span>
-      </button>
+      { image.length > 1
+      && (
+      <>
+        <button className="carousel-control-prev" type="button" data-bs-target="#caroussel" data-bs-slide="prev">
+          <span className="carousel-control-prev-icon" aria-hidden="true" />
+          <span className="visually-hidden">Previous</span>
+        </button>
+        <button className="carousel-control-next" type="button" data-bs-target="#caroussel" data-bs-slide="next">
+          <span className="carousel-control-next-icon" aria-hidden="true" />
+          <span className="visually-hidden">Next</span>
+        </button>
+      </>
+      )}
     </div>
   );
 }

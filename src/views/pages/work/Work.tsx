@@ -4,7 +4,7 @@ import type { TFunction } from 'i18next';
 
 import PresentationScreen from '@/layouts/presentationScreen/PresentationScreen';
 import ProjectBanner from '@/components/project-banner/ProjectBanner';
-import { bannerProjectsData } from '@/helpers/projectsData';
+import bannerProjectsData from '@/helpers/bannersData';
 import './work.scss';
 
 export interface ProjectProps {

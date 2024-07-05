@@ -74,33 +74,27 @@ function GameOfLife({ updateIndex, t, data }: GameOfLifeProps) {
               {t(`projects.${data.name}.description`)}
             </p>
           </div>
-          {pc && data.installerLinks
+          {pc && data.installerLinks?.length
             && (
-              <div className="w-100 text-center pb-5">
+              <div className="project-installer w-100 text-center pb-5">
                 <h2 className="fw-light pb-5">{t('projects.download')}</h2>
                 <div className="d-flex justify-content-around">
-                  <div className="h3">
-                    <a download href={data.installerLinks.win}>
-                      <div
-                        className="btn btn-info justify-content-center text-white d-flex flex-column"
-                        style={{ width: '200px', height: '70px' }}
-                      >
-                        <h4>Windows x86</h4>
-                        <i className="cursor-pointer fa fa-download" />
+                  {
+                    data.installerLinks.map((installer) => (
+                      <div className="h3" key={`${data.name} ${installer.title}}`}>
+                        <button
+                          type="button"
+                          className="btn text-white p-0"
+                          style={{ width: '150px', height: '60px' }}
+                        >
+                          <a download href={installer.link} className="d-flex flex-column justify-content-center h-100">
+                            <h4>{installer.title}</h4>
+                            <i className="cursor-pointer fa fa-download" />
+                          </a>
+                        </button>
                       </div>
-                    </a>
-                  </div>
-                  <div className="h3">
-                    <a download href={data.installerLinks.mac}>
-                      <div
-                        className="btn btn-success justify-content-center text-white d-flex flex-column"
-                        style={{ width: '200px', height: '70px' }}
-                      >
-                        <h4>MacOs</h4>
-                        <i className="cursor-pointer fa fa-download" />
-                      </div>
-                    </a>
-                  </div>
+                    ))
+                  }
                 </div>
               </div>
             )}

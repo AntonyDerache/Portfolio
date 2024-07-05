@@ -1,65 +1,71 @@
 import type { SkillData } from '@/types/skillsData.types';
 
+const generateSkillPath = (str: string) => `skills.${str}`;
+
 const skillsData: Array<SkillData> = [
   {
     class: 'reactjs',
-    name: 'skills.react',
+    name: generateSkillPath('react'),
   },
   {
     class: 'vuejs',
-    name: 'skills.vue',
+    name: generateSkillPath('vue'),
   },
   {
     class: 'svelte',
-    name: 'skills.svelte',
+    name: generateSkillPath('svelte'),
   },
   {
     class: 'typescript',
-    name: 'skills.ts',
+    name: generateSkillPath('ts'),
   },
   {
     class: 'javascript',
-    name: 'skills.js',
+    name: generateSkillPath('js'),
   },
   {
     class: 'nodejs',
-    name: 'skills.node',
+    name: generateSkillPath('node'),
   },
   {
     class: 'playwright',
-    name: 'skills.playwright',
+    name: generateSkillPath('playwright'),
   },
   {
     class: 'storybook',
-    name: 'skills.storybook',
+    name: generateSkillPath('storybook'),
   },
   {
-    class: 'unity',
-    name: 'skills.unity',
-  },
-  {
-    class: 'csharp',
-    name: 'skills.csharp',
-  },
-  {
-    class: 'github',
-    name: 'skills.github',
-  },
-  {
-    class: 'gitlab',
-    name: 'skills.gitlab',
-  },
-  {
-    class: 'git',
-    name: 'skills.git',
-  },
-  {
-    class: 'mongodb',
-    name: 'skills.mongo',
+    class: 'flutter',
+    name: generateSkillPath('flutter'),
   },
   {
     class: 'sass',
-    name: 'skills.sass',
+    name: generateSkillPath('sass'),
+  },
+  {
+    class: 'unity',
+    name: generateSkillPath('unity'),
+  },
+  {
+    class: 'csharp',
+    name: generateSkillPath('csharp'),
+  },
+  {
+    class: 'github',
+    name: generateSkillPath('github'),
+  },
+  {
+    class: 'gitlab',
+    name: generateSkillPath('gitlab'),
+  },
+  {
+    class: 'git',
+    name: generateSkillPath('git'),
+  },
+  {
+    class: 'mongodb',
+    name: generateSkillPath('mongo'),
   },
 ];
 

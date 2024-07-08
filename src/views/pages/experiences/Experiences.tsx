@@ -24,14 +24,14 @@ function Experiences({ updateIndex, t }: ExperiencesProps) {
         <VerticalTimeline>
           <ExperienceElement
             backColor="#fff"
-            skillsName={['VueJS', 'Typescript', 'Java', 'Java Spring', 'Craftsmanship', 'Playwright']}
+            skillsName={['VueJS', 'Typescript', 'Java', 'Spring Boot', 'Craftsmanship', 'Playwright']}
             title={t('experiences.ipponBis.job')}
             substitle={t('experiences.ipponBis.date')}
             description={t('experiences.ipponBis.description')}
           />
           <ExperienceElement
             backColor="#fff"
-            skillsName={['SvelteJS', 'Java', 'Java Spring', 'Lit Element', 'TypeScript', 'DDD', 'Playwright', 'Cypress', 'Storybook']}
+            skillsName={['SvelteJS', 'Java', 'Spring Boot', 'Lit Element', 'TypeScript', 'DDD', 'Playwright', 'Cypress', 'Storybook']}
             title={t('experiences.ippon.job')}
             substitle={t('experiences.ippon.date')}
             description={t('experiences.ippon.description')}

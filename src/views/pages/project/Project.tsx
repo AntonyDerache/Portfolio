@@ -74,7 +74,7 @@ function GameOfLife({ updateIndex, t, data }: GameOfLifeProps) {
               {t(`projects.${data.name}.description`)}
             </p>
           </div>
-          {pc && data.installerLinks?.length
+          {data.installerLinks?.length
             && (
               <div className="project-installer w-100 text-center pb-5">
                 <h2 className="fw-light pb-5">{t('projects.download')}</h2>

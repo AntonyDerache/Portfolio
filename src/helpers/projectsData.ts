@@ -50,7 +50,7 @@ const projectsData: Array<ProjectData> = [
     installerLinks: [
       {
         title: 'Android .apk',
-        link: 'https://www.dropbox.com/scl/fi/zt2v45z9u889qu94nn37r/skull_king_score_v1.0.0.apk?rlkey=wdpvshbeofezkvj3fwbasfy92&st=2tcab271&dl=1',
+        link: 'https://www.dropbox.com/scl/fi/ckhasd1wdy2zk6ayb0olb/skull_king_score_v1.0.1.apk?rlkey=87a68311f212hy2msuat5gt5g&st=n1y2h623&dl=1',
       },
     ],
   },

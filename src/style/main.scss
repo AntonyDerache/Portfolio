@@ -1,5 +1,5 @@
-@import "./animations";
-@import "./mixins";
-@import "./variables";
-@import "./typography";
-@import "./pages";
+// @use "./variables" as *;
+@use "./animations";
+@use "./mixins";
+@use "./typography";
+@use "./pages";

@@ -36,14 +36,14 @@ interface Resources {
     },
     "experiences": {
       "title": "Experiences",
-      "ipponBis": {
+      "ippon": {
         "date": "2023 September - Now",
         "job": "Fullstack consultant at Ippon Technologies",
         "description": "Fullstack consultant for Ippon Technologies"
       },
-      "ippon": {
+      "ipponIntern": {
         "date": "2023 March - 2023 August",
-        "job": "Fullstack developer at Ippon Technologies",
+        "job": "Fullstack developer intern at Ippon Technologies",
         "description": "6-month internship as fullstack developer for Ippon Technologies"
       },
       "trackapBis": {
@@ -167,14 +167,14 @@ interface Resources {
     },
     "experiences": {
       "title": "Expériences",
-      "ipponBis": {
+      "ippon": {
         "date": "2023 Septembre - Maintenant",
         "job": "Consultant fullstack chez Ippon Technologies",
         "description": "Consultant fullstack chez Ippon Technologies"
       },
-      "ippon": {
+      "ipponIntern": {
         "date": "2023 Mars - 2023 Aout",
-        "job": "Développeur fullstack chez Ippon Technologies",
+        "job": "Stagiaire développeur fullstack chez Ippon Technologies",
         "description": "Stage 6 de mois en tant que développeur fullstack chez Ippon Technologies"
       },
       "trackapBis": {
@@ -210,7 +210,7 @@ interface Resources {
         "name": "Forest Boy",
         "genre": "Jeu vidéo 2D, solo",
         "what": "Projet réalisé sous Unity",
-        "description": "Jeu de plates-formes die & retry inspiré des jeux actuelle: Super Meat Boy et Ori And The Blind Forest. Vous incarnez un petit personnage rouge dont l'objectif et de terminer les niveaux sans mourir"
+        "description": "Jeu de plates-formes die & retry inspiré des jeux actuel: Super Meat Boy et Ori And The Blind Forest. Vous incarnez un petit personnage rouge dont l'objectif et de terminer les niveaux sans mourir"
       },
       "epicture": {
         "name": "Epicture",

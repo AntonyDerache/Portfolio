@@ -36,14 +36,14 @@
     },
     "experiences": {
         "title": "Expériences",
-        "ipponBis": {
+        "ippon": {
             "date": "2023 Septembre - Maintenant",
             "job": "Consultant fullstack chez Ippon Technologies",
             "description": "Consultant fullstack chez Ippon Technologies"
         },
-        "ippon": {
+        "ipponIntern": {
             "date": "2023 Mars - 2023 Aout",
-            "job": "Développeur fullstack chez Ippon Technologies",
+            "job": "Stagiaire développeur fullstack chez Ippon Technologies",
             "description": "Stage 6 de mois en tant que développeur fullstack chez Ippon Technologies"
         },
         "trackapBis": {
